@@ -7,6 +7,10 @@ import Slider from "react-slick";
 import bannertwo from '../assets/clg_-building2.jpg'
 import bannerthree from '../assets/clg_gate.jpg'
 import banner from '../assets/clg_Shaheed_Mina.jpg'
+import shaAbdur from '../assets/founder_abdur_rouf.jpg'
+import AbuBokkor from '../assets/abu-bokor.jpg'
+import Sirtwo from '../assets/noName.jpg'
+import RoyhanAlom from '../assets/Rayhan-Alam.jpg'
 
 const Banner = () => {
   const settings = {
@@ -15,29 +19,29 @@ const Banner = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay:true,
+    autoplay: true,
     appendDots: dots => (
       <div
         style={{
-          position: "absolute", 
-          top: "0px",             
-          right: "0px",  
+          position: "absolute",
+          top: "0px",
+          right: "0px",
           fontSize: '30px',
         }}
       >
         <ul
           style={{
             position: "absolute",
-            top: '10px',         
+            top: '10px',
             right: 0,
             borderRadius: "20px",
             padding: "20px",
-            margin: "0", 
-            color: 'green', 
+            margin: "0",
+            color: 'green',
             fontSize: '30px',
           }}
         >
-          
+
           {dots}
         </ul>
       </div>
@@ -46,41 +50,124 @@ const Banner = () => {
       <div
         style={{
           color: "transparent",
-          height:"15px",
-          redius:"10px",
-          width:"15px",
-          background:"#FFFFFF",
-          borderRadius:"30px",
+          height: "15px",
+          redius: "10px",
+          width: "15px",
+          background: "#FFFFFF",
+          borderRadius: "30px",
         }}
       >
         {i + 1}
       </div>
     )
   };
-  
 
-  
-  
-  
-  
-  
+
+
   return (
     <div>
       <Container>
-      <Slider {...settings}>
-        <div className="">
+        <Slider {...settings}>
+          <div className="">
             <img src={bannerOne} alt="" />
-        </div>
-        <div className="">
+          </div>
+          <div className="">
             <img src={bannertwo} alt="" />
-        </div>
-        <div className="">
+          </div>
+          <div className="">
             <img src={bannerthree} alt="" />
-        </div>
-        <div className="">
+          </div>
+          <div className="">
             <img src={banner} alt="" />
-        </div>
+          </div>
         </Slider>
+        <div className=" flex justify-around pb-[30px] border-b-[1px] border-gray-400">
+          <div className="w-[27%]">
+            <div className=" pt-[20px] px-[20px] bg-teal-400 pb-[50px]">
+              <h2>প্রতিষ্ঠাতা</h2>
+              <div className=" relative py-[15px]">
+                <div className=" border-[5px] border-black w-[20%] z-10"> </div>
+                <h2 className=' border-[1px] border-[#FFFFFF]  absolute top-[19px] left-[20%] w-[80%]'></h2>
+              </div>
+              <div className=" relative">
+                <img src={shaAbdur} alt="" />
+                <div className=" backdrop-opacity-10 backdrop-invert bg-black/30  py-[30px] absolute bottom-0 left-[0] w-full ">
+                  <h3 className=' text-[16px] text-white font-medium pl-[20px]'>শাহ আব্দুর রউফ</h3>
+                  <p className=' text-[14px] text-white font-medium pl-[20px]'>সমাজসেক</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="w-[27%]">
+            <div className=" bg-orange-600 py-[20px] px-[20px]">
+              <h2>নোটিশবোর্ড</h2>
+              <div className=" relative">
+                <div className=" border-[5px] border-black w-[20%] z-10"></div>
+                <h2 className=' border-[1px] border-[#FFF]  absolute top-[4px] left-[20%] w-[80%]'></h2>
+              </div>
+              <div className=" border-b-[1px] border-white py-3 ">
+                <h3 className=' text-[18px] text-white font-medium'>জন্মাষ্টমী উপলক্ষ্যে কলেজ বন্ধ</h3>
+                <p className=' text-end text-[12px] text-white font-normal '>রবিবার, আগস্ট 25, 2024</p>
+              </div>
+              <div className=" border-b-[1px] border-white py-3 ">
+                <h3 className=' text-[16px] text-white font-semibold'>উচ্চ মাধ্যমিক ১ম বর্ষের বৃত্তি সংক্রান্ত জরুরী বিজ্ঞপ্তি</h3>
+                <p className=' text-end text-[12px] text-white font-normal '>রবিবার, আগস্ট 18, 2024</p>
+              </div>
+              <div className=" border-b-[1px] border-white py-3 ">
+                <h3 className=' text-[16px] text-white font-semibold'>উচ্চ মাধ্যমিক শ্রেনির ক্লাস শুরু</h3>
+                <p className=' text-end text-[12px] text-white font-normal '>সোমবার, আগস্ট 12, 2024</p>
+              </div>
+              <div className=" border-b-[1px] border-white py-3 ">
+                <h3 className=' text-[13px] text-white font-medium'>অনার্স ৪র্থ বর্ষ ও ডিগ্রি ২য় বর্ষের ২টি পরীক্ষা স্থগিত সংক্রান্ত জরুরি নোটিশ</h3>
+                <p className=' text-end text-[12px] text-white font-normal '>রবিবার, জুন 23, 2024</p>
+              </div>
+              <div className=" border-b border-white flex justify-between py-3 items-center">
+                <h3 className=' text-[16px] text-white font-semibold'>Form fillup Notice</h3>
+                <p className=' text-end text-[12px] text-white font-normal '>বুধবার, মে 29, 2024</p>
+              </div>
+              <button className=' py-[9px] px-[15px] bg-black text-white my-[20px] text-[16px] font-medium hover:bg-white hover:text-black duration-300'>সকল নোটিশ দেখুন</button>
+            </div>
+          </div>
+          <div className="w-[27%]">
+            <div className=" bg-cyan-500 p-[20px]">
+              <h2>শিক্ষকদের তালিকা</h2>
+              <div className=" relative">
+                <div className=" border-[5px] border-black w-[20%] z-10"></div>
+                <h2 className=' border-[1px] border-[#FFF]  absolute top-[4px] left-[20%] w-[80%]'></h2>
+
+              </div>
+              <div className=" flex justify-between gap-x-3 py-[5px]">
+                  <div className=" w-[100px] h-[100px] ">
+                    <img src={AbuBokkor} alt="" />
+                  </div>
+                  <div className="">
+                    <h2 className=' font-medium text-[#FFFFFF] text-[16px]'>মো. আবু বকর সিদ্দিক সরকার</h2>
+                    <p className=' font-light text-[12px] text-white'>অধ্যক্ষ</p>
+                  </div>
+              </div>
+              <div className=" flex justify-between gap-x-4 py-[5px]">
+                  <div className=" w-[100px] h-[100px] ">
+                    <img src={Sirtwo} alt="" />
+                  </div>
+                  <div className="">
+                    <h2 className=' font-medium text-[#FFFFFF] text-[16px]'>মো. জাহিদুল ইসলাম</h2>
+                    <p className=' font-light text-[12px] text-white'>প্রভাষক, তথ্য ও যোগাযোগ প্রযুক্তি</p>
+                  </div>
+              </div>
+              <div className=" flex justify-between gap-x-4 py-[5px]">
+                  <div className=" w-[100px] h-[100px] ">
+                    <img src={RoyhanAlom} alt="" />
+                  </div>
+                  <div className="">
+                    <h2 className=' font-medium text-[#FFFFFF] text-[16px]'>ই.এম.এম. রায়হান আলম</h2>
+                    <p className=' font-light text-[12px] text-white'>প্রভাষক</p>
+                    <p className=' font-light text-[8px] text-white'>যোগদানের তারিখ: ০৮/০৭/২০০৪ খ্রি.</p>
+                  </div>
+              </div>
+              <button className=' py-[9px] px-[15px] bg-black text-white my-[20px] text-[16px] font-medium hover:bg-white hover:text-black duration-300'>সকল শিক্ষকের তালিকা</button>
+            </div>
+          </div>
+        </div>
       </Container>
     </div>
   )
