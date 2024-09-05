@@ -1,23 +1,30 @@
-import './App.css'
-import About from './Components/About'
-import Banner from './Components/Banner'
-import Container from './Components/Container'
-import Footer from './Components/Footer'
-import Menu from './Components/Menu'
-import Navbar from './Components/Navbar'
+import './App.css';
+import Layout from './Components/Layout';
+import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } from 'react-router-dom';
+import Home from './Pages/Home';
+import Collage from './Pages/Collage';
+import Students from './Pages/Students';
+import Guardian from './Pages/Guardian';
+import Contact from './Pages/Contact';
 
 function App() {
-  
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route element={<Layout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/coll" element={<Collage />} />
+        <Route path="/student" element={<Students />} />
+        <Route path="/guardian" element={<Guardian />} />
+        <Route path="/Contact" element={<Contact />} />
+      </Route>
+    )
+  );
 
   return (
     <>
-      <Navbar/>
-      <Menu/>
-      <Banner/>
-      <About/>
-      <Footer/>
+      <RouterProvider router={router} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
