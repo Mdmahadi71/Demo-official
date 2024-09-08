@@ -10,6 +10,15 @@ import Principal from './Pages/Principal';
 import Chistory from './Pages/Chistory';
 import Infrastructure from './Pages/Infrastructure';
 import Facilities from './Pages/Facilities';
+import Teacher from './Pages/Teacher';
+import Employee from './Pages/Employee';
+import Empty from './Pages/Empty';
+import Notice from './Pages/Notice';
+import ClassRoutine from './Pages/ClassRoutine';
+import ExamRoutine from './Pages/ExamRoutine';
+import GuradialPanel from './Pages/GuradialPanel';
+import AddInformation from './Pages/AddInformation';
+import Complaint from './Pages/Complaint';
 
 
 function App() {
@@ -25,6 +34,15 @@ function App() {
         <Route path="/history" element={<Chistory />} />
         <Route path="/infras" element={<Infrastructure />} />
         <Route path='/facilities' element={<Facilities/>}/>
+        <Route path='/teacher' element={<Teacher/>}/>
+        <Route path='/employee' element={<Employee/>}/>
+        <Route path='/empty' element={<Empty/>}/>
+        <Route path='/notice' element={<Notice/>}/>
+        <Route path='/class' element={<ClassRoutine/>}/>
+        <Route path='/ExamRou' element={<ExamRoutine/>}/>
+        <Route path='/garPanel' element={<GuradialPanel/>}/>
+        <Route path='/Addinfor' element={<AddInformation/>}/>
+        <Route path='/Complaint' element={<Complaint/>}/>
       </Route>
     )
   );
