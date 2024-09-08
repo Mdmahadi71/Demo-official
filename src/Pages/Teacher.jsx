@@ -2,6 +2,7 @@ import React from 'react'
 import Container from '../Components/Container'
 import { FaLink, FaSearch } from "react-icons/fa";
 import { AiOutlineLike } from "react-icons/ai";
+import { Link } from 'react-router-dom';
 
 const Teacher = () => {
     return (
@@ -11,16 +12,21 @@ const Teacher = () => {
                     <div className="lg:w-[59%]">
                         <div className=" lg:flex gap-x-3 py-3">
                             <div className="lg:w-[32%] py-3 lg:py-0  ">
-                                <div className="flex gap-x-1 items-center w-full h-[80px] justify-center bg-red-600 text-center hover:bg-neutral-800 text-white duration-300 ">
+                                <Link to={'/Pteacher'}>
+                                <div className="flex gap-x-1 items-center w-full h-[80px] justify-center bg-red-600 text-center
+                                 hover:bg-neutral-800 text-white duration-300 ">
                                     <FaLink className='text-[18px]' />
                                     <h2 className=' font-medium text-[18px] '> বর্তমান শিক্ষকদের তালিকা</h2>
                                 </div>
+                                </Link>
                             </div>
                             <div className="lg:w-[32%] py-3 lg:py-0  ">
+                            <Link to={'/pastteacher'}>
                                 <div className="flex gap-x-1 items-center w-full h-[80px] justify-center bg-red-600 text-center hover:bg-neutral-800 text-white duration-300 ">
                                     <FaLink className='text-[18px]' />
                                     <h2 className=' font-medium text-[18px] '>প্রাক্তন শিক্ষকদের তালিকা</h2>
                                 </div>
+                            </Link>
                             </div>
                         </div>
                     </div>

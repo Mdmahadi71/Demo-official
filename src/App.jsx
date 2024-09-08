@@ -19,6 +19,8 @@ import ExamRoutine from './Pages/ExamRoutine';
 import GuradialPanel from './Pages/GuradialPanel';
 import AddInformation from './Pages/AddInformation';
 import Complaint from './Pages/Complaint';
+import PrteacherList from './Pages/PrteacherList';
+import PastTeacher from './Pages/PastTeacher';
 
 
 function App() {
@@ -43,6 +45,8 @@ function App() {
         <Route path='/garPanel' element={<GuradialPanel/>}/>
         <Route path='/Addinfor' element={<AddInformation/>}/>
         <Route path='/Complaint' element={<Complaint/>}/>
+        <Route path='/Pteacher' element={<PrteacherList/>}/>
+        <Route path='/pastteacher' element={<PastTeacher/>}/>
       </Route>
     )
   );

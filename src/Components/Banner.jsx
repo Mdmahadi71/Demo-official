@@ -83,7 +83,7 @@ const Banner = () => {
     <div className='overflow-hidden'>
       <Container>
         <Slider {...settings}>
-          <div className="">
+          <div className=" z-[-10]">
             <img src={bannerOne} alt="" />
           </div>
           <div className="">
@@ -96,8 +96,8 @@ const Banner = () => {
             <img src={banner} alt="" />
           </div>
         </Slider>
-        <div className=" lg:flex justify-around pb-[30px] border-b-[1px] border-gray-400">
-          <div className="lg:w-[27%] py-3 lg:py-0">
+        <div className=" lg:flex justify-around pb-[30px] border-b-[1px] border-gray-400 ">
+          <div className="lg:w-[27%] py-3 lg:py-0 lg:mt-[-100px] z-10">
             <div className=" pt-[20px] px-[20px] bg-teal-400 pb-[50px]">
               <h2>প্রতিষ্ঠাতা</h2>
               <div className=" relative py-[15px]">
@@ -113,7 +113,7 @@ const Banner = () => {
               </div>
             </div>
           </div>
-          <div className="lg:w-[27%] py-3 lg:py-0">
+          <div className="lg:w-[27%] py-3 lg:py-0 lg:mt-[-100px] z-10">
             <div className=" bg-orange-600 py-[20px] px-[20px]">
               <h2>নোটিশবোর্ড</h2>
               <div className=" relative">
@@ -143,7 +143,7 @@ const Banner = () => {
               <button className=' py-[9px] px-[15px] bg-black text-white my-[20px] text-[16px] font-medium hover:bg-white hover:text-black duration-300'>সকল নোটিশ দেখুন</button>
             </div>
           </div>
-          <div className="lg:w-[27%] py-3 lg:py-0">
+          <div className="lg:w-[27%] py-3 lg:py-0 lg:mt-[-100px] z-10">
             <div className=" bg-cyan-500 p-[20px]">
               <h2>শিক্ষকদের তালিকা</h2>
               <div className=" relative">

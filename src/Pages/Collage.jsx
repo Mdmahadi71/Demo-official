@@ -49,36 +49,46 @@ const Collage = () => {
                             </Link>
                         </div>
                         <div className="lg:w-[32%] py-3 lg:py-0">
+                            <Link to={'/teacher'}>
                             <div className=" flex gap-x-2 items-center w-full h-[80px] justify-center bg-teal-500 hover:bg-neutral-800 text-white duration-300 ">
                                 <FaLink className='text-[18px]'/>
                                 <h2 className='font-medium text-[18px]'> শিক্ষক</h2>
                             </div>
+                            </Link>
                         </div>
                         <div className="lg:w-[32%] py-3 lg:py-0">
+                            <Link to={'/Pteacher'}>
                             <div className=" flex gap-x-1 items-center w-full h-[80px] justify-center bg-teal-500 hover:bg-neutral-800 text-white duration-300 ">
                                 <FaLink className='text-[18px]'/>
                                 <h2 className='font-medium text-[18px] text-center'> বর্তমান শিক্ষকদের তালিকা</h2>
                             </div>
+                            </Link>
                         </div>
                     </div>
                     <div className=" py-[22px] lg:flex justify-between ">
                         <div className="lg:w-[32%] py-3 lg:py-0">
+                            <Link to={'/pastteacher'}>
                             <div className=" flex gap-x-1 items-center w-full h-[80px] justify-center bg-teal-500 hover:bg-neutral-800 text-white duration-300 ">
                                 <FaLink className='text-[18px] text-center'/>
                                 <h2 className='font-medium text-[18px] text-center'> প্রাক্তন শিক্ষকদের তালিকা</h2>
                             </div>
+                            </Link>
                         </div>
                         <div className="lg:w-[32%] py-3 lg:py-0">
+                            <Link to={'/employee'}>
                             <div className=" flex gap-x-2 items-center w-full h-[80px] justify-center bg-teal-500 hover:bg-neutral-800 text-white duration-300 ">
                                 <FaLink className='text-[18px]'/>
                                 <h2 className='font-medium text-[18px]'>  কর্মচারী</h2>
                             </div>
+                            </Link>
                         </div>
                         <div className="lg:w-[32%] py-3 lg:py-0">
+                            <Link to={'/empty'}>
                             <div className=" flex gap-x-1 items-center w-full h-[80px] justify-center bg-teal-500 hover:bg-neutral-800 text-white duration-300 ">
                                 <FaLink className='text-[18px]'/>
                                 <h2 className='font-medium text-[18px] text-center'>  শুন্যপদ</h2>
                             </div>
+                            </Link>
                         </div>
                     </div>
                 </div>

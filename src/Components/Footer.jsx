@@ -1,5 +1,6 @@
 import React from 'react'
 import Container from './Container'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -16,9 +17,9 @@ const Footer = () => {
                 <div className="">
                     <h2 className=' font-semibold text-[18px] text-white border-b-[1px] border-gray-300 '>শিক্ষক</h2>
                     <ul className=' py-[20px] lg:py-0'> 
-                        <li className=' font-light text-gray-400 text-[14px] py-2'>বর্তমান শিক্ষকদের তালিকা</li>
-                        <li className=' font-light text-gray-400 text-[14px] py-2'>শুন্যপদের তালিকা</li>
-                        <li className=' font-light text-gray-400 text-[14px] py-2'>প্রাক্তন শিক্ষকদের তালিকা</li>
+                        <li className=' font-light text-gray-400 text-[14px] py-2'> <Link to={'/Pteacher'}>বর্তমান শিক্ষকদের তালিকা </Link> </li>
+                        <li className=' font-light text-gray-400 text-[14px] py-2'><Link to={'/empty'}> শুন্যপদের তালিকা </Link> </li>
+                        <li className=' font-light text-gray-400 text-[14px] py-2'><Link to={'/pastteacher'}> প্রাক্তন শিক্ষকদের তালিকা </Link> </li>
                         <li className=' font-light text-gray-400 text-[14px] py-2'>৩য় ও ৪র্থ শ্রেণির কর্মচারী</li>
                     </ul>
                 </div>
@@ -28,9 +29,9 @@ const Footer = () => {
                     <h2 className=' font-semibold text-[18px] text-white border-b-[1px] border-gray-300 '>শিক্ষার্থী</h2>
                     <ul className=' py-[20px] lg:py-0'>
                         <li className=' font-light text-gray-400 text-[14px] py-2'>শিক্ষার্থীদের তালিকা</li>
-                        <li className=' font-light text-gray-400 text-[14px] py-2'>নোটিশবোর্ড</li>
-                        <li className=' font-light text-gray-400 text-[14px] py-2'>ক্লাস রুটিন</li>
-                        <li className=' font-light text-gray-400 text-[14px] py-2'>পরীক্ষার রুটিন</li>
+                        <li className=' font-light text-gray-400 text-[14px] py-2'><Link to={'/notice'}>নোটিশবোর্ড </Link> </li>
+                        <li className=' font-light text-gray-400 text-[14px] py-2'><Link to={'/class'}>ক্লাস রুটিন </Link> </li>
+                        <li className=' font-light text-gray-400 text-[14px] py-2'> <Link to={'/ExamRou'}>পরীক্ষার রুটিন </Link> </li>
                         <li className=' font-light text-gray-400 text-[14px] py-2'>পরীক্ষার ফলাফল</li>
                     </ul>
                 </div>
@@ -39,9 +40,9 @@ const Footer = () => {
                 <div className="">
                     <h2 className=' font-semibold text-[18px] text-white border-b-[1px] border-gray-300 '>অভিভাবক</h2>
                     <ul className=' py-[20px] lg:py-0'>
-                        <li className=' font-light text-gray-400 text-[14px] py-2'>অভিভাবক প্যানেল</li>
-                        <li className=' font-light text-gray-400 text-[14px] py-2'>ভর্তি তথ্য</li>
-                        <li className=' font-light text-gray-400 text-[14px] py-2'>অভিযোগ</li>
+                        <li className=' font-light text-gray-400 text-[14px] py-2'> <Link to={'/garPanel'}>অভিভাবক প্যানেল</Link> </li>
+                        <li className=' font-light text-gray-400 text-[14px] py-2'><Link to={'/Addinfor'}>ভর্তি তথ্য</Link> </li>
+                        <li className=' font-light text-gray-400 text-[14px] py-2'> <Link to={'/Complaint'}>অভিযোগ</Link> </li>
                     </ul>
                 </div>
             </div>

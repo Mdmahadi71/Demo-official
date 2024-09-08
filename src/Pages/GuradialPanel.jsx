@@ -20,7 +20,7 @@ const GuradialPanel = () => {
                                             <th class="py-2 lg:px-4 px-2  border-b-2 border-gray-300 bg-emerald-500 text-left text-white text-[13px]  font-semibold">সদস‍্যের নাম</th>
                                             <th class="py-2 lg:px-4 px-2  border-b-2 border-gray-300 bg-emerald-500 text-left text-white text-[13px] font-semibold">পদবী</th>
                                             <th class="py-2 lg:px-4 px-2  border-b-2 border-gray-300 bg-emerald-500 text-left text-white text-[13px]  font-semibold">শুরুর তারিখ</th>
-                                            <th class="py-2 lg:px-4 px-2  border-b-2 border-gray-300 bg-emerald-500 text-left text-white text-[13px]  font-semibold">মেয়াদউত্তীর্ণের তারিখ</th>
+                                            <th class="py-2 lg:px-4 px-2  border-b-2 border-gray-300 bg-emerald-500 text-left text-white text-[13px]  font-semibold hidden md:table-cell ">মেয়াদউত্তীর্ণের তারিখ</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -28,19 +28,19 @@ const GuradialPanel = () => {
                                             <td class="py-2 lg:px-4 border-b border-gray-200">
 
                                             </td>
-                                            <td class="py-2 px-4 border-b border-gray-200">মো. রাশেদুন্নবী</td>
-                                            <td class="py-2 px-4 border-b border-gray-200">গ্রন্থকারিক</td>
+                                            <td class="py-2 px-4 border-b border-gray-200 text-[12px] text-gray-400">মো. রাশেদুন্নবী</td>
+                                            <td class="py-2 px-4 border-b border-gray-200 text-[12px] text-gray-400">গ্রন্থকারিক</td>
                                             <td class="py-2 px-4 border-b border-gray-200">-</td>
-                                            <td class="py-2 px-4 border-b border-gray-200">-</td>
+                                            <td class="py-2 px-4 border-b border-gray-200 hidden md:table-cell">-</td>
                                         </tr>
                                         <tr>
                                             <td class="py-2 px-4 border-b border-gray-200">
                                                
                                             </td>
-                                            <td class="py-2 px-4 border-b border-gray-200">মো. সেলিম মিয়া</td>
-                                            <td class="py-2 px-4 border-b border-gray-200">অফিস সহায়ক</td>
+                                            <td class="py-2 px-4 border-b border-gray-200 text-[12px] text-gray-400">মো. সেলিম মিয়া</td>
+                                            <td class="py-2 px-4 border-b border-gray-200 text-[12px] text-gray-400">অফিস সহায়ক</td>
                                             <td class="py-2 px-4 border-b border-gray-200">-</td>
-                                            <td class="py-2 px-4 border-b border-gray-200">-</td>
+                                            <td class="py-2 px-4 border-b border-gray-200 hidden md:table-cell">-</td>
                                         </tr>
                                     </tbody>
                                 </table>

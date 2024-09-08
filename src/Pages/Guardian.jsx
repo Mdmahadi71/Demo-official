@@ -2,6 +2,7 @@ import React from 'react'
 import { FaLink ,FaSearch } from "react-icons/fa";
 import { AiOutlineLike } from "react-icons/ai";
 import Container from '../Components/Container'
+import { Link } from 'react-router-dom';
 
 const Guardian = () => {
   return (
@@ -12,22 +13,28 @@ const Guardian = () => {
                     <h2 className=' font-semibold text-[24px] text-black'>অভিভাবক</h2>
                     <div className=" lg:flex justify-between py-[22px] ">
                         <div className="lg:w-[32%] py-3 lg:py-0 ">
+                            <Link to={'/garPanel'}>
                             <div className=" flex gap-x-1 items-center w-full h-[80px] justify-center bg-amber-600 hover:bg-neutral-800 text-white duration-300  ">
                                 <FaLink className='text-[18px]'/>
                                 <h2 className=' font-medium text-[18px] '> অভিভাবক প্যানেল</h2>
                             </div>
+                            </Link>
                         </div>
                         <div className="lg:w-[32%] py-3 lg:py-0 ">
+                        <Link to={'/Addinfor'}>
                             <div className=" flex gap-x-1 items-center w-full h-[80px] justify-center bg-amber-600 hover:bg-neutral-800 text-white duration-300 ">
                                 <FaLink className='text-[18px]'/>
                                 <h2 className=' font-medium text-[17px] '> ভর্তি তথ্য</h2>
                             </div>
+                            </Link>
                         </div>
                         <div className="lg:w-[32%] py-3 lg:py-0  ">
+                        <Link to={'/Complaint'}>
                             <div className="flex gap-x-1 items-center w-full h-[80px] justify-center bg-amber-600 hover:bg-neutral-800 text-white duration-300 ">
                                 <FaLink className='text-[18px]'/>
                                 <h2 className=' font-medium text-[18px] '>  অভিযোগ</h2>
                             </div>
+                            </Link>
                         </div>
                     </div>
                  

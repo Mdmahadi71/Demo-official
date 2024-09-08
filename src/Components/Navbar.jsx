@@ -6,13 +6,16 @@ import { RxCross1 } from "react-icons/rx";
 import { Link} from 'react-router-dom'
 const Navbar = () => {
     let [bars, setbars] = useState(false)
+    
     return (
         <div className=' py-[30px] bg-white '>
             <Container className={`relative`}>
                 <div className=" lg:flex justify-between lg:py-0 py-[50px]">
                     <div className=" flex gap-x-3">
                         <div className="lg:w-[10%] w-[30%]">
+                            <Link to={'/'}>
                             <img src={Navlogo} alt="" />
+                            </Link>
                         </div>
                         <div className="lg:w-[60%] w-[70%]">
                             <h2 className=' lg:text-[30px] text-[25px] text-black font-bold'>সরকারি শাহ্ আব্দুর রউফ কলেজ</h2>
