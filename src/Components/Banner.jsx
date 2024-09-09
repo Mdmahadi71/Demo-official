@@ -83,17 +83,17 @@ const Banner = () => {
     <div className='overflow-hidden'>
       <Container>
         <Slider {...settings}>
-          <div className=" z-[-10]">
-            <img src={bannerOne} alt="" />
+          <div className=" z-[-10] w-full">
+            <img src={bannerOne} className=' w-full' alt="" />
           </div>
-          <div className="">
-            <img src={bannertwo} alt="" />
+          <div className="w-full  z-[-10]">
+            <img src={bannertwo} className=' w-full' alt="" />
           </div>
-          <div className="">
-            <img src={bannerthree} alt="" />
+          <div className=" w-full  z-[-10]">
+            <img src={bannerthree} className=' w-full' alt="" />
           </div>
-          <div className="">
-            <img src={banner} alt="" />
+          <div className=" w-full  z-[-10]">
+            <img src={banner} className=' w-full' alt="" />
           </div>
         </Slider>
         <div className=" lg:flex justify-around pb-[30px] border-b-[1px] border-gray-400 ">
