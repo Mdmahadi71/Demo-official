@@ -21,6 +21,7 @@ import AddInformation from './Pages/AddInformation';
 import Complaint from './Pages/Complaint';
 import PrteacherList from './Pages/PrteacherList';
 import PastTeacher from './Pages/PastTeacher';
+import ImageBox from './Pages/ImageBox';
 
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
         <Route path='/Complaint' element={<Complaint/>}/>
         <Route path='/Pteacher' element={<PrteacherList/>}/>
         <Route path='/pastteacher' element={<PastTeacher/>}/>
+        <Route path='/imagebox' element={<ImageBox/>}/>
       </Route>
     )
   );

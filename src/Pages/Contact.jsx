@@ -57,8 +57,8 @@ const Contact = () => {
             <Container>
                 <div>
                     <h2 className='font-semibold text-[24px] text-black'>যোগাযোগ</h2>
-                    <div className="flex justify-between">
-                        <div className="w-[60%] py-4">
+                    <div className="lg:flex justify-between">
+                        <div className="lg:w-[60%] py-4">
                             <div>
                                 <h2 className='font-normal text-[13px] text-black py-2'>
                                     রংপুর-বগুড়া মহাসড়কের পীরগঞ্জ উপজেলার বাস স্ট্যান্ড থেকে সোজা পশ্চিমে গেলে শাহ্ আব্দুর রউফ কলেজ নামে পরিচিতি।
@@ -66,7 +66,7 @@ const Contact = () => {
                                 <h4 className='font-normal text-[13px] text-black py-1'>উপজেলা পরিষদ রোড, পীরগঞ্জ, রংপুর।</h4>
                                 <h4 className='font-normal text-[13px] text-black py-1'>ই-মেইল: sarcpir@yahoo.com</h4>
                                 <h4 className='font-normal text-[13px] text-black py-1'>মোবাইল: +8801717-013948</h4>
-                                <div className="w-[60%]">
+                                <div className="lg:w-[60%]">
                                     <div className="py-[20px]">
                                         <h2 className='font-medium text-[18px] text-black'>Your Name (required)</h2>
                                         <input type="text" onChange={(e) => setName(e.target.value)} className='border-[1px] border-black w-full h-[40px] outline-none ' value={name} />
@@ -96,7 +96,7 @@ const Contact = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-[38%]">
+                        <div className="lg:w-[38%]">
                             <div className=" pt-[30px]">
                                 <div className=" border-b-[1px] border-gray-400"></div>
 
