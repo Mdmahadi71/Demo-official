@@ -76,7 +76,7 @@ const Navbar = () => {
                         </Link> 
                     </div>
                     <div onClick={() => setActiveMenu('picture')} className={`lg:w-[16%] lg:border-b-[6px] border-orange-900 lg:text-center  py-[10px] ${ActiveMenu === 'picture' ? 'text-white bg-orange-900' : 'bg-[#FFFFFF] text-black'}`}>
-                        <h2 className='text-[17px] font-medium '>ছবিঘর</h2>
+                    <Link to={'/imagebox'}>  <h2 className='text-[17px] font-medium '>  ছবিঘর</h2></Link> 
                     </div>
                     <div onClick={() => setActiveMenu('cont')} className={`lg:w-[16%] lg:border-b-[6px] lg:border-orange-500 lg:text-center  py-[10px] ${ActiveMenu === 'cont' ? 'text-white bg-orange-600' : 'bg-[#FFFFFF] text-black'}`}>
                        <Link to={'/Contact'}><h2 className='text-[17px]  font-medium '>যোগাযোগ</h2></Link> 
