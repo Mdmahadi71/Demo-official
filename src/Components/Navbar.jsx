@@ -6,7 +6,7 @@ import { RxCross1 } from "react-icons/rx";
 import { Link} from 'react-router-dom'
 const Navbar = () => {
     let [bars, setbars] = useState(false)
-    let [ActiveMenu , setActiveMenu] = useState(localStorage.getItem('ActiveMenu' | ''))
+    let [ActiveMenu , setActiveMenu] = useState(localStorage.getItem('ActiveMenu' || ''))
     
 
     useEffect(()=>{
