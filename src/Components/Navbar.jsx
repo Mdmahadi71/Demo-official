@@ -22,7 +22,7 @@ const Navbar = () => {
         <div className='  bg-white '>
             <Container className={`relative`}>
 
-                <div className=" relative bg-[url('../src/assets/backgrount.png')] bg-cover bg-center bg-no-repeat py-[15px]">
+                <div className=" relative bg-[url('../src/assets/backgrount.png')] bg-cover bg-center bg-no-repeat py-[15px] lg:mt-0 mt-[30px]">
                     <div class="relative flex overflow-x-hidden">
                         <div class="py-[10px] animate-marquee whitespace-nowrap">
                             <span class="text-[18px] text-white mx-4 font-medium font-bangla ">জন্মাষ্টমী উপলক্ষ্যে কলেজ বন্ধরবিবার, আগস্ট 25, 2024 |</span>
@@ -120,7 +120,7 @@ const Navbar = () => {
 
                 </div>
 
-                <div onClick={() => setbars(!bars)} className=" flex items-center gap-x-1 lg:hidden absolute top-0 right-0 py-2 px-3 bg-slate-500 rounded-[5px] text-white cursor-pointer">
+                <div onClick={() => setbars(!bars)} className=" flex items-center gap-x-1 lg:hidden absolute top-[-30px] right-0 py-2 px-3 bg-slate-500 rounded-[5px] text-white cursor-pointer">
                         <h2 className=' font-normal text-[17px] text-white'>Menu</h2>
                         {bars == true ? <RxCross1 /> : <FaBars />}
                     </div>
