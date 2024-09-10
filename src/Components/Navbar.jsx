@@ -40,7 +40,7 @@ const Navbar = () => {
 
 
                 <div className=" flex justify-between items-center py-[20px]  relative">
-                    <div className="  top-0 left-0 w-[100px] h-[100px] justify-start hidden md:table-caption ">
+                    <div className="  top-0 left-0 w-[120px] h-[120px] justify-start hidden md:table-caption ">
                         <img src={bangGovd} className=' w-full  h-full' alt="" />
                     </div>
 
@@ -70,12 +70,12 @@ const Navbar = () => {
                    
                 </div>
 
-                <div className={`lg:flex border-t-[1px] border-gray-400 lg:static absolute duration-300  ${bars == true ? ' top-[0px] left-0 backdrop-opacity-10 backdrop-invert bg-red-400/30 w-[60%]' : 'top-[-380px] left-0  w-[60%]'}`}>
-                    <div onClick={() => setActiveMenu('home')} className={`lg:w-[16%] lg:border-b-[6px] border-teal-500 lg:text-center py-[10px] ${ActiveMenu === 'home' ? ' text-white bg-teal-500' : ' lg:bg-[#FFFFFF] bg-gradient-to-r from-violet-500 to-fuchsia-500 lg:text-black text-white'}`}>
+                <div className={`lg:flex border-t-[1px] border-gray-400 lg:static absolute duration-300  ${bars == true ? ' top-[0px] left-0 backdrop-opacity-10 backdrop-invert bg-red-400/30 lg:w-full w-[60%]' : 'top-[-380px] left-0 lg:w-full  w-[60%]'}`}>
+                    <div onClick={() => setActiveMenu('home')} className={`lg:w-[16%] lg:border-b-[6px] border-teal-500 lg:text-center py-[10px] ${ActiveMenu === 'home' ? ' text-white bg-teal-500' : ' lg:bg-[#FFFFFF] bg-[hotpink] lg:text-black text-white'}`}>
                         <Link to={'/'}><h2 className='text-[17px]  font-medium font-bangla items-center '> প্রথম পাতা</h2></Link>
                     </div>
 
-                    <div onClick={() => setActiveMenu('about')} className={`lg:w-[16%] relative lg:border-b-[6px] border-green-600 lg:text-center  py-[10px] group ${ActiveMenu === 'about' ? ' text-white bg-green-600' : 'lg:bg-[#FFFFFF] bg-gradient-to-r from-violet-500 to-fuchsia-500 lg:text-black text-white'} `}>
+                    <div onClick={() => setActiveMenu('about')} className={`lg:w-[16%] relative lg:border-b-[6px] border-green-600 lg:text-center  py-[10px] group ${ActiveMenu === 'about' ? ' text-white bg-green-600' : 'lg:bg-[#FFFFFF] bg-[hotpink] lg:text-black text-white'} `}>
                         <Link to={'/coll'}><h2 className='text-[17px] font-medium font-bangla'>কলেজ সম্পর্কে</h2>
                             <ul className='absolute top-[55px] left-0 w-[250px] text-start bg-green-600 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-20'>
                                 <Link to={'/principal'} >  <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-yellow-950 border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>অধ্যক্ষের কথা</li></Link>
@@ -89,7 +89,7 @@ const Navbar = () => {
                         </Link>
                     </div>
 
-                    <div onClick={() => setActiveMenu('stude')} className={`lg:w-[16%] relative lg:border-b-[6px] lg:border-cyan-600 lg:text-center py-[10px] group ${ActiveMenu === "stude" ? ' text-white bg-cyan-600' : 'lg:bg-[#FFFFFF] bg-gradient-to-r from-violet-500 to-fuchsia-500 lg:text-black text-white'}`}>
+                    <div onClick={() => setActiveMenu('stude')} className={`lg:w-[16%] relative lg:border-b-[6px] lg:border-cyan-600 lg:text-center py-[10px] group ${ActiveMenu === "stude" ? ' text-white bg-cyan-600' : 'lg:bg-[#FFFFFF] bg-[hotpink] lg:text-black text-white'}`}>
                         <Link to={'/student'}><h2 className='text-[17px]  font-medium font-bangla '>শিক্ষার্থী</h2>
                             <ul className='absolute top-[55px] left-0 w-[250px] text-start bg-cyan-600 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-20'>
                                 <Link to={'/notice'}> <li onClick={() => setActiveMenu('noti')} className={`border-b-[1px] border-gray-400 py-[8px] pl-[10px]  ${ActiveMenu === 'noti' ? 'text-[13px]  font-medium bg-yellow-950 text-white  font-bangla ' : 'text-[13px]  font-bangla font-medium bg-cyan-600 text-white'}`}>নোটিশ বোর্ড</li></Link>
@@ -101,7 +101,7 @@ const Navbar = () => {
                             </ul>
                         </Link>
                     </div>
-                    <div onClick={() => setActiveMenu('Guar')} className={`lg:w-[16%] relative lg:border-b-[6px] lg:border-fuchsia-900 lg:text-center  py-[10px] group ${ActiveMenu === 'Guar' ? ' text-white bg-fuchsia-900' : 'lg:bg-[#FFFFFF] bg-gradient-to-r from-violet-500 to-fuchsia-500 lg:text-black text-white'} `}>
+                    <div onClick={() => setActiveMenu('Guar')} className={`lg:w-[16%] relative lg:border-b-[6px] lg:border-fuchsia-900 lg:text-center  py-[10px] group ${ActiveMenu === 'Guar' ? ' text-white bg-fuchsia-900' : 'lg:bg-[#FFFFFF] bg-[hotpink] lg:text-black text-white'} `}>
                         <Link to={'/guardian'}><h2 className='text-[17px]  font-medium font-bangla'>অভিভাবক</h2>
                             <ul className='absolute top-[55px] left-0 w-[250px] text-start bg-fuchsia-900 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-20'>
                                 <Link to={'/garPanel'} ><li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-yellow-950 border-b-[1px] border-gray-400 duration-300 text-white font-bangla'>অভিভাবক প্যানেল</li></Link>
@@ -111,10 +111,10 @@ const Navbar = () => {
                             </ul>
                         </Link>
                     </div>
-                    <div onClick={() => setActiveMenu('picture')} className={`lg:w-[16%] lg:border-b-[6px] border-orange-900 lg:text-center  py-[10px] ${ActiveMenu === 'picture' ? 'text-white bg-orange-900' : 'lg:bg-[#FFFFFF] bg-gradient-to-r from-violet-500 to-fuchsia-500 lg:text-black text-white'}`}>
+                    <div onClick={() => setActiveMenu('picture')} className={`lg:w-[16%] lg:border-b-[6px] border-orange-900 lg:text-center  py-[10px] ${ActiveMenu === 'picture' ? 'text-white bg-orange-900' : 'lg:bg-[#FFFFFF] bg-[hotpink] lg:text-black text-white'}`}>
                         <Link to={'/imagebox'}>  <h2 className='text-[17px] font-medium font-bangla'>  ছবিঘর</h2></Link>
                     </div>
-                    <div onClick={() => setActiveMenu('cont')} className={`lg:w-[16%] lg:border-b-[6px] lg:border-orange-500 lg:text-center  py-[10px] ${ActiveMenu === 'cont' ? 'text-white bg-orange-600' : 'lg:bg-[#FFFFFF] bg-gradient-to-r from-violet-500 to-fuchsia-500 lg:text-black text-white'}`}>
+                    <div onClick={() => setActiveMenu('cont')} className={`lg:w-[16%] lg:border-b-[6px] lg:border-orange-500 lg:text-center  py-[10px] ${ActiveMenu === 'cont' ? 'text-white bg-orange-600' : 'lg:bg-[#FFFFFF] bg-[hotpink] lg:text-black text-white'}`}>
                         <Link to={'/Contact'}><h2 className='text-[17px]  font-medium font-bangla'>যোগাযোগ</h2></Link>
                     </div>
 
