@@ -13,8 +13,8 @@ const Footer = () => {
                     <h3 className=' text-[20px] text-white font-semibold font-bangla'>সরকারি শাহ্ আব্দুর রউফ কলেজ</h3>
                     <p className=' font-medium text-white text-[15px] font-bangla'>পীরগঞ্জ, রংপুর</p>
                 </div>
-                <div className=" w-full">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20514.279503420355!2d89.2898861493001!3d25.43002572100525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fcdbceb2c86da9%3A0xfe20f5dc599f7327!2sGovt.%20Shah%20Abdur%20Rouf%20College!5e0!3m2!1sen!2sbd!4v1725991595970!5m2!1sen!2sbd" width="250px"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div className=" lg:w-[200px] w-full">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20514.279503420355!2d89.2898861493001!3d25.43002572100525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fcdbceb2c86da9%3A0xfe20f5dc599f7327!2sGovt.%20Shah%20Abdur%20Rouf%20College!5e0!3m2!1sen!2sbd!4v1725991595970!5m2!1sen!2sbd" width={'200px'} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
             <div className="lg:w-[18%]">
