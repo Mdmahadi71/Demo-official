@@ -24,15 +24,15 @@ const Navbar = () => {
 
                 <div className=" relative bg-[url('../src/assets/backgrount.png')] bg-cover bg-center bg-no-repeat py-[15px] lg:mt-0 mt-[30px]">
                     <div class="relative flex overflow-x-hidden">
-                        <div class="py-[10px] animate-marquee whitespace-nowrap">
-                            <span class="text-[18px] text-white mx-4 font-medium font-bangla ">জন্মাষ্টমী উপলক্ষ্যে কলেজ বন্ধরবিবার, আগস্ট 25, 2024 |</span>
-                            <span class="text-[18px] text-white mx-4 font-medium font-bangla">উচ্চ মাধ্যমিক ১ম বর্ষের বৃত্তি সংক্রান্ত জরুরী বিজ্ঞপ্তি
-                                রবিবার, আগস্ট 18, 2024 |</span>
-                            <span class="text-[18px] text-white mx-4 font-medium font-bangla">উচ্চ মাধ্যমিক শ্রেনির ক্লাস শুরু
-                                সোমবার, আগস্ট 12, 2024 |</span>
+                        <div class="pb-[25px] animate-marquee whitespace-nowrap">
+                            <span class="text-[18px] text-white mx-4 font-medium font-bangla ">***  জন্মাষ্টমী উপলক্ষ্যে কলেজ বন্ধরবিবার, আগস্ট 25, 2024  *** |</span>
+                            <span class="text-[18px] text-white mx-4 font-medium font-bangla">***  উচ্চ মাধ্যমিক ১ম বর্ষের বৃত্তি সংক্রান্ত জরুরী বিজ্ঞপ্তি
+                                রবিবার, আগস্ট 18, 2024 *** |</span>
+                            <span class="text-[18px] text-white mx-4 font-medium font-bangla">***  উচ্চ মাধ্যমিক শ্রেনির ক্লাস শুরু
+                                সোমবার, আগস্ট 12, 2024  *** |</span>
                         </div>
                     </div>
-                    <div className="  py-2 px-4 inline-block bg-red-600 absolute top-[20px] left-0">
+                    <div className="  py-2 px-4 inline-block bg-red-600 absolute top-[0px] left-0">
                         <h2 className=' text-[16px] text-white font-medium'>Letas News</h2>
                     </div>
                 </div>
