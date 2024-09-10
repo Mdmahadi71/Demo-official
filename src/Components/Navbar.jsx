@@ -70,7 +70,7 @@ const Navbar = () => {
                    
                 </div>
 
-                <div className={`lg:flex border-t-[1px] border-gray-400 lg:static absolute duration-300  ${bars == true ? ' top-[0px] left-0 backdrop-opacity-10 backdrop-invert bg-red-400/30 lg:w-full w-[60%]' : 'top-[-380px] left-0 lg:w-full  w-[60%]'}`}>
+                <div className={`lg:flex border-t-[1px] border-gray-400 lg:static absolute duration-300 z-20  ${bars == true ? ' top-[-30px] left-0 backdrop-opacity-10 backdrop-invert bg-red-400/30 lg:w-full w-[60%]' : 'top-[-380px] left-0 lg:w-full  w-[60%]'}`}>
                     <div onClick={() => setActiveMenu('home')} className={`lg:w-[16%] lg:border-b-[6px] border-teal-500 lg:text-center py-[10px] ${ActiveMenu === 'home' ? ' text-white bg-teal-500' : ' lg:bg-[#FFFFFF] bg-[hotpink] lg:text-black text-white'}`}>
                         <Link to={'/'}><h2 className='text-[17px]  font-medium font-bangla items-center '> প্রথম পাতা</h2></Link>
                     </div>
