@@ -10,7 +10,7 @@ const Employee = () => {
                 <div className=" lg:flex justify-between">
                     <div className="lg:w-[59%]">
                         <div className="">
-                          <h2 className=' font-semibold text-[25px] text-black'>কর্মচারী</h2>
+                          <h2 className=' font-semibold text-[25px] text-black font-bangla'>কর্মচারী</h2>
                         </div>
                     </div>
                     <div className="lg:w-[39%]">

@@ -10,14 +10,14 @@ const Collage = () => {
         <Container>
             <div className=" lg:flex justify-between">
                 <div className="lg:w-[60%]">
-                    <h2 className=' font-semibold text-[24px] text-black'>কলেজ সম্পর্কে</h2>
+                    <h2 className=' font-semibold text-[24px] text-black font-bangla'>কলেজ সম্পর্কে</h2>
                     <div className=" lg:flex justify-between py-[22px] ">
                         
                         <div className="lg:w-[32%] py-3 lg:py-0">
                         <Link to={'/principal'}>
                             <div className=" flex gap-x-1 items-center w-full h-[80px] justify-center bg-teal-500 hover:bg-neutral-800 text-white duration-300  ">
                                 <FaLink className='text-[18px]'/>
-                                <h2 className=' font-medium text-[18px] '> অধ্যক্ষের কথা</h2>
+                                <h2 className=' font-medium text-[18px] font-bangla font-bangla'> অধ্যক্ষের কথা</h2>
                             </div>
                             </Link>
                         </div>
@@ -26,7 +26,7 @@ const Collage = () => {
                             <Link to={'/history'}>
                             <div className=" flex gap-x-1 items-center w-full h-[80px] justify-center bg-teal-500 hover:bg-neutral-800 text-white duration-300 ">
                                 <FaLink className='text-[18px]'/>
-                                <h2 className=' font-medium text-[17px] '> কলেজের ইতিহাস</h2>
+                                <h2 className=' font-medium text-[17px]  font-bangla'> কলেজের ইতিহাস</h2>
                             </div>
                             </Link>
                         </div>
@@ -34,7 +34,7 @@ const Collage = () => {
                             <Link to={'/infras'}>
                             <div className="flex gap-x-1 items-center w-full h-[80px] justify-center bg-teal-500 hover:bg-neutral-800 text-white duration-300 ">
                                 <FaLink className='text-[18px]'/>
-                                <h2 className=' font-medium text-[18px] '>  অবকাঠামো</h2>
+                                <h2 className=' font-medium text-[18px]  font-bangla'>  অবকাঠামো</h2>
                             </div>
                             </Link>
                         </div>
@@ -44,7 +44,7 @@ const Collage = () => {
                             <Link to={'/facilities'}>
                             <div className=" flex gap-x-2 items-center w-full h-[80px] justify-center bg-teal-500 hover:bg-neutral-800 text-white duration-300 ">
                                 <FaLink className='text-[18px]'/>
-                                <h2 className='font-medium text-[18px]'>সুবিধাসমূহ</h2>
+                                <h2 className='font-medium text-[18px] font-bangla'>সুবিধাসমূহ</h2>
                             </div>
                             </Link>
                         </div>
@@ -52,7 +52,7 @@ const Collage = () => {
                             <Link to={'/teacher'}>
                             <div className=" flex gap-x-2 items-center w-full h-[80px] justify-center bg-teal-500 hover:bg-neutral-800 text-white duration-300 ">
                                 <FaLink className='text-[18px]'/>
-                                <h2 className='font-medium text-[18px]'> শিক্ষক</h2>
+                                <h2 className='font-medium text-[18px] font-bangla'> শিক্ষক</h2>
                             </div>
                             </Link>
                         </div>
@@ -60,7 +60,7 @@ const Collage = () => {
                             <Link to={'/Pteacher'}>
                             <div className=" flex gap-x-1 items-center w-full h-[80px] justify-center bg-teal-500 hover:bg-neutral-800 text-white duration-300 ">
                                 <FaLink className='text-[18px]'/>
-                                <h2 className='font-medium text-[18px] text-center'> বর্তমান শিক্ষকদের তালিকা</h2>
+                                <h2 className='font-medium text-[18px] text-center font-bangla'> বর্তমান শিক্ষকদের তালিকা</h2>
                             </div>
                             </Link>
                         </div>
@@ -70,7 +70,7 @@ const Collage = () => {
                             <Link to={'/pastteacher'}>
                             <div className=" flex gap-x-1 items-center w-full h-[80px] justify-center bg-teal-500 hover:bg-neutral-800 text-white duration-300 ">
                                 <FaLink className='text-[18px] text-center'/>
-                                <h2 className='font-medium text-[18px] text-center'> প্রাক্তন শিক্ষকদের তালিকা</h2>
+                                <h2 className='font-medium text-[18px] text-center font-bangla'> প্রাক্তন শিক্ষকদের তালিকা</h2>
                             </div>
                             </Link>
                         </div>
@@ -78,7 +78,7 @@ const Collage = () => {
                             <Link to={'/employee'}>
                             <div className=" flex gap-x-2 items-center w-full h-[80px] justify-center bg-teal-500 hover:bg-neutral-800 text-white duration-300 ">
                                 <FaLink className='text-[18px]'/>
-                                <h2 className='font-medium text-[18px]'>  কর্মচারী</h2>
+                                <h2 className='font-medium text-[18px] font-bangla'>  কর্মচারী</h2>
                             </div>
                             </Link>
                         </div>
@@ -86,7 +86,7 @@ const Collage = () => {
                             <Link to={'/empty'}>
                             <div className=" flex gap-x-1 items-center w-full h-[80px] justify-center bg-teal-500 hover:bg-neutral-800 text-white duration-300 ">
                                 <FaLink className='text-[18px]'/>
-                                <h2 className='font-medium text-[18px] text-center'>  শুন্যপদ</h2>
+                                <h2 className='font-medium text-[18px] text-center font-bangla'>  শুন্যপদ</h2>
                             </div>
                             </Link>
                         </div>

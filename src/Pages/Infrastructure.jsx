@@ -9,7 +9,7 @@ const Infrastructure = () => {
       <Container>
         <div className=" lg:flex justify-between">
         <div className="lg:w-[59%]">
-          <h2 className=' font-semibold text-[25px] text-black'>অবকাঠামো</h2>
+          <h2 className=' font-semibold text-[25px] text-black font-bangla'>অবকাঠামো</h2>
         </div>
         <div className="lg:w-[39%]">
           <div className=" pt-[30px]">

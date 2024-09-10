@@ -56,16 +56,16 @@ const Contact = () => {
         <div>
             <Container>
                 <div>
-                    <h2 className='font-semibold text-[24px] text-black'>যোগাযোগ</h2>
+                    <h2 className='font-semibold text-[24px] text-black font-bangla'>যোগাযোগ</h2>
                     <div className="lg:flex justify-between">
                         <div className="lg:w-[60%] py-4">
                             <div>
-                                <h2 className='font-normal text-[13px] text-black py-2'>
+                                <h2 className='font-normal text-[16px] text-black py-2  font-bangla'>
                                     রংপুর-বগুড়া মহাসড়কের পীরগঞ্জ উপজেলার বাস স্ট্যান্ড থেকে সোজা পশ্চিমে গেলে শাহ্ আব্দুর রউফ কলেজ নামে পরিচিতি।
                                 </h2>
-                                <h4 className='font-normal text-[13px] text-black py-1'>উপজেলা পরিষদ রোড, পীরগঞ্জ, রংপুর।</h4>
-                                <h4 className='font-normal text-[13px] text-black py-1'>ই-মেইল: sarcpir@yahoo.com</h4>
-                                <h4 className='font-normal text-[13px] text-black py-1'>মোবাইল: +8801717-013948</h4>
+                                <h4 className='font-normal text-[16px] text-black py-1 font-bangla'>উপজেলা পরিষদ রোড, পীরগঞ্জ, রংপুর।</h4>
+                                <h4 className='font-normal text-[16px] text-black py-1 font-bangla'>ই-মেইল: sarcpir@yahoo.com</h4>
+                                <h4 className='font-normal text-[16px] text-black py-1 font-bangla'>মোবাইল: +8801717-013948</h4>
                                 <div className="lg:w-[60%]">
                                     <div className="py-[20px]">
                                         <h2 className='font-medium text-[18px] text-black'>Your Name (required)</h2>

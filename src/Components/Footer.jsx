@@ -9,49 +9,49 @@ const Footer = () => {
         <div className=" lg:flex justify-between">
             <div className="lg:w-[18%]">
                 <div className=" py-[30px] text-center lg:text-start">
-                    <h3 className=' text-[20px] text-white font-semibold'>সরকারি শাহ্ আব্দুর রউফ কলেজ</h3>
-                    <p className=' font-medium text-white text-[15px]'>পীরগঞ্জ, রংপুর</p>
+                    <h3 className=' text-[20px] text-white font-semibold font-bangla'>সরকারি শাহ্ আব্দুর রউফ কলেজ</h3>
+                    <p className=' font-medium text-white text-[15px] font-bangla'>পীরগঞ্জ, রংপুর</p>
                 </div>
             </div>
             <div className="lg:w-[18%]">
                 <div className="">
-                    <h2 className=' font-semibold text-[18px] text-white border-b-[1px] border-gray-300 '>শিক্ষক</h2>
+                    <h2 className=' font-semibold text-[18px] text-white border-b-[1px] border-gray-300  font-bangla'>শিক্ষক</h2>
                     <ul className=' py-[20px] lg:py-0'> 
-                        <li className=' font-light text-gray-400 text-[14px] py-2'> <Link to={'/Pteacher'}>বর্তমান শিক্ষকদের তালিকা </Link> </li>
-                        <li className=' font-light text-gray-400 text-[14px] py-2'><Link to={'/empty'}> শুন্যপদের তালিকা </Link> </li>
-                        <li className=' font-light text-gray-400 text-[14px] py-2'><Link to={'/pastteacher'}> প্রাক্তন শিক্ষকদের তালিকা </Link> </li>
-                        <li className=' font-light text-gray-400 text-[14px] py-2'>৩য় ও ৪র্থ শ্রেণির কর্মচারী</li>
+                        <li className=' font-light text-gray-400 text-[14px] py-2 font-bangla'> <Link to={'/Pteacher'}>বর্তমান শিক্ষকদের তালিকা </Link> </li>
+                        <li className=' font-light text-gray-400 text-[14px] py-2 font-bangla'><Link to={'/empty'}> শুন্যপদের তালিকা </Link> </li>
+                        <li className=' font-light text-gray-400 text-[14px] py-2 font-bangla'><Link to={'/pastteacher'}> প্রাক্তন শিক্ষকদের তালিকা </Link> </li>
+                        <li className=' font-light text-gray-400 text-[14px] py-2 font-bangla'>৩য় ও ৪র্থ শ্রেণির কর্মচারী</li>
                     </ul>
                 </div>
             </div>
             <div className="lg:w-[18%]">
                 <div className="">
-                    <h2 className=' font-semibold text-[18px] text-white border-b-[1px] border-gray-300 '>শিক্ষার্থী</h2>
+                    <h2 className=' font-semibold text-[18px] text-white border-b-[1px] border-gray-300  font-bangla'>শিক্ষার্থী</h2>
                     <ul className=' py-[20px] lg:py-0'>
-                        <li className=' font-light text-gray-400 text-[14px] py-2'>শিক্ষার্থীদের তালিকা</li>
-                        <li className=' font-light text-gray-400 text-[14px] py-2'><Link to={'/notice'}>নোটিশবোর্ড </Link> </li>
-                        <li className=' font-light text-gray-400 text-[14px] py-2'><Link to={'/class'}>ক্লাস রুটিন </Link> </li>
-                        <li className=' font-light text-gray-400 text-[14px] py-2'> <Link to={'/ExamRou'}>পরীক্ষার রুটিন </Link> </li>
-                        <li className=' font-light text-gray-400 text-[14px] py-2'>পরীক্ষার ফলাফল</li>
+                        <li className=' font-light text-gray-400 text-[14px] py-2 font-bangla'>শিক্ষার্থীদের তালিকা</li>
+                        <li className=' font-light text-gray-400 text-[14px] py-2 font-bangla'><Link to={'/notice'}>নোটিশবোর্ড </Link> </li>
+                        <li className=' font-light text-gray-400 text-[14px] py-2 font-bangla'><Link to={'/class'}>ক্লাস রুটিন </Link> </li>
+                        <li className=' font-light text-gray-400 text-[14px] py-2 font-bangla'> <Link to={'/ExamRou'}>পরীক্ষার রুটিন </Link> </li>
+                        <li className=' font-light text-gray-400 text-[14px] py-2 font-bangla'>পরীক্ষার ফলাফল</li>
                     </ul>
                 </div>
             </div>
             <div className="lg:w-[18%]">
                 <div className="">
-                    <h2 className=' font-semibold text-[18px] text-white border-b-[1px] border-gray-300 '>অভিভাবক</h2>
+                    <h2 className=' font-semibold text-[18px] text-white border-b-[1px] border-gray-300  font-bangla'>অভিভাবক</h2>
                     <ul className=' py-[20px] lg:py-0'>
-                        <li className=' font-light text-gray-400 text-[14px] py-2'> <Link to={'/garPanel'}>অভিভাবক প্যানেল</Link> </li>
-                        <li className=' font-light text-gray-400 text-[14px] py-2'><Link to={'/Addinfor'}>ভর্তি তথ্য</Link> </li>
-                        <li className=' font-light text-gray-400 text-[14px] py-2'> <Link to={'/Complaint'}>অভিযোগ</Link> </li>
+                        <li className=' font-light text-gray-400 text-[14px] py-2 font-bangla'> <Link to={'/garPanel'}>অভিভাবক প্যানেল</Link> </li>
+                        <li className=' font-light text-gray-400 text-[14px] py-2 font-bangla'><Link to={'/Addinfor'}>ভর্তি তথ্য</Link> </li>
+                        <li className=' font-light text-gray-400 text-[14px] py-2 font-bangla'> <Link to={'/Complaint'}>অভিযোগ</Link> </li>
                     </ul>
                 </div>
             </div>
             <div className="lg:w-[18%]">
                 <div className=" py-[30px]">
-                    <h2 className=' text-[20px] text-white font-semibold'>যোগাযোগের তথ‍্য</h2>
-                    <p className=' font-medium text-white text-[12px]'>উপজেলা পরিষদ রোড, পীরগঞ্জ, রংপুর।</p>
-                    <p className=' font-medium text-white text-[12px]'>ই-মেইল: sarcpir@yahoo.com</p>
-                    <p className=' font-medium text-white text-[12px]'>মোবাইল: +8801717-013948</p>
+                    <h2 className=' text-[20px] text-white font-semibold font-bangla'>যোগাযোগের তথ‍্য</h2>
+                    <p className=' font-medium text-white text-[12px] font-bangla'>উপজেলা পরিষদ রোড, পীরগঞ্জ, রংপুর।</p>
+                    <p className=' font-medium text-white text-[12px] font-bangla'>ই-মেইল: sarcpir@yahoo.com</p>
+                    <p className=' font-medium text-white text-[12px] font-bangla'>মোবাইল: +8801717-013948</p>
                 </div>
             </div>
         </div>

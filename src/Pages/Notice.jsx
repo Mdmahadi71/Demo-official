@@ -10,25 +10,25 @@ const Notice = () => {
                 <div className=" lg:flex justify-between">
                     <div className="lg:w-[59%]">
                         <div className=" py-4">
-                            <h2 className=' font-semibold text-[22px] text-black'>নোটিশবোর্ড</h2>
+                            <h2 className=' font-semibold text-[22px] text-black font-bangla'>নোটিশবোর্ড</h2>
                         </div>
                     <ul className=' pl-3'>
-                        <li className=' list-disc font-normal text-[13px] text-black py-1'>জন্মাষ্টমী উপলক্ষ্যে কলেজ বন্ধ রবিবার, <span className=' font-extralight text-[10px] text-gray-400'>আগস্ট 25, 2024</span></li>
-                        <li className=' list-disc font-normal text-[13px] text-black py-1'>উচ্চ মাধ্যমিক ১ম বর্ষের বৃত্তি সংক্রান্ত জরুরী বিজ্ঞপ্তি, <span className=' font-extralight text-[10px] text-gray-400'>রবিবার, আগস্ট 18, 2024</span></li>
-                        <li className=' list-disc font-normal text-[13px] text-black py-1'>উচ্চ মাধ্যমিক শ্রেনির ক্লাস শুরু , <span className=' font-extralight text-[10px] text-gray-400'>সোমবার, আগস্ট 12, 2024</span></li>
-                        <li className=' list-disc font-normal text-[13px] text-black py-1'>অনার্স ৪র্থ বর্ষ ও ডিগ্রি ২য় বর্ষের ২টি পরীক্ষা স্থগিত সংক্রান্ত জরুরি নোটিশ, <span className=' font-extralight text-[10px] text-gray-400'>রবিবার, জুন 23, 2024</span></li>
-                        <li className=' list-disc font-normal text-[13px] text-black py-1'>Form fillup Notice , <span className=' font-extralight text-[10px] text-gray-400'>বুধবার, মে 29, 2024</span></li>
-                        <li className=' list-disc font-normal text-[13px] text-black py-1'>উচ্চ মাধ্যমিক ফরম পূরণ ২০২৪ শিক্ষার্থীদের ফাইনাল প্রিন্ট আউটের স্বাক্ষর প্রদানের নোটিশ, <span className=' font-extralight text-[10px] text-gray-400'>বুধবার, মে 29, 2024</span></li>
-                        <li className=' list-disc font-normal text-[13px] text-black py-1'>exam notice , <span className=' font-extralight text-[10px] text-gray-400'>বুধবার, মে 29, 2024</span></li>
-                        <li className=' list-disc font-normal text-[13px] text-black py-1'>অনার্স ৪র্থ বর্ষের পরীক্ষার পরিবর্তিত সময়সূচি সংক্রান্ত , <span className=' font-extralight text-[10px] text-gray-400'>মঙ্গলবার, মে 28, 2024</span></li>
-                        <li className=' list-disc font-normal text-[13px] text-black py-1'>জন্মাষ্টমী উপলক্ষ্যে কলেজ বন্ধ রবিবার, <span className=' font-extralight text-[10px] text-gray-400'>আগস্ট 25, 2024</span></li>
-                        <li className=' list-disc font-normal text-[13px] text-black py-1'>উচ্চ মাধ্যমিক ১ম বর্ষের বৃত্তি সংক্রান্ত জরুরী বিজ্ঞপ্তি, <span className=' font-extralight text-[10px] text-gray-400'>রবিবার, আগস্ট 18, 2024</span></li>
-                        <li className=' list-disc font-normal text-[13px] text-black py-1'>উচ্চ মাধ্যমিক শ্রেনির ক্লাস শুরু , <span className=' font-extralight text-[10px] text-gray-400'>সোমবার, আগস্ট 12, 2024</span></li>
-                        <li className=' list-disc font-normal text-[13px] text-black py-1'>অনার্স ৪র্থ বর্ষ ও ডিগ্রি ২য় বর্ষের ২টি পরীক্ষা স্থগিত সংক্রান্ত জরুরি নোটিশ, <span className=' font-extralight text-[10px] text-gray-400'>রবিবার, জুন 23, 2024</span></li>
-                        <li className=' list-disc font-normal text-[13px] text-black py-1'>Form fillup Notice , <span className=' font-extralight text-[10px] text-gray-400'>বুধবার, মে 29, 2024</span></li>
-                        <li className=' list-disc font-normal text-[13px] text-black py-1'>উচ্চ মাধ্যমিক ফরম পূরণ ২০২৪ শিক্ষার্থীদের ফাইনাল প্রিন্ট আউটের স্বাক্ষর প্রদানের নোটিশ, <span className=' font-extralight text-[10px] text-gray-400'>বুধবার, মে 29, 2024</span></li>
-                        <li className=' list-disc font-normal text-[13px] text-black py-1'>exam notice , <span className=' font-extralight text-[10px] text-gray-400'>বুধবার, মে 29, 2024</span></li>
-                        <li className=' list-disc font-normal text-[13px] text-black py-1'>অনার্স ৪র্থ বর্ষের পরীক্ষার পরিবর্তিত সময়সূচি সংক্রান্ত , <span className=' font-extralight text-[10px] text-gray-400'>মঙ্গলবার, মে 28, 2024</span></li>
+                        <li className=' list-disc font-normal text-[13px] text-black py-1 font-bangla'>জন্মাষ্টমী উপলক্ষ্যে কলেজ বন্ধ রবিবার, <span className=' font-extralight text-[10px] text-gray-400'>আগস্ট 25, 2024</span></li>
+                        <li className=' list-disc font-normal text-[13px] text-black py-1 font-bangla'>উচ্চ মাধ্যমিক ১ম বর্ষের বৃত্তি সংক্রান্ত জরুরী বিজ্ঞপ্তি, <span className=' font-extralight text-[10px] text-gray-400'>রবিবার, আগস্ট 18, 2024</span></li>
+                        <li className=' list-disc font-normal text-[13px] text-black py-1 font-bangla'>উচ্চ মাধ্যমিক শ্রেনির ক্লাস শুরু , <span className=' font-extralight text-[10px] text-gray-400'>সোমবার, আগস্ট 12, 2024</span></li>
+                        <li className=' list-disc font-normal text-[13px] text-black py-1 font-bangla'>অনার্স ৪র্থ বর্ষ ও ডিগ্রি ২য় বর্ষের ২টি পরীক্ষা স্থগিত সংক্রান্ত জরুরি নোটিশ, <span className=' font-extralight text-[10px] text-gray-400'>রবিবার, জুন 23, 2024</span></li>
+                        <li className=' list-disc font-normal text-[13px] text-black py-1 font-bangla'>Form fillup Notice , <span className=' font-extralight text-[10px] text-gray-400'>বুধবার, মে 29, 2024</span></li>
+                        <li className=' list-disc font-normal text-[13px] text-black py-1 font-bangla'>উচ্চ মাধ্যমিক ফরম পূরণ ২০২৪ শিক্ষার্থীদের ফাইনাল প্রিন্ট আউটের স্বাক্ষর প্রদানের নোটিশ, <span className=' font-extralight text-[10px] text-gray-400'>বুধবার, মে 29, 2024</span></li>
+                        <li className=' list-disc font-normal text-[13px] text-black py-1 font-bangla'>exam notice , <span className=' font-extralight text-[10px] text-gray-400'>বুধবার, মে 29, 2024</span></li>
+                        <li className=' list-disc font-normal text-[13px] text-black py-1 font-bangla'>অনার্স ৪র্থ বর্ষের পরীক্ষার পরিবর্তিত সময়সূচি সংক্রান্ত , <span className=' font-extralight text-[10px] text-gray-400'>মঙ্গলবার, মে 28, 2024</span></li>
+                        <li className=' list-disc font-normal text-[13px] text-black py-1 font-bangla'>জন্মাষ্টমী উপলক্ষ্যে কলেজ বন্ধ রবিবার, <span className=' font-extralight text-[10px] text-gray-400'>আগস্ট 25, 2024</span></li>
+                        <li className=' list-disc font-normal text-[13px] text-black py-1 font-bangla'>উচ্চ মাধ্যমিক ১ম বর্ষের বৃত্তি সংক্রান্ত জরুরী বিজ্ঞপ্তি, <span className=' font-extralight text-[10px] text-gray-400'>রবিবার, আগস্ট 18, 2024</span></li>
+                        <li className=' list-disc font-normal text-[13px] text-black py-1 font-bangla'>উচ্চ মাধ্যমিক শ্রেনির ক্লাস শুরু , <span className=' font-extralight text-[10px] text-gray-400'>সোমবার, আগস্ট 12, 2024</span></li>
+                        <li className=' list-disc font-normal text-[13px] text-black py-1 font-bangla'>অনার্স ৪র্থ বর্ষ ও ডিগ্রি ২য় বর্ষের ২টি পরীক্ষা স্থগিত সংক্রান্ত জরুরি নোটিশ, <span className=' font-extralight text-[10px] text-gray-400'>রবিবার, জুন 23, 2024</span></li>
+                        <li className=' list-disc font-normal text-[13px] text-black py-1 font-bangla'>Form fillup Notice , <span className=' font-extralight text-[10px] text-gray-400'>বুধবার, মে 29, 2024</span></li>
+                        <li className=' list-disc font-normal text-[13px] text-black py-1 font-bangla'>উচ্চ মাধ্যমিক ফরম পূরণ ২০২৪ শিক্ষার্থীদের ফাইনাল প্রিন্ট আউটের স্বাক্ষর প্রদানের নোটিশ, <span className=' font-extralight text-[10px] text-gray-400'>বুধবার, মে 29, 2024</span></li>
+                        <li className=' list-disc font-normal text-[13px] text-black py-1 font-bangla'>exam notice , <span className=' font-extralight text-[10px] text-gray-400'>বুধবার, মে 29, 2024</span></li>
+                        <li className=' list-disc font-normal text-[13px] text-black py-1 font-bangla'>অনার্স ৪র্থ বর্ষের পরীক্ষার পরিবর্তিত সময়সূচি সংক্রান্ত , <span className=' font-extralight text-[10px] text-gray-400'>মঙ্গলবার, মে 28, 2024</span></li>
                     </ul>
 
                     </div>

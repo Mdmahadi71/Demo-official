@@ -10,13 +10,13 @@ const Guardian = () => {
         <Container>
         <div className=" lg:flex justify-between">
                 <div className="lg:w-[60%]">
-                    <h2 className=' font-semibold text-[24px] text-black'>অভিভাবক</h2>
+                    <h2 className=' font-semibold text-[24px] text-black font-bangla'>অভিভাবক</h2>
                     <div className=" lg:flex justify-between py-[22px] ">
                         <div className="lg:w-[32%] py-3 lg:py-0 ">
                             <Link to={'/garPanel'}>
                             <div className=" flex gap-x-1 items-center w-full h-[80px] justify-center bg-amber-600 hover:bg-neutral-800 text-white duration-300  ">
                                 <FaLink className='text-[18px]'/>
-                                <h2 className=' font-medium text-[18px] '> অভিভাবক প্যানেল</h2>
+                                <h2 className=' font-medium text-[18px]  font-bangla'> অভিভাবক প্যানেল</h2>
                             </div>
                             </Link>
                         </div>
@@ -24,7 +24,7 @@ const Guardian = () => {
                         <Link to={'/Addinfor'}>
                             <div className=" flex gap-x-1 items-center w-full h-[80px] justify-center bg-amber-600 hover:bg-neutral-800 text-white duration-300 ">
                                 <FaLink className='text-[18px]'/>
-                                <h2 className=' font-medium text-[17px] '> ভর্তি তথ্য</h2>
+                                <h2 className=' font-medium text-[17px] font-bangla '> ভর্তি তথ্য</h2>
                             </div>
                             </Link>
                         </div>
@@ -32,7 +32,7 @@ const Guardian = () => {
                         <Link to={'/Complaint'}>
                             <div className="flex gap-x-1 items-center w-full h-[80px] justify-center bg-amber-600 hover:bg-neutral-800 text-white duration-300 ">
                                 <FaLink className='text-[18px]'/>
-                                <h2 className=' font-medium text-[18px] '>  অভিযোগ</h2>
+                                <h2 className=' font-medium text-[18px]  font-bangla'>  অভিযোগ</h2>
                             </div>
                             </Link>
                         </div>

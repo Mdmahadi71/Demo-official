@@ -8,7 +8,7 @@ const ImageBox = () => {
         <div>
             <Container>
                 <div className="">
-                    <h3 className=' font-semibold text-[25px] text-black'>ছবিঘর</h3>
+                    <h3 className=' font-semibold text-[25px] text-black font-bangla'>ছবিঘর</h3>
                 </div>
                 <div className=" lg:flex justify-between">
                     <div className="lg:w-[59%]">

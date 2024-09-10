@@ -8,7 +8,7 @@ const AddInformation = () => {
         <div>
             <Container>
                 <div className="">
-                    <h2 className=' font-semibold text-[25px] text-black '>ভর্তি তথ্য</h2>
+                    <h2 className=' font-semibold text-[25px] text-black font-bangla'>ভর্তি তথ্য</h2>
                     <div className=" lg:flex justify-between">
                         <div className="lg:w-[59%]"></div>
                         <div className="lg:w-[39%]">

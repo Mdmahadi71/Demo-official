@@ -16,7 +16,7 @@ const Teacher = () => {
                                 <div className="flex gap-x-1 items-center w-full h-[80px] justify-center bg-red-600 text-center
                                  hover:bg-neutral-800 text-white duration-300 ">
                                     <FaLink className='text-[18px]' />
-                                    <h2 className=' font-medium text-[18px] '> বর্তমান শিক্ষকদের তালিকা</h2>
+                                    <h2 className=' font-medium text-[18px] font-bangla '> বর্তমান শিক্ষকদের তালিকা</h2>
                                 </div>
                                 </Link>
                             </div>
@@ -24,7 +24,7 @@ const Teacher = () => {
                             <Link to={'/pastteacher'}>
                                 <div className="flex gap-x-1 items-center w-full h-[80px] justify-center bg-red-600 text-center hover:bg-neutral-800 text-white duration-300 ">
                                     <FaLink className='text-[18px]' />
-                                    <h2 className=' font-medium text-[18px] '>প্রাক্তন শিক্ষকদের তালিকা</h2>
+                                    <h2 className=' font-medium text-[18px]  font-bangla'>প্রাক্তন শিক্ষকদের তালিকা</h2>
                                 </div>
                             </Link>
                             </div>

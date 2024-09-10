@@ -10,9 +10,9 @@ const Chistory = () => {
         <div className=" lg:flex justify-between">
           <div className="lg:w-[58%]">
             <div className="">
-              <h2 className=' font-semibold text-[25px] text-black py-4'>কলেজের ইতিহাস</h2>
+              <h2 className=' font-semibold text-[29px] text-black py-4 font-bangla'>কলেজের ইতিহাস</h2>
               <div className="">
-                <h2 className=' font-normal text-[12px] text-black'>রংপুর জেলার পীরগঞ্জ উপজেলার একটি প্রাচীন জনপদ,এই জনপদ,এই জনপদ শাহ ইসমাইল গাজী (রা:) এবং মধ্যযুগীয় 
+                <h2 className=' font-normal text-[16px] text-black font-bangla'>রংপুর জেলার পীরগঞ্জ উপজেলার একটি প্রাচীন জনপদ,এই জনপদ,এই জনপদ শাহ ইসমাইল গাজী (রা:) এবং মধ্যযুগীয় 
                    অধ্যায়তিক ও সাধক কবি কাজী হেয়াৎ মামুদের জন্মভুমি। জনপদের বসবাসকারী অধিকাংশ মানুষ দরিদ্র সীমায় বসবাস করে। 
                    সেহেতু তাদের ছেলে মেয়েদের শিক্ষাদানের উদ্দেশ্যে বিশিষ্ট রাজনীতিবিদ জনাব কাজী আব্দুল হালিমের নেতৃত্বে সুধীজনের প্রচেষ্টায়
                    শাহ্‌ আব্দুর রউফ কলেজ স্থাপিত হয়।

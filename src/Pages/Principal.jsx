@@ -9,7 +9,7 @@ const Principal = () => {
       <Container>
         <div className=" lg:flex justify-between">
           <div className="lg:w-[60%]">
-            <h2 className=' font-semibold text-[25px] text-black'>অধ্যক্ষের কথা</h2>
+            <h2 className=' font-semibold text-[25px] text-black font-bangla'>অধ্যক্ষের কথা</h2>
           </div>
           <div className="lg:w-[38%]">
             <div className=" pt-[30px]">
