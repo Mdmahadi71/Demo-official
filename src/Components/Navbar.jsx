@@ -51,7 +51,7 @@ const Navbar = () => {
                             </Link>
                         </div>
                         <div className=" ">
-                        <h2 className=' font-bold  text-[32px] text-center text-black text-uppercase'> GOVT SHAH ABDUR RAUF COLLAGE</h2>
+                        <h2 className=' font-bold  lg:text-[32px]  text-center text-black text-uppercase'> GOVT SHAH ABDUR RAUF COLLAGE</h2>
                             <h2 className=' lg:text-[28px] text-[25px] font-bangla text-black  text-center font-bold'>সরকারি শাহ্ আব্দুর রউফ কলেজ</h2>
                             <h5 className=' lg:text-[20px] font-bangla text-[16px]  text-center text-gray-900'>পীরগঞ্জ, রংপুর</h5>
                             <h4 className=' lg:text-[15px] font-bangla text-[12px]  text-center text-gray-500'>স্থাপিতঃ ১৯৭০ইং</h4>
