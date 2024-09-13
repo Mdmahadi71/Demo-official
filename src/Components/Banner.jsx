@@ -80,7 +80,7 @@ const Banner = () => {
 
 
   return (
-    <div className='overflow-hidden'>
+    <div className='overflow-hidden lg:pt-0 '>
       <Container>
         <Slider {...settings}>
           <div className=" z-[-10] w-full">
