@@ -10,7 +10,7 @@ const Guardian = () => {
         <Container>
         <div className=" lg:flex justify-between">
                 <div className="lg:w-[60%]">
-                    <h2 className=' font-semibold text-[24px] text-black font-bangla'>অভিভাবক</h2>
+                    <h2 className=' font-semibold text-[24px] text-black font-bangla py-5'>অভিভাবক</h2>
                     <div className=" lg:flex justify-between py-[22px] ">
                         <div className="lg:w-[32%] py-3 lg:py-0 ">
                             <Link to={'/garPanel'}>

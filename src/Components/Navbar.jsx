@@ -7,13 +7,10 @@ import { Link } from 'react-router-dom'
 
 
 
-
-
 const Navbar = () => {
     let [bars, setbars] = useState(false)
     let navbarref = useRef()
     let [ActiveMenu, setActiveMenu] = useState(localStorage.getItem('ActiveMenu' || ''))
-
 
     useEffect(() => {
         localStorage.setItem('ActiveMenu', ActiveMenu)
@@ -28,6 +25,8 @@ const Navbar = () => {
             }
         })
     }, [navbarref])
+
+
     return (
         <div className={`bg-white overflow-x-clip lg:h-auto  ${bars == true ? ' min-h-screen' : ' min-h-auto '}`} >
             <Container className={`relative`}>
@@ -51,7 +50,6 @@ const Navbar = () => {
                     </div>
                 </div>
                 {navbarref &&
-
                     <div className={`lg:flex border-t-[1px] border-gray-400 lg:static absolute duration-300 z-20 lg:min-h-0 min-h-screen bg-blue-600 
                      ${bars == true ? ' top-[0px] left-[0]  lg:w-full w-[75%] border-r-[5px] border-blue-600 ' : 'top-[0px] transform translate-x-[-260px] lg:translate-x-0 lg:w-full  w-[50%]'}`}>
 
@@ -86,7 +84,7 @@ const Navbar = () => {
                                 </ul>
                             </Link>
                         </div>
-                        <div onClick={() => setActiveMenu('Guar')} className={`lg:w-[16%] relative lg:border-b-[6px] border-b-[2px] border-blue-500 lg:border-fuchsia-900 lg:text-center  py-[10px] group ${ActiveMenu === 'Guar' ? ' text-white bg-fuchsia-900' : 'lg:bg-[#FFFFFF]  lg:text-black text-white'} `}>
+                        <div onClick={() => setActiveMenu('Guar')} className={`lg:w-[16%] relative lg:border-b-[6px] border-b-[2px] border-blue-500 lg:border-fuchsia-700 lg:text-center  py-[10px] group ${ActiveMenu === 'Guar' ? ' text-white bg-fuchsia-900' : 'lg:bg-[#FFFFFF]  lg:text-black text-white'} `}>
                             <Link to={'/guardian'}><h2 className='text-[17px]  font-medium font-bangla ml-[20px] lg:ml-0'>অভিভাবক</h2>
                                 <ul className='absolute top-[55px] left-0 w-[250px] text-start bg-fuchsia-900 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-20'>
                                     <Link to={'/garPanel'} ><li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-yellow-950 border-b-[1px] border-gray-400 duration-300 text-white font-bangla'>অভিভাবক প্যানেল</li></Link>
@@ -96,24 +94,18 @@ const Navbar = () => {
                                 </ul>
                             </Link>
                         </div>
-                        <div onClick={() => setActiveMenu('picture')} className={`lg:w-[16%] lg:border-b-[6px] border-b-[2px]  border-blue-500 lg:border-orange-900 lg:text-center  py-[10px] ${ActiveMenu === 'picture' ? 'text-white bg-orange-900' : 'lg:bg-[#FFFFFF]  lg:text-black text-white'}`}>
+                        <div onClick={() => setActiveMenu('picture')} className={`lg:w-[16%] lg:border-b-[6px] border-b-[2px]  border-blue-500 lg:border-orange-600 lg:text-center  py-[10px] ${ActiveMenu === 'picture' ? 'text-white bg-orange-900' : 'lg:bg-[#FFFFFF]  lg:text-black text-white'}`}>
                             <Link to={'/imagebox'}>  <h2 className='text-[17px] font-medium font-bangla ml-[20px] lg:ml-0'>  ছবিঘর</h2></Link>
                         </div>
-                        <div onClick={() => setActiveMenu('cont')} className={`lg:w-[16%] lg:border-b-[6px] lg:border-orange-500 border-b-[2px] border-blue-500 lg:text-center  py-[10px] ${ActiveMenu === 'cont' ? 'text-white bg-orange-600' : 'lg:bg-[#FFFFFF]  lg:text-black text-white'}`}>
+                        <div onClick={() => setActiveMenu('cont')} className={`lg:w-[16%] lg:border-b-[6px] lg:border-orange-900 border-b-[2px] border-blue-500 lg:text-center  py-[10px] ${ActiveMenu === 'cont' ? 'text-white bg-orange-600' : 'lg:bg-[#FFFFFF]  lg:text-black text-white'}`}>
                             <Link to={'/Contact'}><h2 className='text-[17px]  font-medium font-bangla ml-[20px] lg:ml-0'>যোগাযোগ</h2></Link>
                         </div>
-
                     </div>
                 }
                 <div onClick={() => setbars(!bars)} ref={navbarref} className={` lg:hidden absolute top-[20px] left-0 text-[27px] rounded-[5px] text-black cursor-pointer duration-300 ${bars == true ? 'left-[80%]' : ' left-[0]'}`}>
 
                     {bars == true ? <RxCross1 /> : <FaBars />}
                 </div>
-
-
-
-
-
 
                 <section className='home-section'>
                     <div className={`relative bg-blue-600 lg:mt-0 mt-[100px] lg:hidden origin-bottom duration-300 ${!bars ? '' : 'transform translate-x-[250px] lg:translate-x-0'}`}>
@@ -131,7 +123,6 @@ const Navbar = () => {
                         </div>
                     </div>
                 </section>
-
             </Container>
         </div>
     )
