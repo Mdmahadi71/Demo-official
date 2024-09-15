@@ -30,7 +30,7 @@ const Navbar = () => {
     return (
         <div className={`bg-white overflow-x-clip lg:h-auto  ${bars == true ? ' min-h-screen' : ' min-h-auto '}`} >
             <Container className={`relative`}>
-                <div className={` lg:py-[10px] py-[30px]  relative origin-bottom  duration-300 ${bars == true ? ' transform translate-x-[200px] lg:translate-x-0 ' : ''}`}>
+                <div className={` lg:py-[10px] py-[30px]  relative origin-bottom  duration-300 ${bars == true ? ' transform translate-x-[200px] sm:translate-x-[330px] lg:translate-x-0 ' : ''}`}>
                     <div className=" w-[100px] h-[100px] lg:mx-0 mx-auto  absolute lg:top-0 lg:left-0 lg:translate-x-[0] left-[50%] translate-x-[-50%] pb-3  ">
                         <Link to={'/'}>
                             <img src={Navlogo} className=' w-full  h-full' alt="" />
@@ -51,7 +51,7 @@ const Navbar = () => {
                 </div>
                 {navbarref &&
                     <div className={`lg:flex border-t-[1px] border-gray-400 lg:static absolute duration-300 z-20 lg:min-h-0 min-h-screen bg-blue-600 
-                     ${bars == true ? ' top-[0px] left-[0]  lg:w-full w-[75%] border-r-[5px] border-blue-600 ' : 'top-[0px] transform translate-x-[-260px] lg:translate-x-0 lg:w-full  w-[50%]'}`}>
+                     ${bars == true ? ' top-[0px] left-[0]  lg:w-full w-[75%] border-r-[5px] border-blue-600 ' : 'top-[0px] transform translate-x-[-560px] lg:translate-x-0 lg:w-full  w-[50%]'}`}>
 
                         <div onClick={() => setActiveMenu('home')} className={`lg:w-[16%] lg:border-b-[6px] border-b-[2px] border-blue-500 lg:border-teal-500 lg:text-center lg:mt-0 mt-2 py-[10px] ${ActiveMenu === 'home' ? ' text-white bg-teal-500' : ' lg:bg-[#FFFFFF] lg:text-black text-white'}`}>
                             <Link to={'/'}><h2 className='text-[17px]  font-medium font-bangla items-center ml-[20px] lg:ml-0 '> প্রথম পাতা</h2></Link>
@@ -108,7 +108,7 @@ const Navbar = () => {
                 </div>
 
                 <section className='home-section'>
-                    <div className={`relative bg-blue-600 lg:mt-0 mt-[100px] lg:hidden origin-bottom duration-300 ${!bars ? '' : 'transform translate-x-[250px] lg:translate-x-0'}`}>
+                    <div className={`relative bg-blue-600 lg:mt-0 mt-[100px] lg:hidden origin-bottom duration-300 ${!bars ? '' : 'transform translate-x-[250px] sm:translate-x-[75%] lg:translate-x-0'}`}>
                         <div class="relative flex overflow-x-hidden">
                             <div class="pb-[25px] animate-marquee whitespace-nowrap">
                                 <span class="text-[18px] text-white mx-4 font-medium font-bangla ">***  জন্মাষ্টমী উপলক্ষ্যে কলেজ বন্ধরবিবার, আগস্ট 25, 2024  *** |</span>
