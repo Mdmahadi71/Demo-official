@@ -9,22 +9,14 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     let [bars, setbars] = useState(false)
-    let navbarref = useRef()
+   
     let [ActiveMenu, setActiveMenu] = useState(localStorage.getItem('ActiveMenu' || ''))
 
     useEffect(() => {
         localStorage.setItem('ActiveMenu', ActiveMenu)
     }, [ActiveMenu])
 
-    useEffect(() => {
-        document.addEventListener('click', (e) => {
-            if (navbarref.current.contains(e.target) == true) {
-                navbarref(!setbars)
-            } else {
-                navbarref(false)
-            }
-        })
-    }, [navbarref])
+   
 
 
     return (
@@ -49,9 +41,9 @@ const Navbar = () => {
                         </div>
                     </div>
                 </div>
-                {navbarref &&
+           
                     <div className={`lg:flex border-t-[1px] border-gray-400 lg:static absolute duration-300 z-20 lg:min-h-0 min-h-screen bg-blue-600 
-                     ${bars == true ? ' top-[0px] left-[0]  lg:w-full w-[75%] border-r-[5px] border-blue-600 ' : 'top-[0px] transform translate-x-[-560px] lg:translate-x-0 lg:w-full  w-[50%]'}`}>
+                     ${bars == true ? ' top-[0px] left-[0]  lg:w-full w-[75%] border-r-[5px] border-r-blue-500 ' : 'top-[0px] transform translate-x-[-560px] lg:translate-x-0 lg:w-full  w-[50%]'}`}>
 
                         <div onClick={() => setActiveMenu('home')} className={`lg:w-[16%] lg:border-b-[6px] border-b-[2px] border-blue-500 lg:border-teal-500 lg:text-center lg:mt-0 mt-2 py-[10px] ${ActiveMenu === 'home' ? ' text-white bg-teal-500' : ' lg:bg-[#FFFFFF] lg:text-black text-white'}`}>
                             <Link to={'/'}><h2 className='text-[17px]  font-medium font-bangla items-center ml-[20px] lg:ml-0 '> প্রথম পাতা</h2></Link>
@@ -101,8 +93,8 @@ const Navbar = () => {
                             <Link to={'/Contact'}><h2 className='text-[17px]  font-medium font-bangla ml-[20px] lg:ml-0'>যোগাযোগ</h2></Link>
                         </div>
                     </div>
-                }
-                <div onClick={() => setbars(!bars)} ref={navbarref} className={` lg:hidden absolute top-[20px] left-0 text-[27px] rounded-[5px] text-black cursor-pointer duration-300 ${bars == true ? 'left-[80%]' : ' left-[0]'}`}>
+
+                <div onClick={() => setbars(!bars)}  className={` lg:hidden absolute top-[20px] left-0 text-[27px] rounded-[5px] text-black cursor-pointer duration-300 ${bars == true ? 'left-[80%]' : ' left-[0]'}`}>
 
                     {bars == true ? <RxCross1 /> : <FaBars />}
                 </div>
