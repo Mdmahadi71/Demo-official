@@ -32,9 +32,10 @@ const Navbar = () => {
                         <h2 className=' lg:text-[28px] text-[25px] font-bangla text-black  font-bold'>সরকারি শাহ্ আব্দুর রউফ কলেজ</h2>
                         <h5 className=' lg:text-[20px] font-bangla text-[16px] text-gray-900 '>পীরগঞ্জ, রংপুর</h5>
                     </div>
-                    <div className=" absolute lg:top-[40px] top-[110px] items-center lg:right-[35%] lg:w-auto  w-full mx-auto h-[50px]  flex justify-center text-center gap-x-4">
+                    <div className={` absolute lg:top-[40px] lg:bg-none bg-[url('../src/assets/protal.png')] py-3 bg-no-repeat bg-center bg-cover top-[110px] items-center lg:right-[0] lg:w-auto  w-full mx-auto h-[50px]
+                          flex justify-center text-center gap-x-4 duration-300 ${bars == true ? 'transform translate-x-[57px]  lg:translate-x-0' : ''}`}>
                         <div className=" cursor-pointer">
-                            <button className=' font-medium text-[16px] text-white  py-2 px-3 rounded-[5px] bg-[red] hover:bg-blue-600 duration-300  '>Notice</button>
+                            <button className=' font-medium text-[16px] text-white  py-2 px-3 rounded-[5px] bg-[red]  hover:bg-blue-600 duration-300  '>Notice</button>
                         </div>
                         <div className="">
                             <button className=' font-medium text-[16px] text-white  bg-blue-500 hover:bg-[red] duration-300  py-2 px-3 rounded-[5px]'>Student Protal</button>
