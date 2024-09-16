@@ -94,7 +94,7 @@ const Navbar = () => {
                         </div>
                     </div>
 
-                <div onClick={() => setbars(!bars)}  className={` lg:hidden absolute top-[20px] left-0 text-[27px] rounded-[5px] text-black cursor-pointer duration-300 ${bars == true ? 'left-[80%]' : ' left-[0]'}`}>
+                <div onClick={() => setbars(!bars)}  className={` lg:hidden absolute top-[20px] left-0 text-[27px] rounded-[5px] p-[20px] text-black cursor-pointer duration-300 ${bars == true ? 'left-[80%]' : ' left-[0]'}`}>
 
                     {bars == true ? <RxCross1 /> : <FaBars />}
                 </div>
@@ -102,7 +102,7 @@ const Navbar = () => {
                 <section className='home-section'>
                     <div className={`relative bg-blue-600 lg:mt-0 mt-[100px] lg:hidden origin-bottom duration-300 ${!bars ? '' : 'transform translate-x-[250px] sm:translate-x-[75%] lg:translate-x-0'}`}>
                         <div class="relative flex overflow-x-hidden">
-                            <div class="pb-[25px] animate-marquee whitespace-nowrap">
+                            <div class="py-[15px] animate-marquee whitespace-nowrap">
                                 <span class="text-[18px] text-white mx-4 font-medium font-bangla ">***  জন্মাষ্টমী উপলক্ষ্যে কলেজ বন্ধরবিবার, আগস্ট 25, 2024  *** |</span>
                                 <span class="text-[18px] text-white mx-4 font-medium font-bangla">***  উচ্চ মাধ্যমিক ১ম বর্ষের বৃত্তি সংক্রান্ত জরুরী বিজ্ঞপ্তি
                                     রবিবার, আগস্ট 18, 2024 *** |</span>
@@ -110,7 +110,7 @@ const Navbar = () => {
                                     সোমবার, আগস্ট 12, 2024  *** |</span>
                             </div>
                         </div>
-                        <div className="  py-2 px-4 inline-block bg-red-600 absolute top-[0px] left-0">
+                        <div className="  py-[16px] px-4 inline-block bg-red-600 absolute top-[0px] left-0">
                             <h2 className=' text-[16px] text-white font-medium'>Letas News</h2>
                         </div>
                     </div>

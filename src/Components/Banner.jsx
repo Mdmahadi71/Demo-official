@@ -29,7 +29,7 @@ const Banner = () => {
         }
       },
       {
-        breakpoint: 375, 
+        breakpoint: 375,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
@@ -75,8 +75,8 @@ const Banner = () => {
       </div>
     )
   };
-  
-  
+
+
 
 
   return (
@@ -97,20 +97,20 @@ const Banner = () => {
           </div>
         </Slider>
 
-        <div className={`relative bg-blue-600 lg:mt-0 mt-[100px] hidden lg:table-cell `}>
-                    <div class="relative flex overflow-x-hidden">
-                        <div class="pb-[25px] animate-marquee whitespace-nowrap">
-                            <span class="text-[18px] text-white mx-4 font-medium font-bangla ">***  জন্মাষ্টমী উপলক্ষ্যে কলেজ বন্ধরবিবার, আগস্ট 25, 2024  *** |</span>
-                            <span class="text-[18px] text-white mx-4 font-medium font-bangla">***  উচ্চ মাধ্যমিক ১ম বর্ষের বৃত্তি সংক্রান্ত জরুরী বিজ্ঞপ্তি
-                                রবিবার, আগস্ট 18, 2024 *** |</span>
-                            <span class="text-[18px] text-white mx-4 font-medium font-bangla">***  উচ্চ মাধ্যমিক শ্রেনির ক্লাস শুরু
-                                সোমবার, আগস্ট 12, 2024  *** |</span>
-                        </div>
-                    </div>
-                    <div className="  py-2 px-4 inline-block bg-red-600 absolute top-[0px] left-0">
-                        <h2 className=' text-[16px] text-white font-medium'>Letas News</h2>
-                    </div>
-                </div>
+        <div className={`relative lg:mt-0 mt-[100px] hidden lg:table-cell `}>
+          <div class="relative flex overflow-x-hidden bg-blue-600  w-[98%]  ">
+            <div class="py-[15px] animate-marquee whitespace-nowrap">
+              <span class="text-[18px] text-white mx-4 font-medium font-bangla ">***  জন্মাষ্টমী উপলক্ষ্যে কলেজ বন্ধরবিবার, আগস্ট 25, 2024  *** |</span>
+              <span class="text-[18px] text-white mx-4 font-medium font-bangla">***  উচ্চ মাধ্যমিক ১ম বর্ষের বৃত্তি সংক্রান্ত জরুরী বিজ্ঞপ্তি
+                রবিবার, আগস্ট 18, 2024 *** |</span>
+              <span class="text-[18px] text-white mx-4 font-medium font-bangla">***  উচ্চ মাধ্যমিক শ্রেনির ক্লাস শুরু
+                সোমবার, আগস্ট 12, 2024  *** |</span>
+            </div>
+          </div>
+          <div className="  py-[16px] px-4 inline-block bg-red-600 absolute top-[0px] left-0">
+            <h2 className=' text-[16px] text-white font-medium'>Letas News</h2>
+          </div>
+        </div>
 
         <div className=" lg:flex justify-around pb-[30px] border-b-[1px] border-gray-400 ">
           <div className="lg:w-[27%] py-3  z-10">
@@ -168,32 +168,32 @@ const Banner = () => {
 
               </div>
               <div className=" flex justify-between gap-x-3 py-[5px]">
-                  <div className=" w-[100px] h-[100px] ">
-                    <img src={AbuBokkor} alt="" />
-                  </div>
-                  <div className="">
-                    <h2 className=' font-medium text-[#FFFFFF] text-[16px] font-bangla'>মো. আবু বকর সিদ্দিক সরকার</h2>
-                    <p className=' font-light text-[12px] text-white font-bangla'>অধ্যক্ষ</p>
-                  </div>
+                <div className=" w-[100px] h-[100px] ">
+                  <img src={AbuBokkor} alt="" />
+                </div>
+                <div className="">
+                  <h2 className=' font-medium text-[#FFFFFF] text-[16px] font-bangla'>মো. আবু বকর সিদ্দিক সরকার</h2>
+                  <p className=' font-light text-[12px] text-white font-bangla'>অধ্যক্ষ</p>
+                </div>
               </div>
               <div className=" flex justify-between py-[5px]">
-                  <div className=" w-[100px] h-[100px] ">
-                    <img src={Sirtwo} alt="" />
-                  </div>
-                  <div className="">
-                    <h2 className=' font-medium text-[#FFFFFF] text-[16px] font-bangla'>মো. জাহিদুল ইসলাম</h2>
-                    <p className=' font-light text-[12px] text-white font-bangla'>প্রভাষক, তথ্য ও যোগাযোগ প্রযুক্তি</p>
-                  </div>
+                <div className=" w-[100px] h-[100px] ">
+                  <img src={Sirtwo} alt="" />
+                </div>
+                <div className="">
+                  <h2 className=' font-medium text-[#FFFFFF] text-[16px] font-bangla'>মো. জাহিদুল ইসলাম</h2>
+                  <p className=' font-light text-[12px] text-white font-bangla'>প্রভাষক, তথ্য ও যোগাযোগ প্রযুক্তি</p>
+                </div>
               </div>
               <div className=" flex justify-between py-[5px]">
-                  <div className=" w-[100px] h-[100px] ">
-                    <img src={RoyhanAlom} alt="" />
-                  </div>
-                  <div className="">
-                    <h2 className=' font-medium text-[#FFFFFF] text-[16px] font-bangla'>ই.এম.এম. রায়হান আলম</h2>
-                    <p className=' font-light text-[12px] text-white font-bangla'>প্রভাষক</p>
-                    <p className=' font-light text-[8px] text-white font-bangla'>যোগদানের তারিখ: ০৮/০৭/২০০৪ খ্রি.</p>
-                  </div>
+                <div className=" w-[100px] h-[100px] ">
+                  <img src={RoyhanAlom} alt="" />
+                </div>
+                <div className="">
+                  <h2 className=' font-medium text-[#FFFFFF] text-[16px] font-bangla'>ই.এম.এম. রায়হান আলম</h2>
+                  <p className=' font-light text-[12px] text-white font-bangla'>প্রভাষক</p>
+                  <p className=' font-light text-[8px] text-white font-bangla'>যোগদানের তারিখ: ০৮/০৭/২০০৪ খ্রি.</p>
+                </div>
               </div>
               <button className=' py-[9px] px-[15px] bg-black text-white my-[20px] text-[16px] font-medium hover:bg-white hover:text-black duration-300 font-bangla'>সকল শিক্ষকের তালিকা</button>
             </div>
