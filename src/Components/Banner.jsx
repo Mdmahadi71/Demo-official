@@ -97,6 +97,7 @@ const Banner = () => {
           </div>
         </Slider>
 
+        <Container>
         <div className={`relative lg:mt-0 mt-[100px] hidden lg:table-cell `}>
           <div class="relative flex overflow-x-hidden bg-blue-600  w-[98%]  ">
             <div class="py-[15px] animate-marquee whitespace-nowrap">
@@ -111,6 +112,7 @@ const Banner = () => {
             <h2 className=' text-[16px] text-white font-medium'>Letas News</h2>
           </div>
         </div>
+        </Container>
 
         <div className=" lg:flex justify-around pb-[30px] border-b-[1px] border-gray-400 ">
           <div className="lg:w-[27%] py-3  z-10">
