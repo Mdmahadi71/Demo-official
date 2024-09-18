@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className={`bg-white overflow-x-clip lg:h-auto  ${bars == true ? ' min-h-screen' : ' min-h-auto '}`} >
             <Container className={`relative`}>
                 <div className={` lg:py-[10px] py-[30px]  relative origin-bottom  duration-300 ${bars == true ? ' transform translate-x-[200px] sm:translate-x-[330px] lg:translate-x-0 ' : ''}`}>
-                    <div className=" w-[100px] h-[100px] lg:mx-0 mx-auto  absolute lg:top-0 lg:left-0 lg:translate-x-[0] left-[50%] translate-x-[-50%] pb-3  ">
+                    <div className=" w-[100px] h-[100px] lg:pb-5 lg:mx-0 mx-auto  absolute lg:top-0 lg:left-0 lg:translate-x-[0] left-[50%] translate-x-[-50%] pb-3  ">
                         <Link to={'/'}>
                             <img src={Navlogo} className=' w-full  h-full' alt="" />
                         </Link>
