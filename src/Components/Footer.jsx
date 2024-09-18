@@ -19,11 +19,11 @@ const Footer = () => {
             <div className="lg:w-[18%]">
                 <div className="">
                     <h2 className=' font-semibold text-[18px] text-white border-b-[1px] border-gray-300  font-bangla'>শিক্ষক</h2>
-                    <ul className=' py-[20px] lg:my-0'> 
-                        <li className=' font-light text-gray-400 text-[14px] py-2 font-bangla'> <Link to={'/Pteacher'}>বর্তমান শিক্ষকদের তালিকা </Link> </li>
-                        <li className=' font-light text-gray-400 text-[14px] py-2 font-bangla'><Link to={'/empty'}> শুন্যপদের তালিকা </Link> </li>
-                        <li className=' font-light text-gray-400 text-[14px] py-2 font-bangla'><Link to={'/pastteacher'}> প্রাক্তন শিক্ষকদের তালিকা </Link> </li>
-                        <li className=' font-light text-gray-400 text-[14px] py-2 font-bangla'>৩য় ও ৪র্থ শ্রেণির কর্মচারী</li>
+                    <ul className=' my-[20px] lg:my-0'> 
+                        <li className=' font-light text-gray-400 text-[14px] my-2 font-bangla'> <Link to={'/Pteacher'}>বর্তমান শিক্ষকদের তালিকা </Link> </li>
+                        <li className=' font-light text-gray-400 text-[14px] my-2 font-bangla'><Link to={'/empty'}> শুন্যপদের তালিকা </Link> </li>
+                        <li className=' font-light text-gray-400 text-[14px] my-2 font-bangla'><Link to={'/pastteacher'}> প্রাক্তন শিক্ষকদের তালিকা </Link> </li>
+                        <li className=' font-light text-gray-400 text-[14px] my-2 font-bangla'>৩য় ও ৪র্থ শ্রেণির কর্মচারী</li>
                     </ul>
                 </div>
             </div>
@@ -31,11 +31,11 @@ const Footer = () => {
                 <div className="">
                     <h2 className=' font-semibold text-[18px] text-white border-b-[1px] border-gray-300  font-bangla'>শিক্ষার্থী</h2>
                     <ul className=' my-[20px] lg:my-0'>
-                        <li className=' font-light text-gray-400 text-[14px] py-2 font-bangla'>শিক্ষার্থীদের তালিকা</li>
-                        <li className=' font-light text-gray-400 text-[14px] py-2 font-bangla'><Link to={'/notice'}>নোটিশবোর্ড </Link> </li>
-                        <li className=' font-light text-gray-400 text-[14px] py-2 font-bangla'><Link to={'/class'}>ক্লাস রুটিন </Link> </li>
-                        <li className=' font-light text-gray-400 text-[14px] py-2 font-bangla'> <Link to={'/ExamRou'}>পরীক্ষার রুটিন </Link> </li>
-                        <li className=' font-light text-gray-400 text-[14px] py-2 font-bangla'>পরীক্ষার ফলাফল</li>
+                        <li className=' font-light text-gray-400 text-[14px] my-2 font-bangla'>শিক্ষার্থীদের তালিকা</li>
+                        <li className=' font-light text-gray-400 text-[14px] my-2 font-bangla'><Link to={'/notice'}>নোটিশবোর্ড </Link> </li>
+                        <li className=' font-light text-gray-400 text-[14px] my-2 font-bangla'><Link to={'/class'}>ক্লাস রুটিন </Link> </li>
+                        <li className=' font-light text-gray-400 text-[14px] my-2 font-bangla'> <Link to={'/ExamRou'}>পরীক্ষার রুটিন </Link> </li>
+                        <li className=' font-light text-gray-400 text-[14px] my-2 font-bangla'>পরীক্ষার ফলাফল</li>
                     </ul>
                 </div>
             </div>
@@ -43,9 +43,9 @@ const Footer = () => {
                 <div className="">
                     <h2 className=' font-semibold text-[18px] text-white border-b-[1px] border-gray-300  font-bangla'>অভিভাবক</h2>
                     <ul className=' my-[20px] lg:my-0'>
-                        <li className=' font-light text-gray-400 text-[14px] py-2 font-bangla'> <Link to={'/garPanel'}>অভিভাবক প্যানেল</Link> </li>
-                        <li className=' font-light text-gray-400 text-[14px] py-2 font-bangla'><Link to={'/Addinfor'}>ভর্তি তথ্য</Link> </li>
-                        <li className=' font-light text-gray-400 text-[14px] py-2 font-bangla'> <Link to={'/Complaint'}>অভিযোগ</Link> </li>
+                        <li className=' font-light text-gray-400 text-[14px] my-2 font-bangla'> <Link to={'/garPanel'}>অভিভাবক প্যানেল</Link> </li>
+                        <li className=' font-light text-gray-400 text-[14px] my-2 font-bangla'><Link to={'/Addinfor'}>ভর্তি তথ্য</Link> </li>
+                        <li className=' font-light text-gray-400 text-[14px] my-2 font-bangla'> <Link to={'/Complaint'}>অভিযোগ</Link> </li>
                     </ul>
                 </div>
             </div>
@@ -55,6 +55,24 @@ const Footer = () => {
                     <p className=' font-medium text-white text-[12px] font-bangla'>উপজেলা পরিষদ রোড, পীরগঞ্জ, রংপুর।</p>
                     <p className=' font-medium text-white text-[12px] font-bangla'>ই-মেইল: sarcpir@yahoo.com</p>
                     <p className=' font-medium text-white text-[12px] font-bangla'>মোবাইল: +8801717-013948</p>
+                </div>
+            </div>
+        </div>
+        <div className=" lg:flex justify-between bg-slate-400 py-3" >
+            <div className="lg:w-[30%]">
+                <div className="">
+                    <h3 className=' font-medium text-[16px] text-white'>© 2024. All rights reserved.</h3>
+                </div>
+            </div>
+            <div className="lg:w-[70%]">
+                <div className="">
+                    <ul className=' flex justify-around'>
+                        <li className=' font-medium text-[16px] text-white'>Student Mail</li>
+                        <li className=' font-medium text-[16px] text-white'>APA</li>
+                        <li className=' font-medium text-[16px] text-white'>Contact</li>
+                        <li className=' font-medium text-[16px] text-white'>Support</li>
+                        <li className=' font-medium text-[16px] text-white'> Credits</li>
+                    </ul>
                 </div>
             </div>
         </div>
