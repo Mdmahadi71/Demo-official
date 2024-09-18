@@ -158,7 +158,7 @@ const Banner = () => {
                 <h3 className=' text-[16px] text-white font-semibold font-bangla'>Form fillup Notice</h3>
                 <p className=' text-end text-[12px] text-white font-normal font-bangla '>বুধবার, মে 29, 2024</p>
               </div>
-              <button className=' py-[9px] px-[15px] bg-black text-white my-[20px] text-[16px] font-medium hover:bg-white hover:text-black duration-300 font-bangla'>সকল নোটিশ দেখুন</button>
+              <button className=' py-[9px] px-[15px] bg-black text-white my-[20px] text-[16px] font-medium  hover:bg-white hover:text-black duration-300 font-bangla'>সকল নোটিশ দেখুন</button>
             </div>
           </div>
           <div className="lg:w-[27%] py-3 z-10">
