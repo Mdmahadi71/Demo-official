@@ -68,7 +68,7 @@ const Footer = () => {
             </div>
         </div>
         <div className="" >
-            <div className="lg:w-[30%] lg:ml-0 ml-4">
+            <div className="lg:w-[30%] lg:mt-0 mt-[20px] lg:ml-0 ml-4">
                 <div className="">
                     <h3 className=' font-medium text-[16px] text-white'>© 2024. All rights reserved.</h3>
                 </div>
