@@ -24,7 +24,8 @@ export default {
         }
     },
     fontFamily: {
-      'bangla': ['Tiro Bangla', 'serif']
+      'bangla': ['Tiro Bangla', 'serif'],
+      'open': ['Poppins', 'sans-serif']
 
     }
   },
