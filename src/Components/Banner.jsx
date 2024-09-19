@@ -109,7 +109,7 @@ const Banner = () => {
             </div>
           </div>
           <div className="  py-[16px] px-4 inline-block bg-red-600 absolute top-[0px] left-0">
-            <h2 className=' text-[16px] text-white font-medium'>Letas News</h2>
+            <h2 className=' text-[16px] text-white font-medium font-open'>Letas News</h2>
           </div>
         </div>
         </Container>
@@ -155,7 +155,7 @@ const Banner = () => {
                 <p className=' text-end text-[12px] text-white font-normal font-bangla '>রবিবার, জুন 23, 2024</p>
               </div>
               <div className=" border-b border-white flex justify-between py-3 items-center">
-                <h3 className=' text-[16px] text-white font-semibold font-bangla'>Form fillup Notice</h3>
+                <h3 className=' text-[14px] text-white font-semibold font-open'>Form fillup Notice</h3>
                 <p className=' text-end text-[12px] text-white font-normal font-bangla '>বুধবার, মে 29, 2024</p>
               </div>
               <button className=' py-[9px] px-[15px] bg-black text-white my-[20px] text-[16px] font-medium  hover:bg-white hover:text-black duration-300 font-bangla'>সকল নোটিশ দেখুন</button>
