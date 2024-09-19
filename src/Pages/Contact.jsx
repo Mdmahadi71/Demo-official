@@ -65,31 +65,31 @@ const Contact = () => {
                                 </h2>
                                 <h4 className='font-normal text-[16px] text-black py-1 font-bangla'>উপজেলা পরিষদ রোড, পীরগঞ্জ, রংপুর।</h4>
                                 <h4 className='font-normal text-[16px] text-black py-1 font-bangla'>ই-মেইল: sarcpir@yahoo.com</h4>
-                                <h4 className='font-normal text-[16px] text-black py-1 font-bangla'>মোবাইল: +8801717-013948</h4>
+                                <h4 className='font-normal text-[16px] text-black py-1 font-open'>মোবাইল: +8801717-013948</h4>
                                 <div className="lg:w-[60%]">
                                     <div className="py-[20px]">
-                                        <h2 className='font-medium text-[18px] text-black'>Your Name (required)</h2>
+                                        <h2 className='font-medium font-open text-[18px] text-black'>Your Name (required)</h2>
                                         <input type="text" onChange={(e) => setName(e.target.value)} className='border-[1px] border-black w-full h-[40px] outline-none ' value={name} />
                                     </div>
                                     <div className="py-3">
-                                        <h2 className='font-medium text-[18px] text-black'>Your Email (required)</h2>
+                                        <h2 className='font-medium text-[18px] text-black font-open'>Your Email (required)</h2>
                                         <input type="email" onChange={(e) => setEmail(e.target.value)} className='border-[1px] border-black w-full h-[40px] outline-none' value={email} />
                                     </div>
                                     
                                     <div className="py-3">
-                                        <h2 className='font-medium text-[18px] text-black'>Subject</h2>
+                                        <h2 className='font-medium text-[18px] text-black font-open'>Subject</h2>
                                         <input
                                             type="text" onChange={(e) => setSubject(e.target.value)} className='border-[1px] border-black w-full h-[40px] outline-none' value={subject} />
                                     </div>
                                     <div className="py-3">
-                                        <h2 className='font-medium text-[18px] text-black'>Your Message</h2>
+                                        <h2 className='font-medium text-[18px] text-black font-open'>Your Message</h2>
                                         <textarea onChange={(e) => setMessage(e.target.value)} className='border-[1px] border-black w-full h-[100px] outline-none' value={message} />
                                     </div>
                                     <div className="py-3">
-                                        <h2 className='font-medium text-[18px] text-black'>Password (required)</h2>
+                                        <h2 className='font-medium text-[18px] text-black font-open'>Password (required)</h2>
                                         <input type="password" onChange={(e) => setPassword(e.target.value)} className='border-[1px] border-black w-full h-[40px] outline-none' value={password} />
                                     </div>
-                                    <button onClick={handleClick} className='py-2 px-3 bg-slate-500 font-medium text-[18px] text-white'>
+                                    <button onClick={handleClick} className='py-2 px-3 bg-slate-500 font-medium font-open text-[18px] text-white'>
                                         Send
                                     </button>
                                     <ToastContainer />
