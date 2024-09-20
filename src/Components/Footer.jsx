@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div className='bg-stone-800 py-[40px]'>
       <Container>
-        <div className=" lg:flex justify-between">
+        <div className=" lg:flex justify-around">
             <div className="lg:w-[18%]">
                 <div className=" text-center lg:text-start ml-2">
                     
@@ -68,9 +68,9 @@ const Footer = () => {
             </div>
         </div>
         <div className="" >
-            <div className="lg:w-[30%] lg:mt-0 mt-[20px] lg:ml-0 ml-4">
+            <div className=" lg:mt-0 mt-[20px] lg:ml-0 ml-4">
                 <div className="">
-                    <h3 className=' font-medium text-[16px] text-white'>© 2024. All rights reserved.</h3>
+                    <h3 className=' font-normal text-[10px] text-white text-center'>© 2024. All rights reserved.</h3>
                 </div>
             </div>
           
