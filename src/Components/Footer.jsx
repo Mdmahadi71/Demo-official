@@ -12,7 +12,7 @@ const Footer = () => {
       <Container>
         <div className=" lg:flex justify-around">
             <div className="lg:w-[18%]">
-                <div className=" text-center lg:text-start ml-2">
+                <div className=" text-center lg:text-start lg:ml-6">
                     
                     <h3 className=' text-[20px] text-white font-semibold font-bangla my-3'><Link to={'/'}>সরকারি শাহ্ আব্দুর রউফ কলেজ</Link></h3>
                     <p className=' font-medium text-white text-[15px] font-bangla my-2'>পীরগঞ্জ, রংপুর</p>
