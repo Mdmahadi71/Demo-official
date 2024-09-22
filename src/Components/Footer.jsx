@@ -63,7 +63,7 @@ const Footer = () => {
                     <h2 className=' text-[20px] text-white font-semibold font-bangla my-3 '>যোগাযোগের তথ‍্য</h2>
                     <p className=' font-medium text-white text-[12px] font-bangla my-2 r'>উপজেলা পরিষদ রোড, পীরগঞ্জ, রংপুর।</p>
                     <p className=' font-medium text-white text-[12px] font-bangla my-2 '>ই-মেইল: sarcpir@yahoo.com</p>
-                    <p className=' font-medium text-white text-[12px] font-bangla my-2 '>মোবাইল: +8801717-013948</p>
+                    <p className=' font-medium text-white text-[12px] font-open my-2 '>মোবাইল: +8801717-013948</p>
                 </div>
             </div>
         </div>
