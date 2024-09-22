@@ -6,6 +6,10 @@ import { getDatabase, ref, set } from "firebase/database";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { ToastContainer, toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
+import { IoEye } from "react-icons/io5";
+import { FaRegEyeSlash } from "react-icons/fa6";
+
+
 
 const Contact = () => {
     const auth = getAuth();
@@ -16,6 +20,9 @@ const Contact = () => {
     let [message, setMessage] = useState('');
     let [password, setPassword] = useState('');
     let navigate = useNavigate()
+    let [Coneye , setConeye] = useState(false)
+
+
 
     let handleClick = () => {
         
@@ -87,7 +94,14 @@ const Contact = () => {
                                     </div>
                                     <div className="py-3">
                                         <h2 className='font-medium text-[18px] text-black font-open'>Password (required)</h2>
-                                        <input type="password" onChange={(e) => setPassword(e.target.value)} className='border-[1px] border-black w-full h-[40px] outline-none' value={password} />
+                                       <div className=" relative">
+                                       <input type={ Coneye==true ? 'text' : 'password'} onChange={(e) => setPassword(e.target.value)} className='border-[1px] border-black w-full h-[40px] outline-none' value={password} />
+                                       <div onClick={()=>setConeye(!Coneye)}  className=" absolute top-[15px] right-[15px] ">
+                                            {Coneye ==true ? <IoEye/> :  <FaRegEyeSlash/>}
+                                         
+                                        </div>
+                                       </div>
+                                       
                                     </div>
                                     <button onClick={handleClick} className='py-2 px-3 bg-slate-500 font-medium font-open text-[18px] text-white'>
                                         Send
