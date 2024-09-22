@@ -96,7 +96,7 @@ const Contact = () => {
                                         <h2 className='font-medium text-[18px] text-black font-open'>Password (required)</h2>
                                        <div className=" relative">
                                        <input type={ Coneye==true ? 'text' : 'password'} onChange={(e) => setPassword(e.target.value)} className='border-[1px] border-black w-full h-[40px] outline-none' value={password} />
-                                       <div onClick={()=>setConeye(!Coneye)}  className=" absolute top-[15px] right-[15px] ">
+                                       <div onClick={()=>setConeye(!Coneye)}  className=" absolute top-[10px] right-[15px] text-[20px] ">
                                             {Coneye ==true ? <IoEye/> :  <FaRegEyeSlash/>}
                                          
                                         </div>
