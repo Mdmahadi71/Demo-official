@@ -9,21 +9,21 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     let [bars, setbars] = useState(false)
-   
+
     let [ActiveMenu, setActiveMenu] = useState(localStorage.getItem('ActiveMenu' || ''))
 
     useEffect(() => {
         localStorage.setItem('ActiveMenu', ActiveMenu)
     }, [ActiveMenu])
 
-   
+
 
 
     return (
         <div className={`bg-white overflow-x-clip lg:h-auto  ${bars == true ? ' min-h-screen' : ' min-h-auto '}`} >
             <Container className={`relative`}>
                 <div className={` lg:py-[10px] py-[30px]  relative origin-bottom  duration-300 ${bars == true ? ' transform translate-x-[200px] sm:translate-x-[330px] lg:translate-x-0 ' : ''}`}>
-                    <div className=" w-[100px] h-[100px] lg:pb-5 lg:mx-0 mx-auto  absolute lg:top-0 lg:left-0 lg:translate-x-[0] left-[50%] translate-x-[-50%] pb-3  ">
+                    <div className=" w-[100px] h-[100px]  lg:mx-0 mx-auto  absolute lg:top-0 lg:left-0 lg:translate-x-[0] left-[50%] translate-x-[-50%]   ">
                         <Link to={'/'}>
                             <img src={Navlogo} className=' w-full  h-full' alt="" />
                         </Link>
@@ -32,28 +32,37 @@ const Navbar = () => {
                         <h2 className=' lg:text-[28px] text-[25px] font-bangla text-black  font-bold'>সরকারি শাহ্ আব্দুর রউফ কলেজ</h2>
                         <h5 className=' lg:text-[20px] font-bangla text-[16px] text-gray-900 '>পীরগঞ্জ, রংপুর</h5>
                     </div>
-                    <div className={` absolute lg:top-[40px] lg:bg-none bg-[url('../src/assets/protal.png')] py-3 bg-no-repeat bg-center bg-cover top-[110px] items-center lg:right-[0] lg:w-auto  w-full mx-auto h-[50px]
+                    <div className={` absolute lg:top-[40px] lg:bg-white bg-gvd-bug py-3 top-[130px] items-center lg:right-[0] lg:w-auto  w-full mx-auto h-[50px]
                           flex justify-center text-center gap-x-4 duration-300 ${bars == true ? 'transform translate-x-[57px]  lg:translate-x-0' : ''}`}>
                         <div className=" cursor-pointer">
-                            <button className=' font-medium font-open text-[16px] text-white  py-2 px-3 rounded-[5px] bg-[red]  hover:bg-blue-600 duration-300  '>Notice</button>
+                            <button className=' font-medium font-open text-[16px] text-white  py-2 px-3 rounded-[5px] bg-gvd-r  hover:bg-gvd-b duration-300  '>Notice</button>
                         </div>
                         <div className="">
-                            <button className=' font-medium font-open text-[16px] text-white  bg-blue-500 hover:bg-[red] duration-300  py-2 px-3 rounded-[5px]'>Student Protal</button>
+                            <button className=' font-medium font-open text-[16px] text-white  bg-gvd-b hover:bg-gvd-r duration-300  py-2 px-3 rounded-[5px]'>Student Protal</button>
                         </div>
                     </div>
                 </div>
-           
-                    <div className={`lg:flex justify-around  lg:p-[-2px] border-t-[1px] border-gray-400 lg:static absolute duration-300 z-20 lg:min-h-0 min-h-screen  
-                     ${bars == true ? ' top-[0px] left-[0] bg-blue-600  lg:w-full w-[75%] border-r-[5px] border-r-blue-500 ' : 'top-[0px] transform translate-x-[-560px] lg:translate-x-0 lg:w-full  w-[50%]'}`}>
 
-                        <div onClick={() => setActiveMenu('home')} className={`lg:w-[16%] lg:border-r-[1px]  lg:border-[red]  w:border-b-[2px] border-blue-500  lg:text-center lg:mt-0 mt-2 py-[10px] ${ActiveMenu === 'home' ? ' text-white lg:bg-white lg:text-black bg-teal-500 lg:border-b-[3px] lg:border-[red]' : ' lg:bg-[#FFFFFF] lg:text-black text-white'}`}>
-                            <Link to={'/'}><h2 className='text-[17px]  font-medium font-bangla items-center ml-[20px] lg:ml-0 '> প্রথম পাতা</h2></Link>
-                        </div>
+                <div className={`lg:flex justify-around lg:mt-[10px] lg:p-[-2px] border-t-[1px] border-gray-400 lg:static absolute duration-300 z-20 lg:min-h-0 min-h-screen  
+                     ${bars == true ? ' top-[0px] left-[0] bg-gvd-b lg:w-full w-[75%] border-r-[5px] border-r-gvd-bu2 ' : 'top-[0px] transform translate-x-[-560px] lg:translate-x-0 lg:w-full  w-[50%]'}`}>
+                   
+                    <div className="lg:w-[16%] relative">
+                        <Link to={'/'}>
+                            <div onClick={() => setActiveMenu('home')} className={`lg:text-center lg:mt-0 mt-2 py-[10px] ${ActiveMenu === 'home'
+                                ? 'text-white lg:bg-white lg:text-black bg-gvd-hx lg:border-b-[3px] lg:border-gvd-r'
+                                : 'lg:bg-[#FFFFFF] lg:text-black text-white'}`}>
+                                <h2 className="text-[17px] font-medium font-bangla items-center top-[0] ml-[20px] lg:ml-0">প্রথম পাতা </h2>
+                            </div>
+                        </Link>
+                        <div className="lg:block  hidden absolute right-0 top-[0] h-[65%] w-[1px] bg-gvd-r"></div>
+                    </div>
 
-                        <div onClick={() => setActiveMenu('about')} className={`lg:w-[16%] relative lg:border-r-[1px]  lg:border-[red]  w:border-b-[2px] border-blue-500  lg:text-center  py-[10px] group
-                         ${ActiveMenu === 'about' ? ' text-white bg-green-600 lg:bg-white lg:text-black lg:border-b-[3px]  lg:border-[red]' : 'lg:bg-[#FFFFFF]  lg:text-black text-white'} `}>
-                            <Link to={'/coll'}><h2 className='text-[17px] font-medium font-bangla ml-[20px] lg:ml-0'>কলেজ সম্পর্কে</h2>
-                                <ul className='absolute top-[55px] left-0 w-[250px] text-start bg-green-600 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-20'>
+                    <div className="lg:w-[16%] relative">
+                        <Link to={'/coll'}>
+                            <div onClick={() => setActiveMenu('about')} className={` relative  w:border-b-[2px] border-blue-500  lg:text-center  py-[10px] group
+                         ${ActiveMenu === 'about' ? ' text-white bg-gvd-hx  lg:bg-white lg:text-black lg:border-b-[3px]  lg:border-gvd-r' : 'lg:bg-[#FFFFFF]  lg:text-black text-white'} `}>
+                                <h2 className='text-[17px] font-medium font-bangla ml-[20px] lg:ml-0'>কলেজ সম্পর্কে</h2>
+                                <ul className='absolute top-[55px] left-0 w-[250px] text-start bg-gvd-sky  opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-20'>
                                     <Link to={'/principal'} >  <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-yellow-950 border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>অধ্যক্ষের কথা</li></Link>
                                     <Link to={'/history'} >  <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-yellow-950 border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>কলেজের ইতিহাস</li></Link>
                                     <Link to={'/infras'}><li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-yellow-950 border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>অবকাঠামো</li></Link>
@@ -62,48 +71,73 @@ const Navbar = () => {
                                     <Link to={'/employee'}> <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-yellow-950 border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>কর্মচারী</li></Link>
                                     <Link to={'/empty'}>  <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-yellow-950 border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>শুন্যপদ</li></Link>
                                 </ul>
-                            </Link>
-                        </div>
-
-                        <div onClick={() => setActiveMenu('stude')} className={`lg:w-[16%] relative lg:border-r-[1px]  lg:border-[red]  w:border-b-[2px] border-blue-500  lg:text-center py-[10px] group ${ActiveMenu === "stude" ? ' text-white lg:bg-white lg:text-black bg-cyan-600 lg:border-b-[3px] lg:border-[red]' : 'lg:bg-[#FFFFFF]  lg:text-black text-white'}`}>
-                            <Link to={'/student'}><h2 className='text-[17px]  font-medium font-bangla ml-[20px] lg:ml-0 '>শিক্ষার্থী</h2>
-                                <ul className='absolute top-[55px] left-0 w-[250px] text-start bg-cyan-600 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-20'>
-                                    <Link to={'/notice'}> <li onClick={() => setActiveMenu('noti')} className={`border-b-[1px] border-gray-400 py-[8px] pl-[10px]  ${ActiveMenu === 'noti' ? 'text-[13px]  font-medium bg-yellow-950 text-white  font-bangla ' : 'text-[13px]  font-bangla font-medium bg-cyan-600 text-white'}`}>নোটিশ বোর্ড</li></Link>
-                                    <Link to={'/class'}> <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-yellow-950 border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>ক্লাস রুটিন</li></Link>
-                                    <Link to={'/ExamRou'}> <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-yellow-950 border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>পরীক্ষার রুটিন</li></Link>
-                                    <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-yellow-950 border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>পরীক্ষার ফলাফল</li>
-                                    <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-yellow-950 border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>একাডেমিক ক্যালেন্ডার</li>
-                                    <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-yellow-950 border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>শিক্ষার্থীর তালিকা</li>
+                            </div>
+                        </Link>
+                        <div className="lg:block  hidden absolute right-0 top-[0] h-[65%] w-[1px] bg-gvd-r"></div>
+                    </div>
+                    <div className="lg:w-[16%] relative ">
+                        <Link to={'/student'}>
+                            <div onClick={() => setActiveMenu('stude')} className={`relative   w:border-b-[2px] border-blue-500  lg:text-center py-[10px] group ${ActiveMenu === "stude" ? ' text-white lg:bg-white lg:text-black bg-gvd-hx lg:border-b-[3px] lg:border-gvd-r' : 'lg:bg-[#FFFFFF]  lg:text-black text-white'}`}>
+                                <h2 className='text-[17px]  font-medium font-bangla ml-[20px] lg:ml-0 '>শিক্ষার্থী</h2>
+                                <ul className='absolute top-[55px] left-0 w-[250px] text-start bg-gvd-sky  opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-20'>
+                                    <Link to={'/notice'}> <li onClick={() => setActiveMenu('noti')} className={`border-b-[1px] border-gray-400 py-[8px] pl-[10px]  ${ActiveMenu === 'noti' ? 'text-[13px]  font-medium bg-gvd-b text-white  font-bangla ' : 'text-[13px]  font-bangla font-medium bg-gvd-b text-white'}`}>নোটিশ বোর্ড</li></Link>
+                                    <Link to={'/class'}> <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>ক্লাস রুটিন</li></Link>
+                                    <Link to={'/ExamRou'}> <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>পরীক্ষার রুটিন</li></Link>
+                                    <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>পরীক্ষার ফলাফল</li>
+                                    <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>একাডেমিক ক্যালেন্ডার</li>
+                                    <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>শিক্ষার্থীর তালিকা</li>
                                 </ul>
-                            </Link>
-                        </div>
-                        <div onClick={() => setActiveMenu('Guar')} className={`lg:w-[16%] relative lg:border-r-[1px]  lg:border-[red]  w:border-b-[2px] border-blue-500  lg:text-center  py-[10px] group ${ActiveMenu === 'Guar' ? ' text-white lg:bg-white lg:text-black bg-fuchsia-900 lg:border-b-[3px]  lg:border-[red]' : 'lg:bg-[#FFFFFF]  lg:text-black text-white'} `}>
-                            <Link to={'/guardian'}><h2 className='text-[17px]  font-medium font-bangla ml-[20px] lg:ml-0'>অভিভাবক</h2>
-                                <ul className='absolute top-[55px] left-0 w-[250px] text-start bg-fuchsia-900 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-20'>
+                            </div>
+                        </Link>
+                        <div className="lg:block  hidden absolute right-0 top-[0] h-[65%] w-[1px] bg-gvd-r"></div>
+                    </div>
+
+                    <div className=" lg:w-[16%] relative">
+                        <Link to={'/guardian'}>
+                            <div onClick={() => setActiveMenu('Guar')} className={` relative   w:border-b-[2px] border-blue-500  lg:text-center  py-[10px] group ${ActiveMenu === 'Guar' ? ' text-white lg:bg-white lg:text-black bg-gvd-hx  lg:border-b-[3px]  lg:border-gvd-r' : 'lg:bg-[#FFFFFF]  lg:text-black text-white'} `}>
+                                <h2 className='text-[17px]  font-medium font-bangla ml-[20px] lg:ml-0'>অভিভাবক</h2>
+                                <ul className='absolute top-[55px] left-0 w-[250px] text-start bg-gvd-sky opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-20'>
                                     <Link to={'/garPanel'} ><li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-yellow-950 border-b-[1px] border-gray-400 duration-300 text-white font-bangla'>অভিভাবক প্যানেল</li></Link>
                                     <Link to={'/Addinfor'} > <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-yellow-950 border-b-[1px] border-gray-400 duration-300 text-white font-bangla'>ভর্তি তথ্য</li></Link>
                                     <Link to={'/Complaint'}><li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-yellow-950 border-b-[1px] border-gray-400 duration-300 text-white font-bangla'>অভিযোগ</li></Link>
-
                                 </ul>
-                            </Link>
-                        </div>
-                        <div onClick={() => setActiveMenu('picture')} className={`lg:w-[16%] lg:border-r-[1px]  lg:border-[red] w:border-b-[2px]  border-blue-500 lg:text-center  py-[10px] ${ActiveMenu === 'picture' ? 'text-white lg:bg-white lg:text-black bg-orange-900 lg:border-b-[3px]  lg:border-[red]' : 'lg:bg-[#FFFFFF]  lg:text-black text-white'}`}>
-                            <Link to={'/imagebox'}>  <h2 className='text-[17px] font-medium font-bangla ml-[20px] lg:ml-0'>  ছবিঘর</h2></Link>
-                        </div>
-                        <div onClick={() => setActiveMenu('cont')} className={`lg:w-[16%] lg:border-r-[1px]  lg:border-[red] w:border-b-[2px] border-blue-500 lg:text-center  py-[10px] ${ActiveMenu === 'cont' ? 'text-white lg:bg-white lg:text-black bg-orange-600 lg:border-b-[3px]  lg:border-[red]' : 'lg:bg-[#FFFFFF]  lg:text-black text-white'}`}>
-                            <Link to={'/Contact'}><h2 className='text-[17px]  font-medium font-bangla ml-[20px] lg:ml-0'>যোগাযোগ</h2></Link>
-                        </div>
+                            </div>
+                        </Link>
+                        <div className="lg:block  hidden absolute right-0 top-[0] h-[65%] w-[1px] bg-gvd-r"></div>
                     </div>
 
-                <div onClick={() => setbars(!bars)}  className={` lg:hidden absolute top-[20px] left-0 text-[27px] rounded-[5px] p-[20px] text-black cursor-pointer duration-300 ${bars == true ? 'left-[80%]' : ' left-[0]'}`}>
+                    <div className="lg:w-[16%] relative">
+                        <Link to={'/imagebox'}>
+                            <div onClick={() => setActiveMenu('picture')} className={` w:border-b-[2px]  border-blue-500 lg:text-center  py-[10px] ${ActiveMenu === 'picture' ? 'text-white lg:bg-white lg:text-black bg-gvd-hx lg:border-b-[3px]  lg:border-gvd-r' : 'lg:bg-[#FFFFFF]  lg:text-black text-white'}`}>
+                                <h2 className='text-[17px] font-medium font-bangla ml-[20px] lg:ml-0'>  ছবিঘর</h2>
+                            </div>
+                        </Link>
+                        <div className="lg:block  hidden absolute right-0 top-[0] h-[65%] w-[1px] bg-gvd-r"></div>
+                    </div>
+
+                    <div className=" lg:w-[16%]  relative">
+                        <Link to={'/Contact'}>
+                            <div onClick={() => setActiveMenu('cont')} className={` w:border-b-[2px] border-blue-500 lg:text-center  py-[10px] ${ActiveMenu === 'cont' ? 'text-white lg:bg-white lg:text-black bg-gvd-hx lg:border-b-[3px]  lg:border-gvd-r' : 'lg:bg-[#FFFFFF]  lg:text-black text-white'}`}>
+                                <h2 className='text-[17px]  font-medium font-bangla ml-[20px] lg:ml-0'>যোগাযোগ</h2>
+                            </div>
+                        </Link>
+                        <div className="lg:block  hidden absolute right-0 top-[0] h-[65%] w-[1px] bg-gvd-r"></div>
+                    </div>
+
+
+
+                </div>
+
+
+                <div onClick={() => setbars(!bars)} className={` lg:hidden absolute top-[20px] left-0 text-[27px] rounded-[5px] p-[20px] text-black cursor-pointer duration-300 ${bars == true ? 'left-[80%]' : ' left-[0]'}`}>
 
                     {bars == true ? <RxCross1 /> : <FaBars />}
                 </div>
 
                 <section className='home-section'>
-                    <div className={`relative bg-blue-600 lg:mt-0 mt-[100px] lg:hidden origin-bottom duration-300 ${!bars ? '' : 'transform translate-x-[250px] sm:translate-x-[75%] lg:translate-x-0'}`}>
+                    <div className={`relative bg-gvd-b lg:mt-0 mt-[120px] lg:hidden origin-bottom duration-300 ${!bars ? '' : 'transform translate-x-[250px] sm:translate-x-[75%] lg:translate-x-0'}`}>
                         <div class="relative flex overflow-x-hidden">
-                            <div class="py-[15px] animate-marquee whitespace-nowrap">
+                            <div class="py-[12px] animate-marquee whitespace-nowrap">
                                 <span class="text-[18px] text-white mx-4 font-medium font-bangla ">***  জন্মাষ্টমী উপলক্ষ্যে কলেজ বন্ধরবিবার, আগস্ট 25, 2024  *** |</span>
                                 <span class="text-[18px] text-white mx-4 font-medium font-bangla">***  উচ্চ মাধ্যমিক ১ম বর্ষের বৃত্তি সংক্রান্ত জরুরী বিজ্ঞপ্তি
                                     রবিবার, আগস্ট 18, 2024 *** |</span>
@@ -111,7 +145,7 @@ const Navbar = () => {
                                     সোমবার, আগস্ট 12, 2024  *** |</span>
                             </div>
                         </div>
-                        <div className="  py-[16px] px-4 inline-block bg-red-600 absolute top-[0px] left-0">
+                        <div className="  py-[16px] px-4 inline-block bg-gvd-r absolute top-[0px] left-0">
                             <h2 className=' text-[16px] text-white font-medium'>Letas News</h2>
                         </div>
                     </div>

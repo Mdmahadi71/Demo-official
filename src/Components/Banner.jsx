@@ -99,8 +99,8 @@ const Banner = () => {
 
         <Container>
         <div className={`relative lg:mt-0 mt-[100px] hidden lg:table-cell `}>
-          <div class="relative flex overflow-x-hidden bg-blue-600  w-[98%]  ">
-            <div class="py-[15px] animate-marquee whitespace-nowrap">
+          <div class="relative flex overflow-x-hidden bg-gvd-b  w-[98%]  ">
+            <div class="py-[14px] animate-marquee whitespace-nowrap">
               <span class="text-[18px] text-white mx-4 font-medium font-bangla ">***  জন্মাষ্টমী উপলক্ষ্যে কলেজ বন্ধরবিবার, আগস্ট 25, 2024  *** |</span>
               <span class="text-[18px] text-white mx-4 font-medium font-bangla">***  উচ্চ মাধ্যমিক ১ম বর্ষের বৃত্তি সংক্রান্ত জরুরী বিজ্ঞপ্তি
                 রবিবার, আগস্ট 18, 2024 *** |</span>
@@ -108,7 +108,7 @@ const Banner = () => {
                 সোমবার, আগস্ট 12, 2024  *** |</span>
             </div>
           </div>
-          <div className="  py-[16px] px-4 inline-block bg-red-600 absolute top-[0px] left-0">
+          <div className="  py-[16px] px-4 inline-block bg-gvd-r absolute top-[0px] left-0">
             <h2 className=' text-[16px] text-white font-medium font-open'>Letas News</h2>
           </div>
         </div>
@@ -116,7 +116,7 @@ const Banner = () => {
 
         <div className=" lg:flex justify-around pb-[30px] border-b-[1px] border-gray-400 ">
           <div className="lg:w-[27%] py-3  z-10">
-            <div className=" pt-[20px] px-[20px] bg-teal-400 pb-[50px]">
+            <div className=" pt-[20px] px-[20px] bg-gvd-cy pb-[50px]">
               <h2>প্রতিষ্ঠাতা</h2>
               <div className=" relative py-[15px]">
                 <div className=" border-[5px] border-black w-[20%] z-10"> </div>
@@ -132,7 +132,7 @@ const Banner = () => {
             </div>
           </div>
           <div className="lg:w-[27%] py-3  z-10">
-            <div className=" bg-orange-600 py-[20px] px-[20px]">
+            <div className=" bg-gvd-r py-[20px] px-[20px]">
               <h2 className=' font-bangla  font-medium text-[16px]'>নোটিশবোর্ড</h2>
               <div className=" relative">
                 <div className=" border-[5px] border-black w-[20%] z-10"></div>
@@ -162,7 +162,7 @@ const Banner = () => {
             </div>
           </div>
           <div className="lg:w-[27%] py-3 z-10">
-            <div className=" bg-cyan-500 p-[20px]">
+            <div className=" bg-gvd-cy2 p-[20px]">
               <h2 className=' text-[16px] font-bangla font-semibold'>শিক্ষকদের তালিকা</h2>
               <div className=" relative">
                 <div className=" border-[5px] border-black w-[20%] z-10"></div>

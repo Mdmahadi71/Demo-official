@@ -21,7 +21,19 @@ export default {
             '0%': { transform: 'translateX(90%)' },
             '100%': { transform: 'translateX(10%)' },
           },
-        }
+        },
+        colors: {
+          'gvd-r': '#FF0000',
+          'gvd-b': '#0000FF',
+          'gvd-black': '#000000',
+          'gvd-cy': '#33ffbc',
+          'gvd-cy2': '#0081e4',
+          'gvd-bu2': '#3830f6',
+          'gvd-sky': '#00b3ff',
+          'gvd-hx': '#01d2a7',
+          'gvd-bug': '#1b0077',
+        
+        },
     },
     fontFamily: {
       'bangla': ['Tiro Bangla', 'serif'],
