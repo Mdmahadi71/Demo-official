@@ -63,13 +63,13 @@ const Navbar = () => {
                          ${ActiveMenu === 'about' ? ' text-white bg-gvd-hx  lg:bg-white lg:text-black lg:border-b-[3px]  lg:border-gvd-r' : 'lg:bg-[#FFFFFF]  lg:text-black text-white'} `}>
                                 <h2 className='text-[17px] font-medium font-bangla ml-[20px] lg:ml-0'>কলেজ সম্পর্কে</h2>
                                 <ul className='absolute top-[55px] left-0 w-[250px] text-start bg-gvd-sky  opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-20'>
-                                    <Link to={'/principal'} >  <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-yellow-950 border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>অধ্যক্ষের কথা</li></Link>
-                                    <Link to={'/history'} >  <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-yellow-950 border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>কলেজের ইতিহাস</li></Link>
-                                    <Link to={'/infras'}><li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-yellow-950 border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>অবকাঠামো</li></Link>
-                                    <Link to={'/facilities'}>  <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-yellow-950 border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>সুবিধাসমূহ</li></Link>
-                                    <Link to={'/teacher'}><li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-yellow-950 border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>শিক্ষক</li></Link>
-                                    <Link to={'/employee'}> <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-yellow-950 border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>কর্মচারী</li></Link>
-                                    <Link to={'/empty'}>  <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-yellow-950 border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>শুন্যপদ</li></Link>
+                                    <Link to={'/principal'} >  <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>অধ্যক্ষের কথা</li></Link>
+                                    <Link to={'/history'} >  <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>কলেজের ইতিহাস</li></Link>
+                                    <Link to={'/infras'}><li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>অবকাঠামো</li></Link>
+                                    <Link to={'/facilities'}>  <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>সুবিধাসমূহ</li></Link>
+                                    <Link to={'/teacher'}><li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>শিক্ষক</li></Link>
+                                    <Link to={'/employee'}> <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>কর্মচারী</li></Link>
+                                    <Link to={'/empty'}>  <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>শুন্যপদ</li></Link>
                                 </ul>
                             </div>
                         </Link>
@@ -80,7 +80,7 @@ const Navbar = () => {
                             <div onClick={() => setActiveMenu('stude')} className={`relative   w:border-b-[2px] border-blue-500  lg:text-center py-[10px] group ${ActiveMenu === "stude" ? ' text-white lg:bg-white lg:text-black bg-gvd-hx lg:border-b-[3px] lg:border-gvd-r' : 'lg:bg-[#FFFFFF]  lg:text-black text-white'}`}>
                                 <h2 className='text-[17px]  font-medium font-bangla ml-[20px] lg:ml-0 '>শিক্ষার্থী</h2>
                                 <ul className='absolute top-[55px] left-0 w-[250px] text-start bg-gvd-sky  opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-20'>
-                                    <Link to={'/notice'}> <li onClick={() => setActiveMenu('noti')} className={`border-b-[1px] border-gray-400 py-[8px] pl-[10px]  ${ActiveMenu === 'noti' ? 'text-[13px]  font-medium bg-gvd-b text-white  font-bangla ' : 'text-[13px]  font-bangla font-medium bg-gvd-b text-white'}`}>নোটিশ বোর্ড</li></Link>
+                                    <Link to={'/notice'}> <li className={`py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla `}>নোটিশ বোর্ড</li></Link>
                                     <Link to={'/class'}> <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>ক্লাস রুটিন</li></Link>
                                     <Link to={'/ExamRou'}> <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>পরীক্ষার রুটিন</li></Link>
                                     <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>পরীক্ষার ফলাফল</li>
@@ -97,9 +97,9 @@ const Navbar = () => {
                             <div onClick={() => setActiveMenu('Guar')} className={` relative   w:border-b-[2px] border-blue-500  lg:text-center  py-[10px] group ${ActiveMenu === 'Guar' ? ' text-white lg:bg-white lg:text-black bg-gvd-hx  lg:border-b-[3px]  lg:border-gvd-r' : 'lg:bg-[#FFFFFF]  lg:text-black text-white'} `}>
                                 <h2 className='text-[17px]  font-medium font-bangla ml-[20px] lg:ml-0'>অভিভাবক</h2>
                                 <ul className='absolute top-[55px] left-0 w-[250px] text-start bg-gvd-sky opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-20'>
-                                    <Link to={'/garPanel'} ><li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-yellow-950 border-b-[1px] border-gray-400 duration-300 text-white font-bangla'>অভিভাবক প্যানেল</li></Link>
-                                    <Link to={'/Addinfor'} > <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-yellow-950 border-b-[1px] border-gray-400 duration-300 text-white font-bangla'>ভর্তি তথ্য</li></Link>
-                                    <Link to={'/Complaint'}><li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-yellow-950 border-b-[1px] border-gray-400 duration-300 text-white font-bangla'>অভিযোগ</li></Link>
+                                    <Link to={'/garPanel'} ><li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-300 text-white font-bangla'>অভিভাবক প্যানেল</li></Link>
+                                    <Link to={'/Addinfor'} > <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-300 text-white font-bangla'>ভর্তি তথ্য</li></Link>
+                                    <Link to={'/Complaint'}><li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-300 text-white font-bangla'>অভিযোগ</li></Link>
                                 </ul>
                             </div>
                         </Link>
