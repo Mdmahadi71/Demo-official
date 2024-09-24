@@ -41,10 +41,10 @@ const Navbar = () => {
                     </div>
                 </div>
             
-                <div className={`lg:flex justify-around  lg:mt-[10px] lg:p-[-2px] border-t-[1px] border-gray-400 lg:static absolute
+                <div className={`lg:flex justify-around  lg:mt-[10px] lg:p-[-2px] border-t-[1px] lg:bg-white border-gray-400 lg:static absolute
                  duration-300 z-20 lg:min-h-0 min-h-screen  
-                     ${bars == true ? ' top-[0px] left-[0] bg-gvd-b lg:bg-white lg:w-full w-[75%] border-r-[5px] border-r-gvd-bu2  ' 
-                     : 'top-[0px] transform translate-x-[-560px] lg:translate-x-0 lg:w-full  w-[50%]'}`}>
+                     ${bars == true ? ' top-[0px] left-[0] lg:left-0 bg-gvd-b lg:bg-white lg:w-full w-[75%] border-r-[5px] border-r-gvd-bu2 lg:border-r-white ' 
+                     : 'top-[0px] transform translate-x-[-560px] lg:translate-x-0 lg:w-full lg:right-0  w-[50%]'}`}>
                    
                     <div onClick={() => setbars(!bars)} className="lg:w-[16%] relative">
                         <Link to={'/'}>
@@ -129,7 +129,7 @@ const Navbar = () => {
                 </div>
 
 
-                <div onClick={() => setbars(!bars)} className={` lg:hidden absolute top-[20px] left-0 text-[27px] rounded-[5px] p-[20px] text-black cursor-pointer duration-300 ${bars == true ? 'left-[80%]' : ' left-[0]'}`}>
+                <div onClick={() => setbars(!bars)} className={` lg:hidden absolute top-[20px] left-0 text-[27px] rounded-[5px] p-[20px] text-black cursor-pointer duration-300 ${bars == true ? 'left-[80%] lg:left-0' : ' left-[0]'}`}>
                     {bars == true ? <RxCross1 /> : <FaBars />}
                 </div>
 
