@@ -60,7 +60,7 @@ const Contact = () => {
     };
 
     return (
-        <div>
+        <div className='py-[20px]'>
             <Container>
                 <div>
                     <h2 className='font-semibold text-[24px] text-black font-bangla'>যোগাযোগ</h2>
@@ -82,7 +82,7 @@ const Contact = () => {
                                         <h2 className='font-medium text-[18px] text-black font-open'>Your Email (required)</h2>
                                         <input type="email" onChange={(e) => setEmail(e.target.value)} className='border-[1px] border-black w-full h-[40px] outline-none' value={email} />
                                     </div>
-                                    
+
                                     <div className="py-3">
                                         <h2 className='font-medium text-[18px] text-black font-open'>Subject</h2>
                                         <input
@@ -94,14 +94,14 @@ const Contact = () => {
                                     </div>
                                     <div className="py-3">
                                         <h2 className='font-medium text-[18px] text-black font-open'>Password (required)</h2>
-                                       <div className=" relative">
-                                       <input type={ Coneye==true ? 'text' : 'password'} onChange={(e) => setPassword(e.target.value)} className='border-[1px] border-black w-full h-[40px] outline-none' value={password} />
-                                       <div onClick={()=>setConeye(!Coneye)}  className=" absolute top-[10px] right-[15px] text-[20px] ">
-                                            {Coneye ==true ? <IoEye/> :  <FaRegEyeSlash/>}
-                                         
+                                        <div className=" relative">
+                                            <input type={Coneye == true ? 'text' : 'password'} onChange={(e) => setPassword(e.target.value)} className='border-[1px] border-black w-full h-[40px] outline-none' value={password} />
+                                            <div onClick={() => setConeye(!Coneye)} className=" absolute top-[10px] right-[15px] text-[20px] ">
+                                                {Coneye == true ? <IoEye /> : <FaRegEyeSlash />}
+
+                                            </div>
                                         </div>
-                                       </div>
-                                       
+
                                     </div>
                                     <button onClick={handleClick} className='py-2 px-3 bg-slate-500 font-medium font-open text-[18px] text-white'>
                                         Send

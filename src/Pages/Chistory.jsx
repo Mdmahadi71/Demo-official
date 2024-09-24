@@ -5,7 +5,7 @@ import { AiOutlineLike } from "react-icons/ai";
 
 const Chistory = () => {
   return (
-    <div>
+    <div className='py-[20px]'>
       <Container>
         <div className=" lg:flex justify-between">
           <div className="lg:w-[58%]">

@@ -5,7 +5,7 @@ import { AiOutlineLike } from "react-icons/ai";
 
 const AddInformation = () => {
     return (
-        <div>
+        <div className='py-[30px]'>
             <Container>
                 <div className="">
                     <h2 className=' font-semibold text-[25px] text-black font-bangla'>ভর্তি তথ্য</h2>

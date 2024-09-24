@@ -5,9 +5,9 @@ import { AiOutlineLike } from "react-icons/ai";
 
 
 const Complaint = () => {
-  return (
-    <div>
-      <Container>
+    return (
+        <div className='py-[20px]'>
+            <Container>
                 <div className="">
                     <h2 className=' font-semibold text-[25px] text-black font-bangla'>অভিযোগ</h2>
                     <div className=" lg:flex justify-between">
@@ -40,8 +40,8 @@ const Complaint = () => {
                     </div>
                 </div>
             </Container>
-    </div>
-  )
+        </div>
+    )
 }
 
 export default Complaint

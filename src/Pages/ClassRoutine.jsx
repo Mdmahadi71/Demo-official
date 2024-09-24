@@ -5,7 +5,7 @@ import { AiOutlineLike } from "react-icons/ai";
 
 const ClassRoutine = () => {
     return (
-        <div>
+        <div className='py-[20px]'>
             <Container>
                 <div className=" lg:flex justify-between">
                     <div className="lg:w-[59%]">
