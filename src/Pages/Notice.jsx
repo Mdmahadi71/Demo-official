@@ -30,8 +30,9 @@ const Notice = () => {
                         <li className=' list-disc font-normal text-[13px] text-black py-1 font-bangla'>exam notice , <span className=' font-extralight text-[10px] text-gray-400'>বুধবার, মে 29, 2024</span></li>
                         <li className=' list-disc font-normal text-[13px] text-black py-1 font-bangla'>অনার্স ৪র্থ বর্ষের পরীক্ষার পরিবর্তিত সময়সূচি সংক্রান্ত , <span className=' font-extralight text-[10px] text-gray-400'>মঙ্গলবার, মে 28, 2024</span></li>
                     </ul>
-
                     </div>
+
+
                     <div className="lg:w-[39%]">
                         <div className=" pt-[30px]">
                             <div className=" border-b-[1px] border-gray-400"></div>
@@ -57,6 +58,8 @@ const Notice = () => {
                             </div>
                         </div>
                     </div>
+
+                    
                 </div>
             </Container>
         </div>

@@ -5,14 +5,14 @@ import { AiOutlineLike } from "react-icons/ai";
 
 const GuradialPanel = () => {
     return (
-        <div>
+        <div className='py-[20px]'>
             <Container>
                 <div className="">
                     <h2 className=' font-semibold text-[25px] text-black font-bangla'>অভিভাবক প্যানেল</h2>
                     <div className=" lg:flex justify-between">
                         <div className="lg:w-[59%]">
                             <div class=" mx-auto my-8">
-                            
+
                                 <table class=" bg-white border border-gray-300">
                                     <thead>
                                         <tr>
@@ -35,7 +35,7 @@ const GuradialPanel = () => {
                                         </tr>
                                         <tr>
                                             <td class="py-2 px-4 border-b border-gray-200">
-                                               
+
                                             </td>
                                             <td class="py-2 px-4 border-b border-gray-200 text-[14px] text-gray-400 font-bangla">মো. সেলিম মিয়া</td>
                                             <td class="py-2 px-4 border-b border-gray-200 text-[14px] text-gray-400 font-bangla">অফিস সহায়ক</td>

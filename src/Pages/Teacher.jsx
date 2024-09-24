@@ -6,11 +6,12 @@ import { Link } from 'react-router-dom';
 
 const Teacher = () => {
     return (
-        <div>
+        <div className='py-[20px]'>
             <Container>
                 <div className=" lg:flex justify-between">
                     <div className="lg:w-[59%]">
                         <div className=" lg:flex gap-x-3 py-3">
+                            
                             <div className="lg:w-[32%] py-3 lg:py-0  ">
                                 <Link to={'/Pteacher'}>
                                 <div className="flex gap-x-1 items-center w-full h-[80px] justify-center bg-red-600 text-center
@@ -20,6 +21,7 @@ const Teacher = () => {
                                 </div>
                                 </Link>
                             </div>
+
                             <div className="lg:w-[32%] py-3 lg:py-0  ">
                             <Link to={'/pastteacher'}>
                                 <div className="flex gap-x-1 items-center w-full h-[80px] justify-center bg-red-600 text-center hover:bg-neutral-800 text-white duration-300 ">
@@ -28,8 +30,11 @@ const Teacher = () => {
                                 </div>
                             </Link>
                             </div>
+
                         </div>
                     </div>
+
+
                     <div className="lg:w-[39%]">
                         <div className=" pt-[30px]">
                             <div className=" border-b-[1px] border-gray-400"></div>
