@@ -17,7 +17,7 @@ const Collage = () => {
                         <Link to={'/principal'}>
                             <div className=" flex gap-x-1 items-center w-full h-[80px] justify-center bg-teal-500 hover:bg-neutral-800 text-white duration-300  ">
                                 <FaLink className='text-[18px]'/>
-                                <h2 className=' font-medium text-[18px] font-bangla font-bangla'> অধ্যক্ষের কথা</h2>
+                                <h2 className=' font-medium text-[18px]  font-bangla'> অধ্যক্ষের কথা</h2>
                             </div>
                             </Link>
                         </div>

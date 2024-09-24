@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Container from './Container'
 import Navlogo from '../assets/logo.png'
-import { FaBars, FaHome } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
 import { Link } from 'react-router-dom'
 
