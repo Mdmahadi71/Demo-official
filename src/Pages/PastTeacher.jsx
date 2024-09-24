@@ -5,8 +5,8 @@ const PastTeacher = () => {
     return (
         <div className=' py-[40px]'>
             <Container>
-                <h3 className=' font-semibold lg:text-[25px] text-[20px] text-black py-[20px] font-bangla'>প্রাক্তন শিক্ষকদের তালিকা</h3>
-                <div class="overflow-x-auto">
+                <h3 className=' font-semibold lg:text-[25px] text-[20px] text-black py-[20px] font-bangla mx-3 lg:mx-0'>প্রাক্তন শিক্ষকদের তালিকা</h3>
+                <div class="overflow-x-auto mx-3 lg:mx-0">
                     <table class="min-w-full bg-white border border-gray-300">
                         <thead class="bg-teal-500 text-white">
                             <tr>

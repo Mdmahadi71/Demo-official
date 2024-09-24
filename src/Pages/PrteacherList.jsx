@@ -9,9 +9,9 @@ const PrteacherList = () => {
     <div className=' py-[20px]'>
       <Container>
         <div className=" py-[20px]">
-            <h3 className=' font-semibold text-[25px] text-black font-bangla'>বর্তমান শিক্ষকদের তালিকা</h3>
+            <h3 className=' font-semibold text-[25px] text-black font-bangla mx-3 lg:mx-0'>বর্তমান শিক্ষকদের তালিকা</h3>
         </div>
-      <div class="overflow-x-auto">
+      <div class="overflow-x-auto mx-3 lg:mx-0">
         <table class="min-w-full bg-white border border-gray-300">
             <thead class="bg-teal-400 text-white">
                 <tr>
@@ -108,7 +108,7 @@ const PrteacherList = () => {
                     <td class="py-6 px-4 border-b text-centerfont-bangla">N/A</td>
                     <td class="py-6 px-4 border-b font-semibold text-black text-[15px]font-bangla">মোছা. আফরোজা আক্তার</td>
                     <td class="py-6 px-4 border-b font-medium text-[15px] text-gray-400font-bangla">প্রভাষক, সমাজ বিজ্ঞান</td>
-                    <td class="py-6 px-4 border-b font-medium text-[15px] text-gray-400font-bangla  font-banglahidden md:table-cell">০১৭২৩৩৩১৪১২</td>
+                    <td class="py-6 px-4 border-b font-medium text-[15px] text-gray-400font-bangla  font-bangla hidden md:table-cell">০১৭২৩৩৩১৪১২</td>
                     <td class="py-6 px-4 border-b font-medium text-[15px] text-gray-400font-bangla hidden md:table-cell">স্নাতকোত্তর</td>
                     <td class="py-6 px-4 border-b font-medium text-[15px] text-gray-400font-bangla hidden md:table-cell">N/A</td>
                 </tr>
