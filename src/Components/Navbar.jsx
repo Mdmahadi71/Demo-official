@@ -9,18 +9,16 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     let [bars, setbars] = useState(false)
-
     let [ActiveMenu, setActiveMenu] = useState(localStorage.getItem('ActiveMenu' || ''))
 
     useEffect(() => {
         localStorage.setItem('ActiveMenu', ActiveMenu)
     }, [ActiveMenu])
 
-
-
+   
 
     return (
-        <div className={`bg-white overflow-x-clip lg:h-auto  ${bars == true ? ' min-h-screen' : ' min-h-auto '}`} >
+        <div className={`bg-white overflow-x-clip lg:h-auto  ${bars == true ? 'min-h-screen lg:min-h-min  ' : ' min-h-auto '}`} >
             <Container className={`relative`}>
                 <div className={` lg:py-[10px] py-[30px]  relative origin-bottom  duration-300 ${bars == true ? ' transform translate-x-[200px] sm:translate-x-[330px] lg:translate-x-0 ' : ''}`}>
                     <div className=" w-[100px] h-[100px]  lg:mx-0 mx-auto  absolute lg:top-0 lg:left-0 lg:translate-x-[0] left-[50%] translate-x-[-50%]   ">
@@ -42,29 +40,32 @@ const Navbar = () => {
                         </div>
                     </div>
                 </div>
-
-                <div className={`lg:flex justify-around lg:mt-[10px] lg:p-[-2px] border-t-[1px] border-gray-400 lg:static absolute duration-300 z-20 lg:min-h-0 min-h-screen  
-                     ${bars == true ? ' top-[0px] left-[0] bg-gvd-b lg:w-full w-[75%] border-r-[5px] border-r-gvd-bu2 ' : 'top-[0px] transform translate-x-[-560px] lg:translate-x-0 lg:w-full  w-[50%]'}`}>
+            
+                <div className={`lg:flex justify-around  lg:mt-[10px] lg:p-[-2px] border-t-[1px] border-gray-400 lg:static absolute
+                 duration-300 z-20 lg:min-h-0 min-h-screen  
+                     ${bars == true ? ' top-[0px] left-[0] bg-gvd-b lg:bg-white lg:w-full w-[75%] border-r-[5px] border-r-gvd-bu2  ' 
+                     : 'top-[0px] transform translate-x-[-560px] lg:translate-x-0 lg:w-full  w-[50%]'}`}>
                    
-                    <div className="lg:w-[16%] relative">
+                    <div onClick={() => setbars(!bars)} className="lg:w-[16%] relative">
                         <Link to={'/'}>
                             <div onClick={() => setActiveMenu('home')} className={`lg:text-center lg:mt-0 mt-2 py-[10px] ${ActiveMenu === 'home'
                                 ? 'text-white lg:bg-white lg:text-black bg-gvd-hx lg:border-b-[3px] lg:border-gvd-r'
                                 : 'lg:bg-[#FFFFFF] lg:text-black text-white'}`}>
-                                <h2 className="text-[17px] font-medium font-bangla items-center top-[0] ml-[20px] lg:ml-0">প্রথম পাতা </h2>
+                                <h2 className="text-[17px] font-medium font-bangla items-center top-[0] ml-[20px] lg:ml-0"> প্রথম পাতা </h2>
                             </div>
                         </Link>
                         <div className="lg:block  hidden absolute right-0 top-[0] h-[65%] w-[1px] bg-gvd-r"></div>
                     </div>
 
-                    <div className="lg:w-[16%] relative">
+                    <div onClick={() => setbars(!bars)} className="lg:w-[16%] relative">
                         <Link to={'/coll'}>
                             <div onClick={() => setActiveMenu('about')} className={` relative  w:border-b-[2px] border-blue-500  lg:text-center  py-[10px] group
                          ${ActiveMenu === 'about' ? ' text-white bg-gvd-hx  lg:bg-white lg:text-black lg:border-b-[3px]  lg:border-gvd-r' : 'lg:bg-[#FFFFFF]  lg:text-black text-white'} `}>
                                 <h2 className='text-[17px] font-medium font-bangla ml-[20px] lg:ml-0'>কলেজ সম্পর্কে</h2>
-                                <ul className='absolute top-[55px] left-0 w-[250px] text-start bg-gvd-sky  opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-20'>
-                                    <Link to={'/principal'} >  <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>অধ্যক্ষের কথা</li></Link>
-                                    <Link to={'/history'} >  <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>কলেজের ইতিহাস</li></Link>
+                                <ul className='absolute top-[55px] left-0 w-[250px] text-start bg-gvd-sky  opacity-0 invisible
+                                 group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-20'>
+                                    <Link to={'/principal'} ><li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>অধ্যক্ষের কথা</li></Link>
+                                    <Link to={'/history'} ><li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>কলেজের ইতিহাস</li></Link>
                                     <Link to={'/infras'}><li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>অবকাঠামো</li></Link>
                                     <Link to={'/facilities'}>  <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>সুবিধাসমূহ</li></Link>
                                     <Link to={'/teacher'}><li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>শিক্ষক</li></Link>
@@ -75,7 +76,8 @@ const Navbar = () => {
                         </Link>
                         <div className="lg:block  hidden absolute right-0 top-[0] h-[65%] w-[1px] bg-gvd-r"></div>
                     </div>
-                    <div className="lg:w-[16%] relative ">
+
+                    <div onClick={() => setbars(!bars)} className="lg:w-[16%] relative ">
                         <Link to={'/student'}>
                             <div onClick={() => setActiveMenu('stude')} className={`relative   w:border-b-[2px] border-blue-500  lg:text-center py-[10px] group ${ActiveMenu === "stude" ? ' text-white lg:bg-white lg:text-black bg-gvd-hx lg:border-b-[3px] lg:border-gvd-r' : 'lg:bg-[#FFFFFF]  lg:text-black text-white'}`}>
                                 <h2 className='text-[17px]  font-medium font-bangla ml-[20px] lg:ml-0 '>শিক্ষার্থী</h2>
@@ -92,7 +94,7 @@ const Navbar = () => {
                         <div className="lg:block  hidden absolute right-0 top-[0] h-[65%] w-[1px] bg-gvd-r"></div>
                     </div>
 
-                    <div className=" lg:w-[16%] relative">
+                    <div  onClick={() => setbars(!bars)} className=" lg:w-[16%] relative">
                         <Link to={'/guardian'}>
                             <div onClick={() => setActiveMenu('Guar')} className={` relative   w:border-b-[2px] border-blue-500  lg:text-center  py-[10px] group ${ActiveMenu === 'Guar' ? ' text-white lg:bg-white lg:text-black bg-gvd-hx  lg:border-b-[3px]  lg:border-gvd-r' : 'lg:bg-[#FFFFFF]  lg:text-black text-white'} `}>
                                 <h2 className='text-[17px]  font-medium font-bangla ml-[20px] lg:ml-0'>অভিভাবক</h2>
@@ -106,7 +108,7 @@ const Navbar = () => {
                         <div className="lg:block  hidden absolute right-0 top-[0] h-[65%] w-[1px] bg-gvd-r"></div>
                     </div>
 
-                    <div className="lg:w-[16%] relative">
+                    <div onClick={() => setbars(!bars)} className="lg:w-[16%] relative">
                         <Link to={'/imagebox'}>
                             <div onClick={() => setActiveMenu('picture')} className={` w:border-b-[2px]  border-blue-500 lg:text-center  py-[10px] ${ActiveMenu === 'picture' ? 'text-white lg:bg-white lg:text-black bg-gvd-hx lg:border-b-[3px]  lg:border-gvd-r' : 'lg:bg-[#FFFFFF]  lg:text-black text-white'}`}>
                                 <h2 className='text-[17px] font-medium font-bangla ml-[20px] lg:ml-0'>  ছবিঘর</h2>
@@ -115,7 +117,7 @@ const Navbar = () => {
                         <div className="lg:block  hidden absolute right-0 top-[0] h-[65%] w-[1px] bg-gvd-r"></div>
                     </div>
 
-                    <div className=" lg:w-[16%]  relative">
+                    <div onClick={() => setbars(!bars)} className=" lg:w-[16%] relative">
                         <Link to={'/Contact'}>
                             <div onClick={() => setActiveMenu('cont')} className={` w:border-b-[2px] border-blue-500 lg:text-center  py-[10px] ${ActiveMenu === 'cont' ? 'text-white lg:bg-white lg:text-black bg-gvd-hx lg:border-b-[3px]  lg:border-gvd-r' : 'lg:bg-[#FFFFFF]  lg:text-black text-white'}`}>
                                 <h2 className='text-[17px]  font-medium font-bangla ml-[20px] lg:ml-0'>যোগাযোগ</h2>
@@ -124,13 +126,10 @@ const Navbar = () => {
                         <div className="lg:block  hidden absolute right-0 top-[0] h-[65%] w-[1px] bg-gvd-r"></div>
                     </div>
 
-
-
                 </div>
 
 
                 <div onClick={() => setbars(!bars)} className={` lg:hidden absolute top-[20px] left-0 text-[27px] rounded-[5px] p-[20px] text-black cursor-pointer duration-300 ${bars == true ? 'left-[80%]' : ' left-[0]'}`}>
-
                     {bars == true ? <RxCross1 /> : <FaBars />}
                 </div>
 
