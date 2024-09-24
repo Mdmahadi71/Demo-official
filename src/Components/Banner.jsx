@@ -97,10 +97,10 @@ const Banner = () => {
           </div>
         </Slider>
 
-        <Container>
-        <div className={`relative lg:mt-0 mt-[100px] hidden lg:table-cell `}>
-          <div class="relative flex overflow-x-hidden bg-gvd-b  w-[98%]  ">
-            <div class="py-[14px] animate-marquee whitespace-nowrap">
+      
+        <div className={`relative lg:mt-[-2PX] mt-[100px] hidden lg:table-cell `}>
+          <div class="relative flex overflow-x-hidden   w-[98%]  ">
+            <div class="py-[14px] animate-marquee whitespace-nowrap bg-gvd-b">
               <span class="text-[18px] text-white mx-4 font-medium font-bangla ">***  জন্মাষ্টমী উপলক্ষ্যে কলেজ বন্ধরবিবার, আগস্ট 25, 2024  *** |</span>
               <span class="text-[18px] text-white mx-4 font-medium font-bangla">***  উচ্চ মাধ্যমিক ১ম বর্ষের বৃত্তি সংক্রান্ত জরুরী বিজ্ঞপ্তি
                 রবিবার, আগস্ট 18, 2024 *** |</span>
@@ -112,7 +112,7 @@ const Banner = () => {
             <h2 className=' text-[16px] text-white font-medium font-open'>Letas News</h2>
           </div>
         </div>
-        </Container>
+
 
         <div className=" lg:flex justify-around pb-[30px] mx-3 lg:mx-0 border-b-[1px] border-gray-400 ">
           <div className="lg:w-[27%] py-3   z-10">

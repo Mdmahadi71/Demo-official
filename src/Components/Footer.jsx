@@ -70,7 +70,7 @@ const Footer = () => {
         <div className="" >
             <div className=" lg:mt-0 mt-[20px] lg:ml-0 ml-4">
                 <div className="">
-                    <h3 className=' font-normal text-[10px] text-white text-center'>© 2024. All rights reserved.</h3>
+                    <h3 className=' font-normal text-[10px] text-white text-center'>© 2024. All rights reserved . Site developed:  Mahadi Hasan</h3>
                 </div>
             </div>
           
