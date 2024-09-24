@@ -145,7 +145,7 @@ const Navbar = () => {
                             </div>
                         </div>
                         <div className="  py-[16px] px-4 inline-block bg-gvd-r absolute top-[0px] left-0">
-                            <h2 className=' text-[16px] text-white font-medium'>Letas News</h2>
+                            <h2 className=' text-[15px] text-white font-medium'>Letas News</h2>
                         </div>
                     </div>
                 </section>

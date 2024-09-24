@@ -7,7 +7,7 @@ const About = () => {
     <div>
       <Container>
         <div className=" lg:flex justify-between">
-          <div className="lg:w-[58%]">
+          <div className="lg:w-[58%] mx-3 lg:mx-0">
             <h2 className=' font-normal text-[16px] my-[30px] font-bangla'>রংপুর জেলার পীরগঞ্জ উপজেলার একটি প্রাচীন জনপদ,এই জনপদ,এই জনপদ শাহ ইসমাইল গাজী (রা:)
               এবং মধ্যযুগীয় অধ্যায়তিক ও সাধক কবি কাজী হেয়াৎ মামুদের জন্মভুমি।
               জনপদের বসবাসকারী অধিকাংশ মানুষ দরিদ্র সীমায় বসবাস করে।
@@ -15,7 +15,7 @@ const About = () => {
               সুধীজনের প্রচেষ্টায় শাহ্‌ আব্দুর রউফ কলেজ স্থাপিত হয়।
               বর্তমান প্রতিষ্ঠানটি এই উপজেলার বৃহৎ শিক্ষা প্রতিষ্ঠান হিসাবে শিক্ষা কার্যক্রম পরিচালনা করে আসছে।</h2>
           </div>
-          <div className="lg:w-[40%] py-3">
+          <div className="lg:w-[40%] py-3 mx-3 lg:mx-0">
             <div className=" pt-[30px]">
               <div className=" border-b-[1px] border-gray-400"></div>
 

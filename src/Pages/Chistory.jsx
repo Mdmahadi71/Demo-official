@@ -7,7 +7,7 @@ const Chistory = () => {
   return (
     <div className='py-[20px]'>
       <Container>
-        <div className=" lg:flex justify-between">
+        <div className=" lg:flex justify-between mx-3 lg:mx-0">
           <div className="lg:w-[58%]">
             <div className="">
               <h2 className=' font-semibold text-[29px] text-black py-4 font-bangla'>কলেজের ইতিহাস</h2>

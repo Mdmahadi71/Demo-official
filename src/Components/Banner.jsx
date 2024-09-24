@@ -114,8 +114,8 @@ const Banner = () => {
         </div>
         </Container>
 
-        <div className=" lg:flex justify-around pb-[30px] border-b-[1px] border-gray-400 ">
-          <div className="lg:w-[27%] py-3  z-10">
+        <div className=" lg:flex justify-around pb-[30px] mx-3 lg:mx-0 border-b-[1px] border-gray-400 ">
+          <div className="lg:w-[27%] py-3   z-10">
             <div className=" pt-[20px] px-[20px] bg-gvd-cy pb-[50px]">
               <h2>প্রতিষ্ঠাতা</h2>
               <div className=" relative py-[15px]">
@@ -161,7 +161,7 @@ const Banner = () => {
               <button className=' py-[9px] px-[15px] bg-black text-white my-[20px] text-[16px] font-medium  hover:bg-white hover:text-black duration-300 font-bangla'>সকল নোটিশ দেখুন</button>
             </div>
           </div>
-          <div className="lg:w-[27%] py-3 z-10">
+          <div className="lg:w-[27%] py-3  z-10">
             <div className=" bg-gvd-cy2 p-[20px]">
               <h2 className=' text-[16px] font-bangla font-semibold'>শিক্ষকদের তালিকা</h2>
               <div className=" relative">

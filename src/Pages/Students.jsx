@@ -8,7 +8,7 @@ const Students = () => {
   return (
     <div className='py-[20px]'>
         <Container>
-        <div className=" lg:flex justify-between">
+        <div className=" lg:flex justify-between mx-3 lg:mx-0">
                 <div className="lg:w-[60%]">
                     <h2 className=' font-semibold text-[24px] text-black font-bangla py-7'>শিক্ষার্থী</h2>
                     <div className=" lg:flex justify-between py-[22px] ">

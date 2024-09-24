@@ -12,9 +12,9 @@ const ImageBox = () => {
         <div className='py-[20px]'>
             <Container>
                 <div className=" py-3">
-                    <h3 className=' font-semibold text-[25px] text-black font-bangla'>ছবিঘর</h3>
+                    <h3 className=' font-semibold text-[25px] text-black font-bangla mx-3 lg:mx-0'>ছবিঘর</h3>
                 </div>
-                <div className=" lg:flex justify-between">
+                <div className=" lg:flex justify-between mx-3 lg:mx-0">
                     <div className="lg:w-[59%]">
                         
 

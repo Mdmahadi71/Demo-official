@@ -20,36 +20,36 @@ const Contact = () => {
     let [message, setMessage] = useState('');
     let [password, setPassword] = useState('');
     let navigate = useNavigate()
-    let [Coneye , setConeye] = useState(false)
+    let [Coneye, setConeye] = useState(false)
 
 
 
     let handleClick = () => {
-        
+
         if (!name || !email || !password || !subject || !message) {
-            toast.error('Please fill in all the fields'); 
-            return; 
+            toast.error('Please fill in all the fields');
+            return;
         }
-    
-        
+
+
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 const userId = userCredential.user.uid;
                 writeUserData(userId, name, email, subject, message);
-                toast.success('Registration successful!'); 
-                setTimeout(()=>{
+                toast.success('Registration successful!');
+                setTimeout(() => {
                     navigate('/')
-                },1000)
+                }, 1000)
             })
             .catch((error) => {
                 const errorCode = error.code;
                 const errorMessage = error.message;
                 console.error(errorCode, errorMessage);
-                toast.error(`Error: ${errorMessage}`); 
+                toast.error(`Error: ${errorMessage}`);
             });
     };
-    
-    
+
+
     const writeUserData = (userId, name, email, subject, message) => {
         set(ref(db, 'users/' + userId), {
             name: name,
@@ -63,8 +63,10 @@ const Contact = () => {
         <div className='py-[20px]'>
             <Container>
                 <div>
-                    <h2 className='font-semibold text-[24px] text-black font-bangla'>যোগাযোগ</h2>
-                    <div className="lg:flex justify-between">
+                    <h2 className='font-semibold text-[24px] text-black font-bangla mx-3 lg:mx-0'>যোগাযোগ</h2>
+                    <div className="lg:flex justify-between mx-3 lg:mx-0">
+
+
                         <div className="lg:w-[60%] py-4">
                             <div>
                                 <h2 className='font-normal text-[16px] text-black py-2  font-bangla'>
