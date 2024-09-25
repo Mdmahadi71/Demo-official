@@ -104,7 +104,7 @@ const About = () => {
 
   
   return (
-    <div className=' py-[50px] overflow-hidden'>
+    <div className=' py-2 overflow-hidden'>
       <Container>
         <div className=" lg:flex justify-between mx-4 lg:mx-0">
 
@@ -130,7 +130,8 @@ const About = () => {
           <div className="lg:w-[58%] w-full my-3 lg:my-0">
             <div className="">
               <Slider {...settings}>
-                <div className="lg:w-[30%] w-full bg-gvd-green p-3 ">
+
+                <div className="lg:w-[30%] w-full bg-gvd-b p-3 ">
                   <div className="">
                     <img src={bayascop} className=' w-full' alt="" />
                   </div>
@@ -144,7 +145,8 @@ const About = () => {
                     <button className='  py-2 px-3 bg-gvd-sky font-open text-[15px] text-white hover:bg-gvd-r duration-300 '>Read more</button>
                   </div>
                 </div>
-                <div className="lg:w-[30%]  w-full bg-gvd-green p-3 ">
+
+                <div className="lg:w-[30%]  w-full bg-gvd-b p-3 ">
                   <div className="">
                     <img src={eventImg} className=' w-full' alt="" />
                   </div>
@@ -158,7 +160,8 @@ const About = () => {
                     <button className='  py-2 px-3 bg-gvd-sky font-open text-[15px] text-white hover:bg-gvd-r duration-300 '>Read more</button>
                   </div>
                 </div>
-                <div className="lg:w-[30%]  w-full bg-gvd-green p-3 ">
+
+                <div className="lg:w-[30%]  w-full bg-gvd-b p-3 ">
                   <div className="">
                     <img src={eventImg2} className=' w-full' alt="" />
                   </div>
@@ -172,12 +175,13 @@ const About = () => {
                     <button className='  py-2 px-3 bg-gvd-sky font-open text-[15px] text-white hover:bg-gvd-r duration-300 '>Read more</button>
                   </div>
                 </div>
-                <div className="lg:w-[30%] w-full bg-gvd-green p-3 ">
+
+                <div className="lg:w-[30%] w-full bg-gvd-b p-3 ">
                   <div className="">
                     <img src={eventImg3} className=' w-full' alt="" />
                   </div>
                   <h2 className='font-open text-[15px] text-white'>Lorem ipsum dolor sit amet consectetur.</h2>
-                  <div className=" border-[2px] border-[#7f8617] py-2 px-3 text-center">
+                  <div className=" border-[2px] border-[#FFFF] py-2 px-3 text-center">
                     <h2>START DATE</h2>
                     <p>01.10.2024</p>
                   </div>
@@ -186,13 +190,14 @@ const About = () => {
                     <button className='  py-2 px-3 bg-gvd-sky font-open text-[15px] text-white hover:bg-gvd-r duration-300 '>Read more</button>
                   </div>
                 </div>
+
               </Slider>
             </div>
           </div>
 
 
           <div className="lg:w-[20%] my-3 lg:my-0">
-            <div className=" pt-[20px] px-[20px] bg-gvd-cy pb-[50px]">
+            <div className=" pt-[20px] px-[20px] bg-gvd-sky pb-[50px]">
               <h2>অধ্যক্ষ</h2>
               <div className=" relative py-[15px]">
                 <div className=" border-[5px] border-black w-[20%] z-10"> </div>
