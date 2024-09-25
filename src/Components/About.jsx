@@ -27,35 +27,35 @@ const About = () => {
   
     responsive: [
       {
-        breakpoint: 1440, // Larger screens (widescreen, 2k+)
+        breakpoint: 1440,
         settings: {
-          slidesToShow: 1, // Show 1 slide on very large screens
+          slidesToShow: 1, 
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 1024, // Large screens (lg)
+        breakpoint: 1024,
         settings: {
-          slidesToShow: 1, // Show 1 slide on large screens
+          slidesToShow: 1, 
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 768, // Tablets
+        breakpoint: 768, 
         settings: {
-          slidesToShow: 2, // Show 2 slides on medium-sized screens (like tablets)
+          slidesToShow: 2, 
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 480, // Small screens (phones)
+        breakpoint: 480, 
         settings: {
-          slidesToShow: 1, // Show 1 slide on small screens
+          slidesToShow: 1, 
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 320, // Very small screens (most common minimum width)
+        breakpoint: 320, 
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -109,7 +109,7 @@ const About = () => {
         <div className=" lg:flex justify-between mx-4 lg:mx-0">
 
 
-          <div className="lg:w-[18%]">
+          <div className="lg:w-[20%] my-3 lg:my-0">
             <div className=" pt-[20px] px-[20px] bg-gvd-cy pb-[50px]">
               <h2>প্রতিষ্ঠাতা</h2>
               <div className=" relative py-[15px]">
@@ -127,71 +127,71 @@ const About = () => {
           </div>
 
 
-          <div className="lg:w-[58%] w-full">
+          <div className="lg:w-[58%] w-full my-3 lg:my-0">
             <div className="">
-            <Slider {...settings}>
-              <div className="lg:w-[30%] w-full bg-gvd-green p-3 ">
-                <div className="">
-                  <img src={bayascop} className=' w-full' alt="" />
+              <Slider {...settings}>
+                <div className="lg:w-[30%] w-full bg-gvd-green p-3 ">
+                  <div className="">
+                    <img src={bayascop} className=' w-full' alt="" />
+                  </div>
+                  <h2 className='font-open text-[15px] text-white'>Lorem ipsum dolor sit amet consectetur.</h2>
+                  <div className=" border-[2px] border-[#7f8617] py-2 px-3 text-center">
+                    <h2>START DATE</h2>
+                    <p>01.10.2024</p>
+                  </div>
+                  <h2 className='font-open text-[15px] text-[#bfca0f] my-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque itaque impedit?</h2>
+                  <div className=" flex justify-end">
+                    <button className='  py-2 px-3 bg-gvd-sky font-open text-[15px] text-white hover:bg-gvd-r duration-300 '>Read more</button>
+                  </div>
                 </div>
-                <h2 className='font-open text-[15px] text-white'>Lorem ipsum dolor sit amet consectetur.</h2>
-                <div className=" border-[2px] border-[#7f8617] py-2 px-3 text-center">
-                  <h2>START DATE</h2>
-                  <p>01.10.2024</p>
+                <div className="lg:w-[30%]  w-full bg-gvd-green p-3 ">
+                  <div className="">
+                    <img src={eventImg} className=' w-full' alt="" />
+                  </div>
+                  <h2 className='font-open text-[15px] text-white'>Lorem ipsum dolor sit amet consectetur.</h2>
+                  <div className=" border-[2px] border-[#7f8617] py-2 px-3 text-center">
+                    <h2>START DATE</h2>
+                    <p>01.10.2024</p>
+                  </div>
+                  <h2 className='font-open text-[15px] text-[#bfca0f] my-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque itaque impedit?</h2>
+                  <div className=" flex justify-end">
+                    <button className='  py-2 px-3 bg-gvd-sky font-open text-[15px] text-white hover:bg-gvd-r duration-300 '>Read more</button>
+                  </div>
                 </div>
-                <h2 className='font-open text-[15px] text-[#bfca0f] my-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque itaque impedit?</h2>
-                <div className=" flex justify-end">
-                <button className='  py-2 px-3 bg-gvd-sky font-open text-[15px] text-white hover:bg-gvd-r duration-300 '>Read more</button>
+                <div className="lg:w-[30%]  w-full bg-gvd-green p-3 ">
+                  <div className="">
+                    <img src={eventImg2} className=' w-full' alt="" />
+                  </div>
+                  <h2 className='font-open text-[15px] text-white'>Lorem ipsum dolor sit amet consectetur.</h2>
+                  <div className=" border-[2px] border-[#7f8617] py-2 px-3 text-center">
+                    <h2>START DATE</h2>
+                    <p>01.10.2024</p>
+                  </div>
+                  <h2 className='font-open text-[15px] text-[#bfca0f] my-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque itaque impedit?</h2>
+                  <div className=" flex justify-end">
+                    <button className='  py-2 px-3 bg-gvd-sky font-open text-[15px] text-white hover:bg-gvd-r duration-300 '>Read more</button>
+                  </div>
                 </div>
-              </div>
-              <div className="lg:w-[30%]  w-full bg-gvd-green p-3 ">
-                <div className="">
-                  <img src={eventImg} className=' w-full' alt="" />
+                <div className="lg:w-[30%] w-full bg-gvd-green p-3 ">
+                  <div className="">
+                    <img src={eventImg3} className=' w-full' alt="" />
+                  </div>
+                  <h2 className='font-open text-[15px] text-white'>Lorem ipsum dolor sit amet consectetur.</h2>
+                  <div className=" border-[2px] border-[#7f8617] py-2 px-3 text-center">
+                    <h2>START DATE</h2>
+                    <p>01.10.2024</p>
+                  </div>
+                  <h2 className='font-open text-[15px] text-[#bfca0f] my-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque itaque impedit?</h2>
+                  <div className=" flex justify-end">
+                    <button className='  py-2 px-3 bg-gvd-sky font-open text-[15px] text-white hover:bg-gvd-r duration-300 '>Read more</button>
+                  </div>
                 </div>
-                <h2 className='font-open text-[15px] text-white'>Lorem ipsum dolor sit amet consectetur.</h2>
-                <div className=" border-[2px] border-[#7f8617] py-2 px-3 text-center">
-                  <h2>START DATE</h2>
-                  <p>01.10.2024</p>
-                </div>
-                <h2 className='font-open text-[15px] text-[#bfca0f] my-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque itaque impedit?</h2>
-                <div className=" flex justify-end">
-                <button className='  py-2 px-3 bg-gvd-sky font-open text-[15px] text-white hover:bg-gvd-r duration-300 '>Read more</button>
-                </div>
-              </div>
-              <div className="lg:w-[30%]  w-full bg-gvd-green p-3 ">
-                <div className="">
-                  <img src={eventImg2} className=' w-full' alt="" />
-                </div>
-                <h2 className='font-open text-[15px] text-white'>Lorem ipsum dolor sit amet consectetur.</h2>
-                <div className=" border-[2px] border-[#7f8617] py-2 px-3 text-center">
-                  <h2>START DATE</h2>
-                  <p>01.10.2024</p>
-                </div>
-                <h2 className='font-open text-[15px] text-[#bfca0f] my-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque itaque impedit?</h2>
-                <div className=" flex justify-end">
-                <button className='  py-2 px-3 bg-gvd-sky font-open text-[15px] text-white hover:bg-gvd-r duration-300 '>Read more</button>
-                </div>
-              </div>
-              <div className="lg:w-[30%] w-full bg-gvd-green p-3 ">
-                <div className="">
-                  <img src={eventImg3} className=' w-full' alt="" />
-                </div>
-                <h2 className='font-open text-[15px] text-white'>Lorem ipsum dolor sit amet consectetur.</h2>
-                <div className=" border-[2px] border-[#7f8617] py-2 px-3 text-center">
-                  <h2>START DATE</h2>
-                  <p>01.10.2024</p>
-                </div>
-                <h2 className='font-open text-[15px] text-[#bfca0f] my-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque itaque impedit?</h2>
-                <div className=" flex justify-end">
-                <button className='  py-2 px-3 bg-gvd-sky font-open text-[15px] text-white hover:bg-gvd-r duration-300 '>Read more</button>
-                </div>
-              </div>
               </Slider>
             </div>
           </div>
 
 
-          <div className="lg:w-[18%]">
+          <div className="lg:w-[20%] my-3 lg:my-0">
             <div className=" pt-[20px] px-[20px] bg-gvd-cy pb-[50px]">
               <h2>অধ্যক্ষ</h2>
               <div className=" relative py-[15px]">
