@@ -1,6 +1,7 @@
 import React from 'react'
 import Banner from '../Components/Banner'
 import About from '../Components/About'
+import CollageHistory from '../Components/CollageHistory'
 
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
 
         <Banner/>
         <About/>
+        <CollageHistory/>
 
     </div>
   )
