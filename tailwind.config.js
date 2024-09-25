@@ -32,6 +32,7 @@ export default {
           'gvd-sky': '#00b3ff',
           'gvd-hx': '#01d2a7',
           'gvd-bug': '#1b0077',
+          'gvd-green': '#05a403',
         
         },
     },

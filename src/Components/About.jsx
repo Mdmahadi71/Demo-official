@@ -2,44 +2,212 @@ import React from 'react'
 import Container from './Container'
 import { FaSearch } from "react-icons/fa";
 import { AiOutlineLike } from "react-icons/ai";
+import shaAbdur from '../assets/founder_abdur_rouf.jpg'
+import AbuBokkor from '../assets/abu-bokor.jpg'
+import bayascop from '../assets/imb3.jpg'
+import Slider from "react-slick";
+import eventImg from '../assets/Imb15.jpg'
+import eventImg2 from '../assets/Imb5.jpg'
+import eventImg3 from '../assets/Imb7.jpg'
+
+
+
+
+
 const About = () => {
+ 
+
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToScroll: 1,
+    slidesToShow: 3,
+    autoplay: true,
+  
+    responsive: [
+      {
+        breakpoint: 1440, // Larger screens (widescreen, 2k+)
+        settings: {
+          slidesToShow: 1, // Show 1 slide on very large screens
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1024, // Large screens (lg)
+        settings: {
+          slidesToShow: 1, // Show 1 slide on large screens
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768, // Tablets
+        settings: {
+          slidesToShow: 2, // Show 2 slides on medium-sized screens (like tablets)
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480, // Small screens (phones)
+        settings: {
+          slidesToShow: 1, // Show 1 slide on small screens
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 320, // Very small screens (most common minimum width)
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+    appendDots: dots => (
+      <div
+        style={{
+          position: "absolute",
+          top: "0px",
+          right: "0px",
+          fontSize: '30px',
+        }}
+      >
+        <ul
+          style={{
+            position: "absolute",
+            top: '10px',
+            right: 0,
+            borderRadius: "20px",
+            padding: "20px",
+            margin: "0",
+            color: 'green',
+            fontSize: '30px',
+          }}
+        >
+          {dots}
+        </ul>
+      </div>
+    ),
+    customPaging: i => (
+      <div
+        style={{
+          color: "transparent",
+          height: "15px",
+          width: "15px",
+          background: "#FFFFFF",
+          borderRadius: "30px",
+        }}
+      >
+        {i + 1}
+      </div>
+    )
+  };
+
+  
   return (
-    <div>
+    <div className=' py-[50px] overflow-hidden'>
       <Container>
-        <div className=" lg:flex justify-between">
-          <div className="lg:w-[58%] mx-3 lg:mx-0">
-            <h2 className=' font-normal text-[16px] my-[30px] font-bangla'>রংপুর জেলার পীরগঞ্জ উপজেলার একটি প্রাচীন জনপদ,এই জনপদ,এই জনপদ শাহ ইসমাইল গাজী (রা:)
-              এবং মধ্যযুগীয় অধ্যায়তিক ও সাধক কবি কাজী হেয়াৎ মামুদের জন্মভুমি।
-              জনপদের বসবাসকারী অধিকাংশ মানুষ দরিদ্র সীমায় বসবাস করে।
-              সেহেতু তাদের ছেলে মেয়েদের শিক্ষাদানের উদ্দেশ্যে বিশিষ্ট রাজনীতিবিদ জনাব কাজী আব্দুল হালিমের নেতৃত্বে
-              সুধীজনের প্রচেষ্টায় শাহ্‌ আব্দুর রউফ কলেজ স্থাপিত হয়।
-              বর্তমান প্রতিষ্ঠানটি এই উপজেলার বৃহৎ শিক্ষা প্রতিষ্ঠান হিসাবে শিক্ষা কার্যক্রম পরিচালনা করে আসছে।</h2>
-          </div>
-          <div className="lg:w-[40%] py-3 mx-3 lg:mx-0">
-            <div className=" pt-[30px]">
-              <div className=" border-b-[1px] border-gray-400"></div>
+        <div className=" lg:flex justify-between mx-4 lg:mx-0">
 
-              <div className=" py-[30px] text-center lg:text-start  ">
-                <input type="text" className=' lg:w-[290px] w-[250px] h-[50px] border-[1px] outline-none border-gray-400 ' name="" id="" />
-                <button className=' py-[8px] px-[26px] bg-black text-white lg:ml-3'><FaSearch /></button>
+
+          <div className="lg:w-[18%]">
+            <div className=" pt-[20px] px-[20px] bg-gvd-cy pb-[50px]">
+              <h2>প্রতিষ্ঠাতা</h2>
+              <div className=" relative py-[15px]">
+                <div className=" border-[5px] border-black w-[20%] z-10"> </div>
+                <h2 className=' border-[1px] border-[#FFFFFF]  absolute top-[19px] left-[20%] w-[80%]'></h2>
               </div>
-              <div className=" border-b-[1px] border-gray-400 mt-[20px]"></div>
-              <div className="">
-                <div className=" border-b-[1px] border-gray-400 my-[30px]"></div>
-              </div>
-              <div className=" w-[100px] mx-auto  ">
-                <div className=" border-[1px] border-gray-400  w-[70px]  text-center rounded-[5px]">
-                  <h2 className=' font-medium text-[16px] text-black  py-2'>5555k</h2>
-                  <div className=" bg-gvd-sky h-[30px]  flex justify-center items-center rounded-b-[5px]">
-                    <AiOutlineLike className='text-white' />
-                    <h2 className='font-medium text-[16px] text-white'>Like</h2>
-                  </div>
+              <div className=" relative">
+                <img src={shaAbdur} alt="" />
+                <div className=" backdrop-opacity-10 backdrop-invert bg-black/30  py-[30px] absolute bottom-0 left-[0] w-full ">
+                  <h3 className=' text-[16px] text-white font-medium pl-[20px] font-bangla'>শাহ আব্দুর রউফ</h3>
+                  <p className=' text-[14px] text-white font-medium pl-[20px] font-bangla'>সমাজসেক</p>
                 </div>
-
-                <div className=" bg-gvd-sky h-[40px] w-[70px] text-center my-[20px] leading-[40px] rounded-[5px]"><h2 className=' font-medium text-[16px] text-white'>Share</h2></div>
               </div>
             </div>
           </div>
+
+
+          <div className="lg:w-[58%] w-full">
+            <div className="">
+            <Slider {...settings}>
+              <div className="lg:w-[30%] w-full bg-gvd-green p-3 ">
+                <div className="">
+                  <img src={bayascop} className=' w-full' alt="" />
+                </div>
+                <h2 className='font-open text-[15px] text-white'>Lorem ipsum dolor sit amet consectetur.</h2>
+                <div className=" border-[2px] border-[#7f8617] py-2 px-3 text-center">
+                  <h2>START DATE</h2>
+                  <p>01.10.2024</p>
+                </div>
+                <h2 className='font-open text-[15px] text-[#bfca0f] my-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque itaque impedit?</h2>
+                <div className=" flex justify-end">
+                <button className='  py-2 px-3 bg-gvd-sky font-open text-[15px] text-white hover:bg-gvd-r duration-300 '>Read more</button>
+                </div>
+              </div>
+              <div className="lg:w-[30%]  w-full bg-gvd-green p-3 ">
+                <div className="">
+                  <img src={eventImg} className=' w-full' alt="" />
+                </div>
+                <h2 className='font-open text-[15px] text-white'>Lorem ipsum dolor sit amet consectetur.</h2>
+                <div className=" border-[2px] border-[#7f8617] py-2 px-3 text-center">
+                  <h2>START DATE</h2>
+                  <p>01.10.2024</p>
+                </div>
+                <h2 className='font-open text-[15px] text-[#bfca0f] my-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque itaque impedit?</h2>
+                <div className=" flex justify-end">
+                <button className='  py-2 px-3 bg-gvd-sky font-open text-[15px] text-white hover:bg-gvd-r duration-300 '>Read more</button>
+                </div>
+              </div>
+              <div className="lg:w-[30%]  w-full bg-gvd-green p-3 ">
+                <div className="">
+                  <img src={eventImg2} className=' w-full' alt="" />
+                </div>
+                <h2 className='font-open text-[15px] text-white'>Lorem ipsum dolor sit amet consectetur.</h2>
+                <div className=" border-[2px] border-[#7f8617] py-2 px-3 text-center">
+                  <h2>START DATE</h2>
+                  <p>01.10.2024</p>
+                </div>
+                <h2 className='font-open text-[15px] text-[#bfca0f] my-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque itaque impedit?</h2>
+                <div className=" flex justify-end">
+                <button className='  py-2 px-3 bg-gvd-sky font-open text-[15px] text-white hover:bg-gvd-r duration-300 '>Read more</button>
+                </div>
+              </div>
+              <div className="lg:w-[30%] w-full bg-gvd-green p-3 ">
+                <div className="">
+                  <img src={eventImg3} className=' w-full' alt="" />
+                </div>
+                <h2 className='font-open text-[15px] text-white'>Lorem ipsum dolor sit amet consectetur.</h2>
+                <div className=" border-[2px] border-[#7f8617] py-2 px-3 text-center">
+                  <h2>START DATE</h2>
+                  <p>01.10.2024</p>
+                </div>
+                <h2 className='font-open text-[15px] text-[#bfca0f] my-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque itaque impedit?</h2>
+                <div className=" flex justify-end">
+                <button className='  py-2 px-3 bg-gvd-sky font-open text-[15px] text-white hover:bg-gvd-r duration-300 '>Read more</button>
+                </div>
+              </div>
+              </Slider>
+            </div>
+          </div>
+
+
+          <div className="lg:w-[18%]">
+            <div className=" pt-[20px] px-[20px] bg-gvd-cy pb-[50px]">
+              <h2>অধ্যক্ষ</h2>
+              <div className=" relative py-[15px]">
+                <div className=" border-[5px] border-black w-[20%] z-10"> </div>
+                <h2 className=' border-[1px] border-[#FFFFFF]  absolute top-[19px] left-[20%] w-[80%]'></h2>
+              </div>
+              <div className=" relative">
+                <img src={AbuBokkor} className=' w-full' alt="" />
+                <div className=" backdrop-opacity-10 backdrop-invert bg-black/30  py-[30px] absolute bottom-0 left-[0] w-full ">
+                  <h3 className=' text-[16px] text-white font-medium pl-[20px] font-bangla'>মো. আবু বকর সিদ্দিক সরকার</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </Container>
     </div>
