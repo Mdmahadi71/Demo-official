@@ -108,7 +108,7 @@ const Banner = () => {
         </div>
 
 
-        <div className=" lg:flex justify-around pb-[30px] mx-3 lg:mx-0 border-b-[1px] border-gray-400 ">
+        {/* <div className=" lg:flex justify-around pb-[30px] mx-3 lg:mx-0 border-b-[1px] border-gray-400 ">
           
           <div className="lg:w-[27%] py-3  z-10">
             <div className=" bg-gvd-r py-[20px] px-[20px]">
@@ -141,7 +141,7 @@ const Banner = () => {
             </div>
           </div>
         
-        </div>
+        </div> */}
       </Container>
     </div>
   )
