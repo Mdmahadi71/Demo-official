@@ -10,7 +10,7 @@ const CollageHistory = () => {
                 <div className=" lg:flex justify-between mx-4 lg:mx-0">
                     <div className="lg:w-[73%]">
 
-                        <div className=" lf:flex justify-between">
+                        <div className=" lg:flex justify-between">
                             <div className=" lg:w-[75%] ">
                                 <h2 className=' font-bangla font-bold text-[22px] text-black my-2'>সরকারি শাহ্ আব্দুর রউফ কলেজে স্বাগতম</h2>
                                 <h2 className=' font-bangla font-semibold text-[18px] text-[#312525]'>রংপুর জেলার পীরগঞ্জ উপজেলার একটি প্রাচীন জনপদ,এই জনপদ,এই জনপদ শাহ ইসমাইল গাজী (রা:) এবং মধ্যযুগীয় অধ্যায়তিক ও সাধক কবি কাজী হেয়াৎ মামুদের জন্মভুমি।
