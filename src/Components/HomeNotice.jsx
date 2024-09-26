@@ -9,65 +9,23 @@ const HomeNotice = () => {
   let scrollRefthree = useRef(null);
 
   
-  let handleScrollOne = (direction) => {
-    const scrollAmount = 100; 
-    if (direction === 'up') {
-      scrollRefone.current.scrollBy({
-        top: -scrollAmount,
-        behavior: 'smooth',
-      });
-    } else {
-      scrollRefone.current.scrollBy({
-        top: scrollAmount,
-        behavior: 'smooth',
-      });
-    }
-  };
-  let handleScrolltwo = (direction) => {
-    const scrollAmount = 100; 
-    if (direction === 'up') {
-      scrollReftwo.current.scrollBy({
-        top: -scrollAmount,
-        behavior: 'smooth',
-      });
-    } else {
-      scrollReftwo.current.scrollBy({
-        top: scrollAmount,
-        behavior: 'smooth',
-      });
-    }
-  };
+ 
 
-  let handleScrollthree = (direction) => {
-    const scrollAmount = 100; 
+  const handleScroll = (ref, direction) => {
+    const scrollAmount = 100;
     if (direction === 'up') {
-      scrollRefthree.current.scrollBy({
+      ref.current.scrollBy({
         top: -scrollAmount,
         behavior: 'smooth',
       });
     } else {
-      scrollRefthree.current.scrollBy({
+      ref.current.scrollBy({
         top: scrollAmount,
         behavior: 'smooth',
       });
     }
   };
-
-  let handleScrollm = (direction) => {
-    const scrollAmount = 100; 
-    if (direction === 'up') {
-      scrollRefm.current.scrollBy({
-        top: -scrollAmount,
-        behavior: 'smooth',
-      });
-    } else {
-      scrollRefm.current.scrollBy({
-        top: scrollAmount,
-        behavior: 'smooth',
-      });
-    }
-  };
-
+  
   return (
     <div className=' py-[50px]'>
       <Container>
@@ -138,10 +96,10 @@ const HomeNotice = () => {
 
 
             <div className=" flex justify-end gap-x-2 bg-gvd-sect py-2 absolute bottom-0 right-0 w-full">
-              <button className="bg-black text-white px-4 py-2" onClick={() => handleScrollOne('up')}>
+              <button className="bg-black text-white px-4 py-2" onClick={() => handleScroll(scrollRefone, 'up')}>
                 <IoIosArrowUp className=' text-[25px]' />
               </button>
-              <button className="bg-black text-white px-4 py-2" onClick={() => handleScrollOne('down')}>
+              <button className="bg-black text-white px-4 py-2" onClick={() => handleScroll(scrollRefone, 'down')}>
                 <IoIosArrowDown className=' text-[25px]' />
               </button>
             </div>
@@ -212,10 +170,10 @@ const HomeNotice = () => {
 
 
             <div className=" flex justify-end gap-x-2 bg-gvd-sect py-2 absolute bottom-0 right-0 w-full">
-              <button className="bg-black text-white px-4 py-2" onClick={() => handleScrolltwo('up')}>
+              <button className="bg-black text-white px-4 py-2" onClick={() => handleScroll(scrollReftwo, 'up')}>
                 <IoIosArrowUp className=' text-[25px]' />
               </button>
-              <button className="bg-black text-white px-4 py-2" onClick={() => handleScrolltwo('down')}>
+              <button className="bg-black text-white px-4 py-2" onClick={() => handleScroll(scrollReftwo, 'down')}>
                 <IoIosArrowDown className=' text-[25px]' />
               </button>
             </div>
@@ -287,10 +245,10 @@ const HomeNotice = () => {
 
 
             <div className=" flex justify-end gap-x-2 bg-gvd-sect py-2 absolute bottom-0 right-0 w-full">
-              <button className="bg-black text-white px-4 py-2" onClick={() => handleScrollthree('up')}>
+              <button className="bg-black text-white px-4 py-2"  onClick={() => handleScroll(scrollRefthree, 'up')}>
                 <IoIosArrowUp className=' text-[25px]' />
               </button>
-              <button className="bg-black text-white px-4 py-2" onClick={() => handleScrollthree('down')}>
+              <button className="bg-black text-white px-4 py-2"  onClick={() => handleScroll(scrollRefthree, 'down')}>
                 <IoIosArrowDown className=' text-[25px]' />
               </button>
             </div>
@@ -362,10 +320,10 @@ const HomeNotice = () => {
 
 
             <div className=" flex justify-end gap-x-2 bg-gvd-sect py-2 absolute bottom-0 right-0 w-full">
-              <button className="bg-black text-white px-4 py-2" onClick={() => handleScrollm('up')}>
+              <button className="bg-black text-white px-4 py-2" onClick={() => handleScroll(scrollRefm, 'up')}>
                 <IoIosArrowUp className=' text-[25px]' />
               </button>
-              <button className="bg-black text-white px-4 py-2" onClick={() => handleScrollm('down')}>
+              <button className="bg-black text-white px-4 py-2" onClick={() => handleScroll(scrollRefm, 'down')}>
                 <IoIosArrowDown className=' text-[25px]' />
               </button>
             </div>
