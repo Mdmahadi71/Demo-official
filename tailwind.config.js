@@ -33,6 +33,8 @@ export default {
           'gvd-hx': '#01d2a7',
           'gvd-bug': '#1b0077',
           'gvd-green': '#05a403',
+          'gvd-sec': '#00b109',
+          'gvd-sect': '#005604',
         
         },
     },
