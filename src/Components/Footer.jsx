@@ -19,7 +19,7 @@ const Footer = () => {
                 </div>
 
             </div>
-            <div className="lg:w-[18%] w-[80%] sm:w-[95%] md:w-[90%] lg:ml-0 ml-4">
+            <div className="lg:w-[18%] w-[90%] sm:w-[95%] md:w-[90%] lg:ml-0 ml-4">
                 <div className="">
                     <div className=" border-b-[1px] border-gray-300  ">
                       <h2 className=' font-semibold text-[18px] text-white font-bangla mb-3'>শিক্ষক</h2>
@@ -32,7 +32,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <div className="lg:w-[18%] w-[80%] sm:w-[95%] md:w-[90%] lg:ml-0 ml-4">
+            <div className="lg:w-[18%] w-[90%] sm:w-[95%] md:w-[90%] lg:ml-0 ml-4">
                 <div className="">
                         <div className=" border-b-[1px] border-gray-300">
                            <h2 className=' font-semibold text-[18px] text-white mb-3 font-bangla'>শিক্ষার্থী</h2>
@@ -46,7 +46,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <div className="lg:w-[18%] w-[80%] sm:w-[95%] md:w-[90%] lg:ml-0 ml-4">
+            <div className="lg:w-[18%] w-[90%] sm:w-[95%] md:w-[90%] lg:ml-0 ml-4">
                 <div className=" ">
                     <div className="border-b-[1px]  border-gray-300">
                        <h2 className=' font-semibold text-[18px] text-white mb-3 font-bangla'>অভিভাবক</h2>

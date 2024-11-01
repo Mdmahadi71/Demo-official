@@ -4,12 +4,17 @@ import Navlogo from '../assets/logo.png'
 import { FaBars } from "react-icons/fa";
 import { RxCross1 } from "react-icons/rx";
 import { Link } from 'react-router-dom'
+import { FaPlus } from "react-icons/fa6";
+import { RiArrowUpSLine ,RiArrowDownSLine } from "react-icons/ri";
 
 
 
 const Navbar = () => {
     let [bars, setbars] = useState(false)
     let [ActiveMenu, setActiveMenu] = useState(localStorage.getItem('ActiveMenu' || ''))
+    let [Collages ,setCollages] = useState(false)
+    let [Studentss , setStudentss] = useState(false)
+    let [GuarDian , setGuarDian] = useState(false)
 
     useEffect(() => {
         localStorage.setItem('ActiveMenu', ActiveMenu)
@@ -51,19 +56,25 @@ const Navbar = () => {
                             <div onClick={() => setActiveMenu('home')} className={`lg:text-center lg:mt-0 mt-2 py-[10px] ${ActiveMenu === 'home'
                                 ? 'text-white lg:bg-white lg:text-black bg-gvd-hx lg:border-b-[3px] lg:border-gvd-r'
                                 : 'lg:bg-[#FFFFFF] lg:text-black text-white'}`}>
-                                <h2 className="text-[17px] font-medium font-bangla items-center top-[0] ml-[20px] lg:ml-0"> প্রথম পাতা </h2>
+                                <h2 className="text-[17px] font-medium font-bangla items-center top-[0] ml-[20px] lg:ml-0 flex justify-between lg:justify-center "> প্রথম পাতা <FaPlus className=' lg:hidden'/> </h2>
                             </div>
                         </Link>
                         <div className="lg:block  hidden absolute right-0 top-[0] h-[65%] w-[1px] bg-gvd-r"></div>
                     </div>
 
-                    <div onClick={() => setbars(!bars)} className="lg:w-[16%] relative">
-                        <Link to={'/coll'}>
+                    <div className="lg:w-[16%] relative">
+                       
                             <div onClick={() => setActiveMenu('about')} className={` relative  w:border-b-[2px] border-blue-500  lg:text-center  py-[10px] group
-                         ${ActiveMenu === 'about' ? ' text-white bg-gvd-hx  lg:bg-white lg:text-black lg:border-b-[3px]  lg:border-gvd-r' : 'lg:bg-[#FFFFFF]  lg:text-black text-white'} `}>
-                                <h2 className='text-[17px] font-medium font-bangla ml-[20px] lg:ml-0'>কলেজ সম্পর্কে</h2>
-                                <ul className='absolute top-[55px] left-0 w-[250px] text-start bg-gvd-sky  opacity-0 invisible
-                                 group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-20'>
+                         ${ActiveMenu === 'about' ? ' text-white bg-gvd-hx  lg:bg-white lg:text-black lg:border-b-[3px]  lg:border-gvd-r' : 'lg:bg-[#FFFFFF]  lg:text-black text-white'}  `}>
+                                <div className=" flex justify-between lg:justify-center items-center">
+                               <Link to={'./coll'}><h2  onClick={() => setbars(!bars)} className='text-[17px] font-medium font-bangla ml-[20px] lg:ml-0 lg:justify-center flex justify-between items-center '>কলেজ সম্পর্কে </h2></Link> 
+                                <i className=' lg:hidden' onClick={()=> setCollages(!Collages)} >
+                                    {Collages == true ? <RiArrowUpSLine className=' text-[25px]'/>  : <RiArrowDownSLine className=' text-[25px]'/>}
+                                    </i>
+                                </div> 
+                                <ul onClick={()=>setCollages(!Collages)} className={`absolute top-[55px] left-0 w-[250px] text-start bg-gvd-sky  lg:opacity-0 lg:invisible
+                                 lg:group-hover:opacity-100 lg:group-hover:visible transition-opacity duration-300 z-20   ${Collages == true ? 'top-[-500px] left-0 z-40  ' : 'top-[20px] left-0 h-[250px] '}`}>
+
                                     <Link to={'/principal'} ><li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>অধ্যক্ষের কথা</li></Link>
                                     <Link to={'/history'} ><li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>কলেজের ইতিহাস</li></Link>
                                     <Link to={'/infras'}><li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>অবকাঠামো</li></Link>
@@ -73,15 +84,26 @@ const Navbar = () => {
                                     <Link to={'/empty'}>  <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>শুন্যপদ</li></Link>
                                 </ul>
                             </div>
-                        </Link>
+                     
                         <div className="lg:block  hidden absolute right-0 top-[0] h-[65%] w-[1px] bg-gvd-r"></div>
                     </div>
 
-                    <div onClick={() => setbars(!bars)} className="lg:w-[16%] relative ">
-                        <Link to={'/student'}>
+                    <div  className="lg:w-[16%] relative ">
+                        
                             <div onClick={() => setActiveMenu('stude')} className={`relative   w:border-b-[2px] border-blue-500  lg:text-center py-[10px] group ${ActiveMenu === "stude" ? ' text-white lg:bg-white lg:text-black bg-gvd-hx lg:border-b-[3px] lg:border-gvd-r' : 'lg:bg-[#FFFFFF]  lg:text-black text-white'}`}>
-                                <h2 className='text-[17px]  font-medium font-bangla ml-[20px] lg:ml-0 '>শিক্ষার্থী</h2>
-                                <ul className='absolute top-[55px] left-0 w-[250px] text-start bg-gvd-sky  opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-20'>
+
+                                <div className=" flex justify-between lg:justify-center items-center">
+                                 <Link to={'/student'}> <h2 onClick={() => setbars(!bars)} className='text-[17px]  font-medium font-bangla ml-[20px] lg:ml-0 '>শিক্ষার্থী</h2></Link> 
+                                 <i onClick={()=>setStudentss(!Studentss)} className=' lg:hidden'>
+                                    {Studentss == true ? <RiArrowUpSLine className=' text-[25px]'/>  : <RiArrowDownSLine className=' text-[25px]'/>}
+                                 </i>
+                                </div>
+
+
+                                <ul className={`absolute top-[55px] left-0 w-[250px] text-start bg-gvd-sky  lg:opacity-0 lg:invisible 
+                                    lg:group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-20 ${Studentss == true ? 'top-[-500px] left-0 z-40 ' : 'top-[20px] left-0 h-[250px] '}`}>
+
+
                                     <Link to={'/notice'}> <li className={`py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla `}>নোটিশ বোর্ড</li></Link>
                                     <Link to={'/class'}> <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>ক্লাস রুটিন</li></Link>
                                     <Link to={'/ExamRou'}> <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>পরীক্ষার রুটিন</li></Link>
@@ -90,21 +112,29 @@ const Navbar = () => {
                                     <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>শিক্ষার্থীর তালিকা</li>
                                 </ul>
                             </div>
-                        </Link>
+                  
                         <div className="lg:block  hidden absolute right-0 top-[0] h-[65%] w-[1px] bg-gvd-r"></div>
                     </div>
 
-                    <div  onClick={() => setbars(!bars)} className=" lg:w-[16%] relative">
-                        <Link to={'/guardian'}>
-                            <div onClick={() => setActiveMenu('Guar')} className={` relative   w:border-b-[2px] border-blue-500  lg:text-center  py-[10px] group ${ActiveMenu === 'Guar' ? ' text-white lg:bg-white lg:text-black bg-gvd-hx  lg:border-b-[3px]  lg:border-gvd-r' : 'lg:bg-[#FFFFFF]  lg:text-black text-white'} `}>
-                                <h2 className='text-[17px]  font-medium font-bangla ml-[20px] lg:ml-0'>অভিভাবক</h2>
-                                <ul className='absolute top-[55px] left-0 w-[250px] text-start bg-gvd-sky opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-20'>
+                    <div className=" lg:w-[16%] relative">
+                        
+                            <div onClick={() => setActiveMenu('Guar')} className={` relative   w:border-b-[2px] border-blue-500  lg:text-center 
+                                 py-[10px] group ${ActiveMenu === 'Guar' ? ' text-white lg:bg-white lg:text-black bg-gvd-hx  lg:border-b-[3px]  lg:border-gvd-r' : 'lg:bg-[#FFFFFF]  lg:text-black text-white'} `}>
+
+
+                                <div className="flex justify-between lg:justify-center items-center">
+                                  <Link to={'/guardian'}> <h2 onClick={() => setbars(!bars)} className='text-[17px]  font-medium font-bangla ml-[20px] lg:ml-0'>অভিভাবক</h2></Link>
+                                <i onClick={()=>setGuarDian(!GuarDian)} className=' lg:hidden'>
+                                    {GuarDian == true ? <RiArrowUpSLine className=' text-[25px]'/>  : <RiArrowDownSLine className=' text-[25px]'/>}
+                                </i>
+                                </div>
+                                <ul className={`absolute top-[55px] left-0 w-[250px] text-start bg-gvd-sky lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible transition-opacity duration-300 z-20 ${GuarDian == true ? 'top-[-500px] left-0 z-40  ' : 'top-[20px] left-0 h-[250px] '}`}>
                                     <Link to={'/garPanel'} ><li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-300 text-white font-bangla'>অভিভাবক প্যানেল</li></Link>
                                     <Link to={'/Addinfor'} > <li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-300 text-white font-bangla'>ভর্তি তথ্য</li></Link>
                                     <Link to={'/Complaint'}><li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-300 text-white font-bangla'>অভিযোগ</li></Link>
                                 </ul>
                             </div>
-                        </Link>
+                    
                         <div className="lg:block  hidden absolute right-0 top-[0] h-[65%] w-[1px] bg-gvd-r"></div>
                     </div>
 
@@ -129,7 +159,7 @@ const Navbar = () => {
                 </div>
 
 
-                <div onClick={() => setbars(!bars)} className={` lg:hidden absolute top-[20px] left-0 text-[27px] rounded-[5px] p-[20px] text-black cursor-pointer duration-300 ${bars == true ? 'left-[80%] lg:left-0' : ' left-[0]'}`}>
+                <div onClick={() => setbars(!bars)} className={` lg:hidden absolute top-[20px] left-0 text-[27px] rounded-[5px] p-[20px] text-black cursor-pointer duration-300 z-10 ${bars == true ? 'left-[80%] lg:left-0' : ' left-[0]'}`}>
                     {bars == true ? <RxCross1 /> : <FaBars />}
                 </div>
 
