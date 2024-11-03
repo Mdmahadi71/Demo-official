@@ -31,7 +31,7 @@ const CollageHistory = () => {
 
                     <div className="lg:w-[20%]">
                         <div className="">
-                            <div className=" py-3 px-3 bg-gvd-b text-center my-2">
+                            <div className=" py-3 px-3 bg-goved-aa text-center my-2 rounded-[5px]">
                                 <h2 className=' font-bangla font-semibold text-[20px] text-white'>সম্মানিত প্রভাষক</h2>
                             </div>
                             <div className=" border-[10px] border-gray-400">

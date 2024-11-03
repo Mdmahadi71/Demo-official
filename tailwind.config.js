@@ -35,6 +35,10 @@ export default {
           'gvd-green': '#05a403',
           'gvd-sec': '#00b109',
           'gvd-sect': '#005604',
+          'goved-as' : '#E5DDC8',
+          'goved-pp' : '#01949A',
+          'goved-aa' : '#004369',
+          'goved-ss' :'#DB1F48'
         
         },
     },

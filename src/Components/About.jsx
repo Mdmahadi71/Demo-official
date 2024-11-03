@@ -110,10 +110,10 @@ const About = () => {
 
 
           <div className="lg:w-[20%] my-3 lg:my-0">
-            <div className=" pt-[20px] px-[20px] bg-gvd-cy pb-[50px]">
-              <h2>প্রতিষ্ঠাতা</h2>
+            <div className=" pt-[20px] px-[20px] bg-goved-aa pb-[50px] rounded-[10px]">
+              <h2 className=' font-bangla font-semibold text-[22px] text-white'>প্রতিষ্ঠাতা</h2>
               <div className=" relative py-[15px]">
-                <div className=" border-[5px] border-black w-[20%] z-10"> </div>
+                <div className=" border-[5px] border-goved-pp w-[20%] z-10"> </div>
                 <h2 className=' border-[1px] border-[#FFFFFF]  absolute top-[19px] left-[20%] w-[80%]'></h2>
               </div>
               <div className=" relative">
@@ -131,63 +131,63 @@ const About = () => {
             <div className="">
               <Slider {...settings}>
 
-                <div className="lg:w-[30%] w-full bg-gvd-b p-3 ">
+                <div className="lg:w-[30%] w-full bg-goved-pp p-3 ">
                   <div className="">
                     <img src={bayascop} className=' w-full' alt="" />
                   </div>
-                  <h2 className='font-open text-[15px] text-white'>Lorem ipsum dolor sit amet consectetur.</h2>
-                  <div className=" border-[2px] border-[#7f8617] py-2 px-3 text-center">
-                    <h2>START DATE</h2>
-                    <p>01.10.2024</p>
+                  <h2 className='font-open text-[15px] text-white font-normal'>Lorem ipsum dolor sit amet consectetur.</h2>
+                  <div className=" border-[2px] border-goved-as py-2 px-3 text-center">
+                    <h2 className=' font-open font-normal text-[20px] text-white'>START DATE</h2>
+                    <p className=' font-open font-light text-[16px] text-white'>01.10.2024</p>
                   </div>
-                  <h2 className='font-open text-[15px] text-[#bfca0f] my-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque itaque impedit?</h2>
+                  <h2 className='font-open text-[15px] text-goved-aa my-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque itaque impedit?</h2>
                   <div className=" flex justify-end">
-                    <button className='  py-2 px-3 bg-gvd-sky font-open text-[15px] text-white hover:bg-gvd-r duration-300 '>Read more</button>
+                    <button className='  py-2 px-3 bg-goved-aa font-open text-[15px] text-white hover:bg-goved-ss duration-300 '>Read more</button>
                   </div>
                 </div>
 
-                <div className="lg:w-[30%]  w-full bg-gvd-b p-3 ">
+                <div className="lg:w-[30%] w-full bg-goved-pp p-3 ">
                   <div className="">
                     <img src={eventImg} className=' w-full' alt="" />
                   </div>
-                  <h2 className='font-open text-[15px] text-white'>Lorem ipsum dolor sit amet consectetur.</h2>
-                  <div className=" border-[2px] border-[#7f8617] py-2 px-3 text-center">
-                    <h2>START DATE</h2>
-                    <p>01.10.2024</p>
+                  <h2 className='font-open text-[15px] text-white font-normal'>Lorem ipsum dolor sit amet consectetur.</h2>
+                  <div className=" border-[2px] border-goved-as py-2 px-3 text-center">
+                    <h2 className=' font-open font-normal text-[20px] text-white'>START DATE</h2>
+                    <p className=' font-open font-light text-[16px] text-white'>01.10.2024</p>
                   </div>
-                  <h2 className='font-open text-[15px] text-[#bfca0f] my-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque itaque impedit?</h2>
+                  <h2 className='font-open text-[15px] text-goved-aa my-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque itaque impedit?</h2>
                   <div className=" flex justify-end">
-                    <button className='  py-2 px-3 bg-gvd-sky font-open text-[15px] text-white hover:bg-gvd-r duration-300 '>Read more</button>
+                    <button className='  py-2 px-3 bg-goved-aa font-open text-[15px] text-white hover:bg-goved-ss duration-300 '>Read more</button>
                   </div>
                 </div>
 
-                <div className="lg:w-[30%]  w-full bg-gvd-b p-3 ">
+                <div className="lg:w-[30%] w-full bg-goved-pp p-3 ">
                   <div className="">
                     <img src={eventImg2} className=' w-full' alt="" />
                   </div>
-                  <h2 className='font-open text-[15px] text-white'>Lorem ipsum dolor sit amet consectetur.</h2>
-                  <div className=" border-[2px] border-[#7f8617] py-2 px-3 text-center">
-                    <h2>START DATE</h2>
-                    <p>01.10.2024</p>
+                  <h2 className='font-open text-[15px] text-white font-normal'>Lorem ipsum dolor sit amet consectetur.</h2>
+                  <div className=" border-[2px] border-goved-as py-2 px-3 text-center">
+                    <h2 className=' font-open font-normal text-[20px] text-white'>START DATE</h2>
+                    <p className=' font-open font-light text-[16px] text-white'>01.10.2024</p>
                   </div>
-                  <h2 className='font-open text-[15px] text-[#bfca0f] my-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque itaque impedit?</h2>
+                  <h2 className='font-open text-[15px] text-goved-aa my-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque itaque impedit?</h2>
                   <div className=" flex justify-end">
-                    <button className='  py-2 px-3 bg-gvd-sky font-open text-[15px] text-white hover:bg-gvd-r duration-300 '>Read more</button>
+                    <button className='  py-2 px-3 bg-goved-aa font-open text-[15px] text-white hover:bg-goved-ss duration-300 '>Read more</button>
                   </div>
                 </div>
 
-                <div className="lg:w-[30%] w-full bg-gvd-b p-3 ">
+                <div className="lg:w-[30%] w-full bg-goved-pp p-3 ">
                   <div className="">
                     <img src={eventImg3} className=' w-full' alt="" />
                   </div>
-                  <h2 className='font-open text-[15px] text-white'>Lorem ipsum dolor sit amet consectetur.</h2>
-                  <div className=" border-[2px] border-[#FFFF] py-2 px-3 text-center">
-                    <h2>START DATE</h2>
-                    <p>01.10.2024</p>
+                  <h2 className='font-open text-[15px] text-white font-normal'>Lorem ipsum dolor sit amet consectetur.</h2>
+                  <div className=" border-[2px] border-goved-as py-2 px-3 text-center">
+                    <h2 className=' font-open font-normal text-[20px] text-white'>START DATE</h2>
+                    <p className=' font-open font-light text-[16px] text-white'>01.10.2024</p>
                   </div>
-                  <h2 className='font-open text-[15px] text-[#bfca0f] my-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque itaque impedit?</h2>
+                  <h2 className='font-open text-[15px] text-goved-aa my-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque itaque impedit?</h2>
                   <div className=" flex justify-end">
-                    <button className='  py-2 px-3 bg-gvd-sky font-open text-[15px] text-white hover:bg-gvd-r duration-300 '>Read more</button>
+                    <button className='  py-2 px-3 bg-goved-aa font-open text-[15px] text-white hover:bg-goved-ss duration-300 '>Read more</button>
                   </div>
                 </div>
 
@@ -197,10 +197,10 @@ const About = () => {
 
 
           <div className="lg:w-[20%] my-3 lg:my-0">
-            <div className=" pt-[20px] px-[20px] bg-gvd-sky pb-[50px]">
-              <h2>অধ্যক্ষ</h2>
+            <div className=" pt-[20px] px-[20px] bg-goved-aa pb-[50px] rounded-[10px]">
+              <h2 className=' font-bangla font-semibold text-[22px] text-white'>অধ্যক্ষ</h2>
               <div className=" relative py-[15px]">
-                <div className=" border-[5px] border-black w-[20%] z-10"> </div>
+                <div className=" border-[5px] border-goved-pp w-[20%] z-10"> </div>
                 <h2 className=' border-[1px] border-[#FFFFFF]  absolute top-[19px] left-[20%] w-[80%]'></h2>
               </div>
               <div className=" relative">
