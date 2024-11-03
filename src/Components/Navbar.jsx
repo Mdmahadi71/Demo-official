@@ -72,8 +72,8 @@ const Navbar = () => {
                                     {Collages == true ? <RiArrowUpSLine className=' text-[25px]'/>  : <RiArrowDownSLine className=' text-[25px]'/>}
                                     </i>
                                 </div> 
-                                <ul onClick={()=>setCollages(!Collages)} className={`absolute top-[55px] left-0 w-[250px] text-start bg-gvd-sky  lg:opacity-0 lg:invisible
-                                 lg:group-hover:opacity-100 lg:group-hover:visible transition-opacity duration-300 z-20   ${Collages == true ? 'top-[-500px] left-0 z-40  ' : 'top-[20px] left-0 h-[250px] '}`}>
+                                <ul onClick={() => setCollages(!Collages)} className={`absolute top-[55px] left-0 w-[250px] text-start bg-gvd-sky  lg:opacity-0 lg:invisible
+                                 lg:group-hover:opacity-100 lg:group-hover:visible transition-opacity duration-300 z-20   ${Collages == true ? 'top-[-500px] left-0 z-40  ' : 'top-[20px] left-0  '}`}>
 
                                     <Link to={'/principal'} ><li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>অধ্যক্ষের কথা</li></Link>
                                     <Link to={'/history'} ><li className='py-[8px] text-[13px] pl-[10px] font-medium hover:bg-gvd-b border-b-[1px] border-gray-400 duration-200 text-white font-bangla'>কলেজের ইতিহাস</li></Link>
