@@ -25,7 +25,7 @@ const ScrollToptobootom = () => {
     <div>
       <Container>
         {topTobottom && 
-          <button className=' w-[40px] h-[40px] bottom-[50px] lg:right-[50px] right-[10px] fixed text-[40px]  bg-gvd-sky z-10' onClick={scrollUp}><IoIosArrowUp/></button>
+          <button className=' w-[40px] h-[40px] bottom-[50px] lg:right-[50px] right-[10px] fixed text-[40px]  bg-goved-pp z-10' onClick={scrollUp}><IoIosArrowUp/></button>
         }
         
       </Container>

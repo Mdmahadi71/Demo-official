@@ -102,7 +102,7 @@ const Banner = () => {
                 সোমবার, আগস্ট 12, 2024  *** |</span>
             </div>
           </div>
-          <div className="  py-[16px] px-4 inline-block bg-gvd-r absolute top-[0px] left-0">
+          <div className="  py-[16px] px-4 inline-block bg-goved-ss absolute top-[0px] left-0">
             <h2 className=' text-[16px] text-white font-medium font-open'>Letas News</h2>
           </div>
         </div>
