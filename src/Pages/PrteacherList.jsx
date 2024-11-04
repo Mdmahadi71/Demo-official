@@ -13,7 +13,7 @@ const PrteacherList = () => {
         </div>
       <div class="overflow-x-auto mx-3 lg:mx-0">
         <table class="min-w-full bg-white border border-gray-300">
-            <thead class="bg-teal-400 text-white">
+            <thead class="bg-goved-pp text-white">
                 <tr>
                     <th class="py-2 px-4 border-b font-bangla">ছবি</th>
                     <th class="py-2 px-4 border-b font-bangla">শিক্ষকের নাম</th>
