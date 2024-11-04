@@ -1,7 +1,5 @@
 import React from 'react'
 import Container from '../Components/Container'
-import { FaSearch } from "react-icons/fa";
-import { AiOutlineLike } from "react-icons/ai";
 import Sharee from '../Components/Sharee';
 
 

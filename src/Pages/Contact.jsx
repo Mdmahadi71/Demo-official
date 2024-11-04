@@ -104,7 +104,7 @@ const Contact = () => {
                                         </div>
 
                                     </div>
-                                    <button onClick={handleClick} className='py-2 px-3 bg-slate-500 font-medium font-open text-[18px] text-white'>
+                                    <button onClick={handleClick} className='py-2 px-3 bg-goved-aa font-medium font-open text-[18px] text-white'>
                                         Send
                                     </button>
                                     <ToastContainer />

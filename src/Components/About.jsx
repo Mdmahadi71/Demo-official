@@ -131,7 +131,7 @@ const About = () => {
             <div className="">
               <Slider {...settings}>
 
-                <div className="lg:w-[30%] w-full bg-goved-pp p-3 ">
+                <div className="lg:w-[30%] w-full bg-goved-pp p-3 rounded-[10px]  ">
                   <div className="">
                     <img src={bayascop} className=' w-full' alt="" />
                   </div>
@@ -146,7 +146,7 @@ const About = () => {
                   </div>
                 </div>
 
-                <div className="lg:w-[30%] w-full bg-goved-pp p-3 ">
+                <div className="lg:w-[30%] w-full bg-goved-pp p-3 rounded-[10px] ">
                   <div className="">
                     <img src={eventImg} className=' w-full' alt="" />
                   </div>
@@ -161,7 +161,7 @@ const About = () => {
                   </div>
                 </div>
 
-                <div className="lg:w-[30%] w-full bg-goved-pp p-3 ">
+                <div className="lg:w-[30%] w-full bg-goved-pp p-3 rounded-[10px]">
                   <div className="">
                     <img src={eventImg2} className=' w-full' alt="" />
                   </div>
@@ -176,7 +176,7 @@ const About = () => {
                   </div>
                 </div>
 
-                <div className="lg:w-[30%] w-full bg-goved-pp p-3 ">
+                <div className="lg:w-[30%] w-full bg-goved-pp p-3 rounded-[10px]">
                   <div className="">
                     <img src={eventImg3} className=' w-full' alt="" />
                   </div>
