@@ -65,7 +65,7 @@ const Navbar = () => {
                     <div className="lg:w-[16%] relative">
 
                         <div onClick={() => setActiveMenu('about')} className={` relative  w:border-b-[2px] border-blue-500  lg:text-center  py-[10px] group
-                         ${ActiveMenu === 'about' ? ' text-white bg-goved-pp  lg:bg-white lg:text-black lg:border-b-[3px]  lg:border-gvd-r' : 'lg:bg-[#FFFFFF]  lg:text-black text-white'}  `}>
+                         ${ActiveMenu === 'about' ? ' text-white bg-goved-pp  lg:bg-white lg:text-black lg:border-b-[3px]  lg:border-goved-ss' : 'lg:bg-[#FFFFFF]  lg:text-black text-white'}  `}>
                             <div className=" flex justify-between lg:justify-center items-center">
                                 <Link to={'./coll'}><h2 onClick={() => setbars(!bars)} className='text-[17px] font-medium font-bangla ml-[20px] lg:ml-0 lg:justify-center flex justify-between items-center '>কলেজ সম্পর্কে </h2></Link>
                                 <i className=' lg:hidden cursor-pointer' onClick={() => setCollages(!Collages)} >
@@ -85,7 +85,7 @@ const Navbar = () => {
                             </ul>
                         </div>
 
-                        <div className="lg:block  hidden absolute right-0 top-[0] h-[65%] w-[1px] bg-gvd-r"></div>
+                        <div className="lg:block  hidden absolute right-0 top-[0] h-[65%] w-[1px] bg-goved-ss"></div>
                     </div>
 
                     <div className={`lg:w-[16%] relative  ${Collages == true ? '' : 'transform translate-y-[260px] sm:translate-y-[75%] lg:translate-y-0'}`}>
@@ -113,7 +113,7 @@ const Navbar = () => {
                             </ul>
                         </div>
 
-                        <div className="lg:block  hidden absolute right-0 top-[0] h-[65%] w-[1px] bg-gvd-r"></div>
+                        <div className="lg:block  hidden absolute right-0 top-[0] h-[65%] w-[1px] bg-goved-ss"></div>
                     </div>
 
                     <div className={`lg:w-[16%] relative ${Collages == true ? '' : 'transform translate-y-[270px] sm:translate-y-[75%] lg:translate-y-0'} ${Studentss == true ? '' : 'transform translate-y-[240px] sm:translate-y-[75%] lg:translate-y-0'}`}>
@@ -135,7 +135,7 @@ const Navbar = () => {
                             </ul>
                         </div>
 
-                        <div className="lg:block  hidden absolute right-0 top-[0] h-[65%] w-[1px] bg-gvd-r"></div>
+                        <div className="lg:block  hidden absolute right-0 top-[0] h-[65%] w-[1px] bg-goved-ss"></div>
                     </div>
 
                     <div onClick={() => setbars(!bars)} className={`lg:w-[16%] relative ${Collages == true ? '' : 'transform translate-y-[280px] sm:translate-y-[75%] lg:translate-y-0'}
